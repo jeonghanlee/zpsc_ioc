@@ -1,4 +1,4 @@
 epicsEnvSet("IOC","ioczpsc")
-epicsEnvSet("TOP","/home/mead/epics/iocs/zpsc")
-epicsEnvSet("EPICS_BASE","/home/mead/epics/base-7.0.8.1")
+epicsEnvSet("TOP","/home/mead/epics/iocs/zpsc_ioc/ioc/zpsc")
+epicsEnvSet("EPICS_BASE","/home/mead/epics/epics-base")
 epicsEnvSet("PSCDRV","/home/mead/epics/pscdrv")
