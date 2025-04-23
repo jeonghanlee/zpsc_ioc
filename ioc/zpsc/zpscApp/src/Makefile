@@ -17,9 +17,13 @@ zpsc_DBD += base.dbd
 
 # Include dbd files from all support applications:
 zpsc_DBD += pscCore.dbd
+zpsc_DBD += scaleWaveform.dbd
 
 # Add all the support libraries needed by this IOC
 zpsc_LIBS += pscCore
+
+# Add your custom C source here:
+zpsc_SRCS += scaleWaveform.c   
 
 # zpsc_registerRecordDeviceDriver.cpp derives from zpsc.dbd
 zpsc_SRCS += zpsc_registerRecordDeviceDriver.cpp

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-04-18 10:48:29 by mead-->
+<!--Saved on 2025-04-23 17:02:44 by mead-->
 <display version="2.0.0">
   <name>$(CHAN):$(PriSys)</name>
   <width>900</width>
@@ -2487,7 +2487,7 @@
           <widget type="label" version="2.0.0">
             <name>Label_48</name>
             <text>DCCT2</text>
-            <x>106</x>
+            <x>24</x>
             <y>193</y>
             <width>102</width>
             <horizontal_alignment>2</horizontal_alignment>
@@ -2502,7 +2502,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_57</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT2-Gain-I</pv_name>
-            <x>672</x>
+            <x>590</x>
             <y>193</y>
             <width>102</width>
             <font>
@@ -2526,7 +2526,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_58</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC-Offset-I</pv_name>
-            <x>444</x>
+            <x>362</x>
             <y>222</y>
             <width>102</width>
             <height>22</height>
@@ -2552,7 +2552,7 @@
           <widget type="label" version="2.0.0">
             <name>Label_49</name>
             <text>DAC Monitor</text>
-            <x>107</x>
+            <x>25</x>
             <y>222</y>
             <width>102</width>
             <horizontal_alignment>2</horizontal_alignment>
@@ -2567,7 +2567,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_59</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC-Gain-I</pv_name>
-            <x>672</x>
+            <x>590</x>
             <y>222</y>
             <width>102</width>
             <font>
@@ -2591,7 +2591,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_60</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Volt-Offset-I</pv_name>
-            <x>444</x>
+            <x>362</x>
             <y>241</y>
             <width>102</width>
             <height>22</height>
@@ -2617,7 +2617,7 @@
           <widget type="label" version="2.0.0">
             <name>Label_50</name>
             <text>Voltage</text>
-            <x>106</x>
+            <x>24</x>
             <y>241</y>
             <width>102</width>
             <horizontal_alignment>2</horizontal_alignment>
@@ -2632,7 +2632,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_61</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Volt-Gain-I</pv_name>
-            <x>672</x>
+            <x>590</x>
             <y>241</y>
             <width>102</width>
             <font>
@@ -2656,7 +2656,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_62</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Gnd-Offset-I</pv_name>
-            <x>444</x>
+            <x>362</x>
             <y>258</y>
             <width>102</width>
             <height>22</height>
@@ -2682,7 +2682,7 @@
           <widget type="label" version="2.0.0">
             <name>Label_51</name>
             <text>Ground</text>
-            <x>107</x>
+            <x>25</x>
             <y>258</y>
             <width>102</width>
             <horizontal_alignment>2</horizontal_alignment>
@@ -2697,7 +2697,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_63</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Gnd-Gain-I</pv_name>
-            <x>672</x>
+            <x>590</x>
             <y>258</y>
             <width>102</width>
             <font>
@@ -2721,7 +2721,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_64</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Spare-Offset-I</pv_name>
-            <x>444</x>
+            <x>362</x>
             <y>277</y>
             <width>102</width>
             <height>22</height>
@@ -2747,7 +2747,7 @@
           <widget type="label" version="2.0.0">
             <name>Label_52</name>
             <text>Spare</text>
-            <x>106</x>
+            <x>24</x>
             <y>277</y>
             <width>102</width>
             <horizontal_alignment>2</horizontal_alignment>
@@ -2762,7 +2762,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_65</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Spare-Gain-I</pv_name>
-            <x>672</x>
+            <x>590</x>
             <y>277</y>
             <width>102</width>
             <font>
@@ -2786,7 +2786,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_66</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Reg-Offset-I</pv_name>
-            <x>444</x>
+            <x>362</x>
             <y>294</y>
             <width>102</width>
             <height>22</height>
@@ -2812,7 +2812,7 @@
           <widget type="label" version="2.0.0">
             <name>Label_53</name>
             <text>Regulator</text>
-            <x>107</x>
+            <x>25</x>
             <y>294</y>
             <width>102</width>
             <horizontal_alignment>2</horizontal_alignment>
@@ -2827,7 +2827,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_67</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Reg-Gain-I</pv_name>
-            <x>672</x>
+            <x>590</x>
             <y>294</y>
             <width>102</width>
             <font>
@@ -2851,7 +2851,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_68</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Error-Offset-I</pv_name>
-            <x>444</x>
+            <x>362</x>
             <y>313</y>
             <width>102</width>
             <height>22</height>
@@ -2877,7 +2877,7 @@
           <widget type="label" version="2.0.0">
             <name>Label_54</name>
             <text>Error</text>
-            <x>106</x>
+            <x>24</x>
             <y>313</y>
             <width>102</width>
             <horizontal_alignment>2</horizontal_alignment>
@@ -2892,7 +2892,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_69</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Error-Gain-I</pv_name>
-            <x>672</x>
+            <x>590</x>
             <y>313</y>
             <width>102</width>
             <font>
@@ -2916,7 +2916,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_70</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT1-I</pv_name>
-            <x>217</x>
+            <x>135</x>
             <y>174</y>
             <width>102</width>
             <font>
@@ -2941,7 +2941,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_71</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT2-I</pv_name>
-            <x>217</x>
+            <x>135</x>
             <y>193</y>
             <width>102</width>
             <font>
@@ -2966,7 +2966,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_72</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC-I</pv_name>
-            <x>217</x>
+            <x>135</x>
             <y>222</y>
             <width>102</width>
             <font>
@@ -2991,7 +2991,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_73</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Volt-I</pv_name>
-            <x>217</x>
+            <x>135</x>
             <y>241</y>
             <width>102</width>
             <font>
@@ -3016,7 +3016,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_74</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Gnd-I</pv_name>
-            <x>217</x>
+            <x>135</x>
             <y>258</y>
             <width>102</width>
             <font>
@@ -3041,7 +3041,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_75</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Spare-I</pv_name>
-            <x>217</x>
+            <x>135</x>
             <y>277</y>
             <width>102</width>
             <font>
@@ -3066,7 +3066,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_76</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Reg-I</pv_name>
-            <x>217</x>
+            <x>135</x>
             <y>294</y>
             <width>102</width>
             <font>
@@ -3091,7 +3091,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_77</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Error-I</pv_name>
-            <x>217</x>
+            <x>135</x>
             <y>313</y>
             <width>102</width>
             <font>
@@ -3116,7 +3116,7 @@
           <widget type="label" version="2.0.0">
             <name>Label_55</name>
             <text>Readback</text>
-            <x>214</x>
+            <x>132</x>
             <y>143</y>
             <width>102</width>
             <font>
@@ -3135,7 +3135,7 @@
           <widget type="label" version="2.0.0">
             <name>Label_56</name>
             <text>Offset RdBk</text>
-            <x>441</x>
+            <x>359</x>
             <y>142</y>
             <width>102</width>
             <height>22</height>
@@ -3155,7 +3155,7 @@
           <widget type="label" version="2.0.0">
             <name>Label_57</name>
             <text>Gain RdBk</text>
-            <x>669</x>
+            <x>587</x>
             <y>142</y>
             <width>102</width>
             <font>
@@ -3174,7 +3174,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_90</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT1-Gain-SP</pv_name>
-            <x>564</x>
+            <x>482</x>
             <y>174</y>
             <width>102</width>
             <font>
@@ -3198,7 +3198,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_91</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT2-Gain-SP</pv_name>
-            <x>564</x>
+            <x>482</x>
             <y>193</y>
             <width>102</width>
             <font>
@@ -3222,7 +3222,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_92</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC-Gain-SP</pv_name>
-            <x>564</x>
+            <x>482</x>
             <y>222</y>
             <width>102</width>
             <font>
@@ -3246,7 +3246,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_93</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Volt-Gain-SP</pv_name>
-            <x>564</x>
+            <x>482</x>
             <y>241</y>
             <width>102</width>
             <font>
@@ -3270,7 +3270,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_94</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Gnd-Gain-SP</pv_name>
-            <x>564</x>
+            <x>482</x>
             <y>258</y>
             <width>102</width>
             <font>
@@ -3294,7 +3294,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_95</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Spare-Gain-SP</pv_name>
-            <x>564</x>
+            <x>482</x>
             <y>277</y>
             <width>102</width>
             <font>
@@ -3318,7 +3318,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_96</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Reg-Gain-SP</pv_name>
-            <x>564</x>
+            <x>482</x>
             <y>294</y>
             <width>102</width>
             <font>
@@ -3342,7 +3342,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_97</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Error-Gain-SP</pv_name>
-            <x>564</x>
+            <x>482</x>
             <y>313</y>
             <width>102</width>
             <font>
@@ -3366,7 +3366,7 @@
           <widget type="label" version="2.0.0">
             <name>Label_61</name>
             <text>Gain Set</text>
-            <x>561</x>
+            <x>479</x>
             <y>142</y>
             <width>102</width>
             <font>
@@ -3385,7 +3385,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_98</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT1-Offset-SP</pv_name>
-            <x>336</x>
+            <x>254</x>
             <y>174</y>
             <width>102</width>
             <height>22</height>
@@ -3410,7 +3410,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_99</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT2-Offset-SP</pv_name>
-            <x>336</x>
+            <x>254</x>
             <y>193</y>
             <width>102</width>
             <height>22</height>
@@ -3435,7 +3435,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_100</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC-Offset-SP</pv_name>
-            <x>336</x>
+            <x>254</x>
             <y>222</y>
             <width>102</width>
             <height>22</height>
@@ -3461,7 +3461,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_101</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Volt-Offset-SP</pv_name>
-            <x>336</x>
+            <x>254</x>
             <y>241</y>
             <width>102</width>
             <height>22</height>
@@ -3487,7 +3487,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_102</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Gnd-Offset-SP</pv_name>
-            <x>336</x>
+            <x>254</x>
             <y>258</y>
             <width>102</width>
             <height>22</height>
@@ -3513,7 +3513,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_103</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Spare-Offset-SP</pv_name>
-            <x>336</x>
+            <x>254</x>
             <y>277</y>
             <width>102</width>
             <height>22</height>
@@ -3539,7 +3539,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_104</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Reg-Offset-SP</pv_name>
-            <x>336</x>
+            <x>254</x>
             <y>294</y>
             <width>102</width>
             <height>22</height>
@@ -3565,7 +3565,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_105</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Error-Offset-SP</pv_name>
-            <x>336</x>
+            <x>254</x>
             <y>313</y>
             <width>102</width>
             <height>22</height>
@@ -3591,7 +3591,7 @@
           <widget type="label" version="2.0.0">
             <name>Label_62</name>
             <text>Offset Set</text>
-            <x>333</x>
+            <x>251</x>
             <y>142</y>
             <width>102</width>
             <height>22</height>
@@ -3611,7 +3611,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_54</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT1-Offset-I</pv_name>
-            <x>444</x>
+            <x>362</x>
             <y>174</y>
             <width>102</width>
             <height>22</height>
@@ -3636,7 +3636,7 @@
           <widget type="label" version="2.0.0">
             <name>Label_47</name>
             <text>DCCT1</text>
-            <x>107</x>
+            <x>25</x>
             <y>174</y>
             <width>102</width>
             <horizontal_alignment>2</horizontal_alignment>
@@ -3651,7 +3651,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_55</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT1-Gain-I</pv_name>
-            <x>672</x>
+            <x>590</x>
             <y>174</y>
             <width>102</width>
             <font>
@@ -3675,7 +3675,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_56</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT2-Offset-I</pv_name>
-            <x>444</x>
+            <x>362</x>
             <y>193</y>
             <width>102</width>
             <height>22</height>
@@ -3700,7 +3700,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_152</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-I</pv_name>
-            <x>219</x>
+            <x>137</x>
             <y>400</y>
             <width>102</width>
             <font>
@@ -3725,7 +3725,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_153</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-Gain-SP</pv_name>
-            <x>566</x>
+            <x>484</x>
             <y>400</y>
             <width>102</width>
             <font>
@@ -3749,7 +3749,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_154</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-Offset-SP</pv_name>
-            <x>338</x>
+            <x>256</x>
             <y>400</y>
             <width>102</width>
             <height>22</height>
@@ -3775,7 +3775,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_155</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-Offset-I</pv_name>
-            <x>446</x>
+            <x>364</x>
             <y>400</y>
             <width>102</width>
             <height>22</height>
@@ -3801,7 +3801,7 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_156</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-Gain-I</pv_name>
-            <x>674</x>
+            <x>592</x>
             <y>400</y>
             <width>102</width>
             <font>
@@ -3825,11 +3825,78 @@
           <widget type="label" version="2.0.0">
             <name>Label_68</name>
             <text>DAC</text>
-            <x>107</x>
+            <x>25</x>
             <y>400</y>
             <width>102</width>
             <horizontal_alignment>2</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_59</name>
+            <text>Scale Factor</text>
+            <x>716</x>
+            <y>141</y>
+            <width>102</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <horizontal_alignment>1</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_79</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT1ScaleFactor-I</pv_name>
+            <x>719</x>
+            <y>173</y>
+            <width>102</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <precision>6</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_118</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT2ScaleFactor-I</pv_name>
+            <x>719</x>
+            <y>192</y>
+            <width>102</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <precision>6</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
             <actions>
             </actions>
             <border_color>
@@ -3880,7 +3947,7 @@
                     </x_axis>
                     <y_axes>
                       <y_axis>
-                        <title></title>
+                        <title>Amps</title>
                         <autoscale>true</autoscale>
                         <log_scale>false</log_scale>
                         <minimum>0.0</minimum>
@@ -3906,7 +3973,7 @@
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:DCCT2-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:DCCT2Scaled-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -4398,7 +4465,7 @@
                     </x_axis>
                     <y_axes>
                       <y_axis>
-                        <title></title>
+                        <title>Amps</title>
                         <autoscale>true</autoscale>
                         <log_scale>false</log_scale>
                         <minimum>0.0</minimum>
@@ -4424,7 +4491,7 @@
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:DCCT1-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:DCCT1Scaled-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -4531,7 +4598,7 @@
                     </x_axis>
                     <y_axes>
                       <y_axis>
-                        <title></title>
+                        <title>Amps</title>
                         <autoscale>true</autoscale>
                         <log_scale>false</log_scale>
                         <minimum>0.0</minimum>
@@ -4557,7 +4624,7 @@
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:DCCT2-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:DCCT2Scaled-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -4827,7 +4894,7 @@
                     </x_axis>
                     <y_axes>
                       <y_axis>
-                        <title></title>
+                        <title>Amps</title>
                         <autoscale>true</autoscale>
                         <log_scale>false</log_scale>
                         <minimum>0.0</minimum>
@@ -4853,7 +4920,7 @@
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:DCCT1-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:DCCT1Scaled-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -5182,7 +5249,7 @@
                     </x_axis>
                     <y_axes>
                       <y_axis>
-                        <title></title>
+                        <title>Amps</title>
                         <autoscale>true</autoscale>
                         <log_scale>false</log_scale>
                         <minimum>0.0</minimum>
@@ -5208,7 +5275,7 @@
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:DCCT1-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:DCCT1Scaled-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -5478,7 +5545,7 @@
                     </x_axis>
                     <y_axes>
                       <y_axis>
-                        <title></title>
+                        <title>Amps</title>
                         <autoscale>true</autoscale>
                         <log_scale>false</log_scale>
                         <minimum>0.0</minimum>
@@ -5504,7 +5571,7 @@
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:DCCT2-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:DCCT2Scaled-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -5842,7 +5909,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
                     </x_axis>
                     <y_axes>
                       <y_axis>
-                        <title></title>
+                        <title>Amps</title>
                         <autoscale>true</autoscale>
                         <log_scale>false</log_scale>
                         <minimum>0.0</minimum>
@@ -5868,7 +5935,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:DCCT1-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:DCCT1Scaled-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -6138,7 +6205,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
                     </x_axis>
                     <y_axes>
                       <y_axis>
-                        <title></title>
+                        <title>Amps</title>
                         <autoscale>true</autoscale>
                         <log_scale>false</log_scale>
                         <minimum>0.0</minimum>
@@ -6164,7 +6231,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:DCCT2-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:DCCT2Scaled-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -6502,7 +6569,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
                     </x_axis>
                     <y_axes>
                       <y_axis>
-                        <title></title>
+                        <title>Amps</title>
                         <autoscale>true</autoscale>
                         <log_scale>false</log_scale>
                         <minimum>0.0</minimum>
@@ -6528,7 +6595,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:DCCT1-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:DCCT1Scaled-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -6834,7 +6901,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
                     </x_axis>
                     <y_axes>
                       <y_axis>
-                        <title></title>
+                        <title>Amps</title>
                         <autoscale>true</autoscale>
                         <log_scale>false</log_scale>
                         <minimum>0.0</minimum>
@@ -6860,7 +6927,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:DCCT2-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:DCCT2Scaled-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -7229,13 +7296,10 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
             <x>8</x>
             <width>858</width>
             <height>870</height>
-            <active_tab>4</active_tab>
           </widget>
         </children>
       </tab>
     </tabs>
-    <x>8</x>
-    <y>6</y>
     <width>882</width>
     <height>924</height>
     <active_tab>5</active_tab>

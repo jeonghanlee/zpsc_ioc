@@ -53,17 +53,13 @@ dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=1, TYPE=EVR, CHAN=3, MSGID=10
 dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=1, TYPE=EVR, CHAN=4, MSGID=103, BUFLEN=$(BLEN)")
 
 
-#dbLoadRecords("db/fault_ch1.db", "P=$(IOCNAME), NO=1, BUF_LEN=$(BLEN)")
-#dbLoadRecords("db/fault_ch2.db", "P=$(IOCNAME), NO=1, BUF_LEN=$(BLEN)")
-#dbLoadRecords("db/fault_ch3.db", "P=$(IOCNAME), NO=1, BUF_LEN=$(BLEN)")
-#dbLoadRecords("db/fault_ch4.db", "P=$(IOCNAME), NO=1, BUF_LEN=$(BLEN)")
-
 dbLoadRecords("db/wfmstats.db", "P=$(IOCNAME), PSC=1")
 
+#dbLoadRecords("db/asub_test.db")
 
 
 
-var(PSCDebug, 5)	#5 full debug
+var(PSCDebug, 1)	#5 full debug
 
 #psc1 Create the PSC
 createPSC("Tx1", $(PSC1_IP), 7, 0)
