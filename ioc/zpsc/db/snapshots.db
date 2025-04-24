@@ -20,6 +20,8 @@ record(waveform,"$(P){$(NO)}Chan$(CHAN):$(TYPE):Cnt-Wfm") {
 
 
 
+
+
 record(waveform,"$(P){$(NO)}Chan$(CHAN):$(TYPE):DCCT1-Wfm") {
     field(DTYP, "PSC Block I32 In")
     field(INP , "@Wfm$(NO) $(MSGID) 8 40")
@@ -31,7 +33,7 @@ record(waveform,"$(P){$(NO)}Chan$(CHAN):$(TYPE):DCCT1-Wfm") {
 
 record(ai, "$(P){$(NO)}Chan$(CHAN):DCCT1ScaleFactor-I") {
     field(DTYP, "Soft Channel")
-    field(VAL, "11.0")   # Example scalar value
+    field(VAL, "1.0")   
     field(PINI, "YES")
     field(FLNK, "$(P){$(NO)}Chan$(CHAN):$(TYPE):TriggerScaleDCCT1") 
 }
@@ -47,7 +49,7 @@ record(aSub, "$(P){$(NO)}Chan$(CHAN):$(TYPE):ScaleDCCT1") {
     field(INPB, "$(P){$(NO)}Chan$(CHAN):DCCT1ScaleFactor-I")
     field(FTB , "DOUBLE")
     field(NOB , "1")
-    field(OUTA, "$(P){$(NO)}Chan$(CHAN):$(TYPE):DCCT1Scaled-Wfm")
+    field(OUTA, "$(P){$(NO)}Chan$(CHAN):$(TYPE):DCCT1Scaled-Wfm PP")
     field(FTVA, "DOUBLE")
     field(NOVA, "$(BUFLEN)")
     field(SNAM, "scaleWaveform")
@@ -121,6 +123,17 @@ record(waveform,"$(P){$(NO)}Chan$(CHAN):$(TYPE):DAC-Wfm") {
     field(NELM,"$(BUFLEN)")
 }
 
+record(ai, "$(P){$(NO)}Chan$(CHAN):DACMonScaleFactor-I") {
+    field(DTYP, "Soft Channel")
+    field(VAL, "1.0")   
+    field(PINI, "YES")
+    #field(FLNK, "$(P){$(NO)}Chan$(CHAN):$(TYPE):TriggerScaleDCCT2") 
+}
+
+
+
+
+
 record(waveform,"$(P){$(NO)}Chan$(CHAN):$(TYPE):Volt-Wfm") {
     field(DTYP, "PSC Block I32 In")
     field(INP , "@Wfm$(NO) $(MSGID) 20 40")
@@ -128,6 +141,22 @@ record(waveform,"$(P){$(NO)}Chan$(CHAN):$(TYPE):Volt-Wfm") {
     field(FTVL,"DOUBLE")
     field(NELM,"$(BUFLEN)")
 } 
+
+record(ai, "$(P){$(NO)}Chan$(CHAN):VoltScaleFactor-I") {
+    field(DTYP, "Soft Channel")
+    field(VAL, "1.0")   
+    field(PINI, "YES")
+    #field(FLNK, "$(P){$(NO)}Chan$(CHAN):$(TYPE):TriggerScaleDCCT2") 
+}
+
+    
+record(ai, "$(P){$(NO)}Chan$(CHAN):GndScaleFactor-I") {
+    field(DTYP, "Soft Channel")
+    field(VAL, "1.0")   
+    field(PINI, "YES")
+    #field(FLNK, "$(P){$(NO)}Chan$(CHAN):$(TYPE):TriggerScaleDCCT2") 
+}   
+    
     
 record(waveform,"$(P){$(NO)}Chan$(CHAN):$(TYPE):Gnd-Wfm") {
     field(DTYP, "PSC Block I32 In")
@@ -137,6 +166,14 @@ record(waveform,"$(P){$(NO)}Chan$(CHAN):$(TYPE):Gnd-Wfm") {
     field(NELM,"$(BUFLEN)")
 }
  
+ 
+record(ai, "$(P){$(NO)}Chan$(CHAN):SpareScaleFactor-I") {
+    field(DTYP, "Soft Channel")
+    field(VAL, "1.0")   
+    field(PINI, "YES")
+    #field(FLNK, "$(P){$(NO)}Chan$(CHAN):$(TYPE):TriggerScaleDCCT2") 
+} 
+ 
 record(waveform,"$(P){$(NO)}Chan$(CHAN):$(TYPE):Spare-Wfm") {
     field(DTYP, "PSC Block I32 In")
     field(INP , "@Wfm$(NO) $(MSGID) 28 40")
@@ -145,12 +182,28 @@ record(waveform,"$(P){$(NO)}Chan$(CHAN):$(TYPE):Spare-Wfm") {
     field(NELM,"$(BUFLEN)")
 }
   
+  
+record(ai, "$(P){$(NO)}Chan$(CHAN):RegScaleFactor-I") {
+    field(DTYP, "Soft Channel")
+    field(VAL, "1.0")   
+    field(PINI, "YES")
+    #field(FLNK, "$(P){$(NO)}Chan$(CHAN):$(TYPE):TriggerScaleDCCT2") 
+}  
+  
 record(waveform,"$(P){$(NO)}Chan$(CHAN):$(TYPE):Reg-Wfm") {
     field(DTYP, "PSC Block I32 In")
     field(INP , "@Wfm$(NO) $(MSGID) 32 40")
     field(SCAN,"I/O Intr")
     field(FTVL,"DOUBLE")
     field(NELM,"$(BUFLEN)")
+} 
+ 
+ 
+record(ai, "$(P){$(NO)}Chan$(CHAN):ErrorScaleFactor-I") {
+    field(DTYP, "Soft Channel")
+    field(VAL, "1.0")   
+    field(PINI, "YES")
+    #field(FLNK, "$(P){$(NO)}Chan$(CHAN):$(TYPE):TriggerScaleDCCT2") 
 } 
  
     
@@ -164,7 +217,22 @@ record(waveform,"$(P){$(NO)}Chan$(CHAN):$(TYPE):Error-Wfm") {
     
     
     
-
+record(ai, "$(P){$(NO)}Chan$(CHAN):DACScaleFactor-I") {
+    field(DTYP, "Soft Channel")
+    field(VAL, "1.0")   
+    field(PINI, "YES")
+    #field(FLNK, "$(P){$(NO)}Chan$(CHAN):$(TYPE):TriggerScaleDCCT2") 
+}      
+    
+    
+record(ai, "$(P){$(NO)}Chan$(CHAN):DACRateScaleFactor-I") {
+    field(DTYP, "Soft Channel")
+    field(VAL, "1.0")   
+    field(PINI, "YES")
+    #field(FLNK, "$(P){$(NO)}Chan$(CHAN):$(TYPE):TriggerScaleDCCT2") 
+}      
+    
+    
 
       
     
