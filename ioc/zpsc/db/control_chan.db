@@ -42,9 +42,9 @@ record(mbbo, "$(P){$(NO)}Chan$(CHAN):DAC_OpMode-SP") {
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):DAC_SetPt-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):DAC_SetPt-SP") {
     field(DESC, "DAC Setpoint")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 104")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
@@ -76,18 +76,18 @@ record(ao, "$(P){$(NO)}Chan$(CHAN):DACSetPt-Gain-SP") {
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):DACSetPt-Offset-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):DACSetPt-Offset-SP") {
     field(DESC, "DAC SetPoint Offset ")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 120")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):DCCT1-Offset-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):DCCT1-Offset-SP") {
     field(DESC, "DCCT 1 Offset Readback")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 124")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
@@ -101,9 +101,9 @@ record(ao, "$(P){$(NO)}Chan$(CHAN):DCCT1-Gain-SP") {
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):DCCT2-Offset-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):DCCT2-Offset-SP") {
     field(DESC, "DCCT 2 Offset Readback")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 132")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
@@ -117,9 +117,9 @@ record(ao, "$(P){$(NO)}Chan$(CHAN):DCCT2-Gain-SP") {
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):DAC-Offset-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):DAC-Offset-SP") {
     field(DESC, "DAC Setpoint Offset Readback")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 140")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
@@ -133,9 +133,9 @@ record(ao, "$(P){$(NO)}Chan$(CHAN):DAC-Gain-SP") {
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):Volt-Offset-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):Volt-Offset-SP") {
     field(DESC, "Voltage Monitor Offset Readback")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 148")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
@@ -149,9 +149,9 @@ record(ao, "$(P){$(NO)}Chan$(CHAN):Volt-Gain-SP") {
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):Gnd-Offset-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):Gnd-Offset-SP") {
     field(DESC, "Ground Monitor Offset Readback")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 156")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
@@ -165,9 +165,9 @@ record(ao, "$(P){$(NO)}Chan$(CHAN):Gnd-Gain-SP") {
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):Spare-Offset-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):Spare-Offset-SP") {
     field(DESC, "Spare Monitor Offset Readback")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 164")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
@@ -181,9 +181,9 @@ record(ao, "$(P){$(NO)}Chan$(CHAN):Spare-Gain-SP") {
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):Reg-Offset-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):Reg-Offset-SP") {
     field(DESC, "Regulator Output Voltage Offset Readback")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 172")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
@@ -197,9 +197,9 @@ record(ao, "$(P){$(NO)}Chan$(CHAN):Reg-Gain-SP") {
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):Error-Offset-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):Error-Offset-SP") {
     field(DESC, "Error Voltage Offset Readback")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 180")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
