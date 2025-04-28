@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-04-25 11:46:51 by mead-->
+<!--Saved on 2025-04-27 09:35:42 by mead-->
 <display version="2.0.0">
   <name>$(CHAN):$(PriSys)</name>
   <width>900</width>
@@ -813,8 +813,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -853,8 +852,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -890,8 +888,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -930,8 +927,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -955,8 +951,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -995,8 +990,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1020,8 +1014,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1060,8 +1053,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1085,8 +1077,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1125,8 +1116,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1150,8 +1140,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1190,8 +1179,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1215,8 +1203,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1333,8 +1320,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1358,8 +1344,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>6</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1398,8 +1383,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>6</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1423,8 +1407,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>6</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1463,8 +1446,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>6</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1488,8 +1470,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>6</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1528,8 +1509,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>6</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1553,8 +1533,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>6</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1593,8 +1572,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>6</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1618,8 +1596,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>6</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1658,8 +1635,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>6</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1683,8 +1659,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>6</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1723,8 +1698,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>6</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1760,8 +1734,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1800,8 +1773,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1825,8 +1797,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1865,8 +1836,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1905,8 +1875,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1930,8 +1899,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1970,8 +1938,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -1995,8 +1962,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -2198,8 +2164,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -2223,8 +2188,7 @@
               <color red="255" green="255" blue="255">
               </color>
             </background_color>
-            <format>1</format>
-            <precision>0</precision>
+            <precision>3</precision>
             <show_units>false</show_units>
             <horizontal_alignment>1</horizontal_alignment>
             <actions>
@@ -2485,8 +2449,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_47</name>
             <text>DCCT1</text>
-            <x>23</x>
-            <y>156</y>
+            <x>95</x>
+            <y>186</y>
             <width>59</width>
             <horizontal_alignment>2</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -2500,8 +2464,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_48</name>
             <text>DCCT2</text>
-            <x>28</x>
-            <y>175</y>
+            <x>100</x>
+            <y>205</y>
             <width>54</width>
             <horizontal_alignment>2</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -2515,8 +2479,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_49</name>
             <text>DAC Mon</text>
-            <x>17</x>
-            <y>285</y>
+            <x>89</x>
+            <y>315</y>
             <width>65</width>
             <horizontal_alignment>2</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -2530,8 +2494,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_50</name>
             <text>Voltage</text>
-            <x>16</x>
-            <y>304</y>
+            <x>88</x>
+            <y>334</y>
             <width>66</width>
             <horizontal_alignment>2</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -2545,8 +2509,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_51</name>
             <text>Ground</text>
-            <x>17</x>
-            <y>321</y>
+            <x>89</x>
+            <y>351</y>
             <width>65</width>
             <horizontal_alignment>2</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -2560,8 +2524,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_52</name>
             <text>Spare</text>
-            <x>22</x>
-            <y>340</y>
+            <x>94</x>
+            <y>370</y>
             <width>60</width>
             <horizontal_alignment>2</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -2575,8 +2539,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_53</name>
             <text>Regulator</text>
-            <x>5</x>
-            <y>357</y>
+            <x>77</x>
+            <y>387</y>
             <width>77</width>
             <horizontal_alignment>2</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -2590,8 +2554,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_54</name>
             <text>Error</text>
-            <x>16</x>
-            <y>373</y>
+            <x>88</x>
+            <y>403</y>
             <width>66</width>
             <horizontal_alignment>2</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -2605,8 +2569,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_57</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT2-Gain-I</pv_name>
-            <x>545</x>
-            <y>175</y>
+            <x>617</x>
+            <y>205</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2629,8 +2593,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_70</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT1-I</pv_name>
-            <x>90</x>
-            <y>156</y>
+            <x>162</x>
+            <y>186</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2653,8 +2617,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_71</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT2-I</pv_name>
-            <x>90</x>
-            <y>175</y>
+            <x>162</x>
+            <y>205</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2677,8 +2641,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_55</name>
             <text>Readback</text>
-            <x>87</x>
-            <y>125</y>
+            <x>159</x>
+            <y>155</y>
             <width>102</width>
             <horizontal_alignment>1</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -2692,8 +2656,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_56</name>
             <text>Offset RdBk</text>
-            <x>314</x>
-            <y>124</y>
+            <x>386</x>
+            <y>154</y>
             <width>102</width>
             <height>22</height>
             <horizontal_alignment>1</horizontal_alignment>
@@ -2708,8 +2672,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_57</name>
             <text>Gain RdBk</text>
-            <x>542</x>
-            <y>124</y>
+            <x>614</x>
+            <y>154</y>
             <width>102</width>
             <horizontal_alignment>1</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -2723,8 +2687,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_90</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT1-Gain-SP</pv_name>
-            <x>437</x>
-            <y>156</y>
+            <x>509</x>
+            <y>186</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2747,8 +2711,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_91</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT2-Gain-SP</pv_name>
-            <x>437</x>
-            <y>175</y>
+            <x>509</x>
+            <y>205</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2771,8 +2735,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_61</name>
             <text>Gain Set</text>
-            <x>434</x>
-            <y>124</y>
+            <x>506</x>
+            <y>154</y>
             <width>102</width>
             <horizontal_alignment>1</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -2786,8 +2750,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_98</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT1-Offset-SP</pv_name>
-            <x>209</x>
-            <y>156</y>
+            <x>281</x>
+            <y>186</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -2811,8 +2775,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_99</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT2-Offset-SP</pv_name>
-            <x>209</x>
-            <y>175</y>
+            <x>281</x>
+            <y>205</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -2836,8 +2800,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_62</name>
             <text>Offset Set</text>
-            <x>206</x>
-            <y>124</y>
+            <x>278</x>
+            <y>154</y>
             <width>102</width>
             <height>22</height>
             <horizontal_alignment>1</horizontal_alignment>
@@ -2852,8 +2816,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_54</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT1-Offset-I</pv_name>
-            <x>317</x>
-            <y>156</y>
+            <x>389</x>
+            <y>186</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -2877,8 +2841,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_55</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT1-Gain-I</pv_name>
-            <x>545</x>
-            <y>156</y>
+            <x>617</x>
+            <y>186</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2901,8 +2865,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_56</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT2-Offset-I</pv_name>
-            <x>317</x>
-            <y>175</y>
+            <x>389</x>
+            <y>205</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -2925,11 +2889,11 @@
           </widget>
           <widget type="label" version="2.0.0">
             <name>Label_59</name>
-            <text>Amps/bit</text>
-            <x>655</x>
-            <y>123</y>
+            <text>Amps/Volt</text>
+            <x>44</x>
+            <y>602</y>
             <width>102</width>
-            <horizontal_alignment>1</horizontal_alignment>
+            <horizontal_alignment>2</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
             <actions>
             </actions>
@@ -2940,33 +2904,9 @@
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Update_79</name>
-            <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT1ScaleFactor-I</pv_name>
-            <x>658</x>
-            <y>155</y>
-            <width>102</width>
-            <font>
-              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-              </font>
-            </font>
-            <background_color>
-              <color red="255" green="255" blue="255">
-              </color>
-            </background_color>
-            <precision>6</precision>
-            <show_units>false</show_units>
-            <horizontal_alignment>1</horizontal_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
-          <widget type="textentry" version="3.0.0">
-            <name>Text Update_118</name>
-            <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT2ScaleFactor-I</pv_name>
-            <x>658</x>
-            <y>174</y>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):AmpsperVolt-SP</pv_name>
+            <x>154</x>
+            <y>604</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2989,8 +2929,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_68</name>
             <text>DAC</text>
-            <x>24</x>
-            <y>483</y>
+            <x>96</x>
+            <y>513</y>
             <width>53</width>
             <horizontal_alignment>2</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -3004,8 +2944,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_71</name>
             <text>Offset Set</text>
-            <x>205</x>
-            <y>263</y>
+            <x>277</x>
+            <y>293</y>
             <width>102</width>
             <height>22</height>
             <horizontal_alignment>1</horizontal_alignment>
@@ -3018,25 +2958,10 @@
             </border_color>
           </widget>
           <widget type="label" version="2.0.0">
-            <name>Label_84</name>
-            <text>Volts/bit</text>
-            <x>654</x>
-            <y>262</y>
-            <width>102</width>
-            <horizontal_alignment>1</horizontal_alignment>
-            <vertical_alignment>1</vertical_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
-          <widget type="label" version="2.0.0">
             <name>Label_92</name>
             <text>Readback</text>
-            <x>86</x>
-            <y>264</y>
+            <x>158</x>
+            <y>294</y>
             <width>102</width>
             <horizontal_alignment>1</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -3050,8 +2975,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_115</name>
             <text>Offset RdBk</text>
-            <x>313</x>
-            <y>263</y>
+            <x>385</x>
+            <y>293</y>
             <width>102</width>
             <height>22</height>
             <horizontal_alignment>1</horizontal_alignment>
@@ -3066,8 +2991,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_116</name>
             <text>Gain RdBk</text>
-            <x>541</x>
-            <y>263</y>
+            <x>613</x>
+            <y>293</y>
             <width>102</width>
             <horizontal_alignment>1</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -3081,8 +3006,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_58</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC-Offset-I</pv_name>
-            <x>315</x>
-            <y>285</y>
+            <x>387</x>
+            <y>315</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -3107,8 +3032,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_59</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC-Gain-I</pv_name>
-            <x>543</x>
-            <y>285</y>
+            <x>615</x>
+            <y>315</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3131,8 +3056,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_60</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Volt-Offset-I</pv_name>
-            <x>315</x>
-            <y>304</y>
+            <x>387</x>
+            <y>334</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -3157,8 +3082,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_61</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Volt-Gain-I</pv_name>
-            <x>543</x>
-            <y>304</y>
+            <x>615</x>
+            <y>334</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3181,8 +3106,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_62</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Gnd-Offset-I</pv_name>
-            <x>315</x>
-            <y>321</y>
+            <x>387</x>
+            <y>351</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -3207,8 +3132,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_63</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Gnd-Gain-I</pv_name>
-            <x>543</x>
-            <y>321</y>
+            <x>615</x>
+            <y>351</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3231,8 +3156,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_64</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Spare-Offset-I</pv_name>
-            <x>315</x>
-            <y>340</y>
+            <x>387</x>
+            <y>370</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -3257,8 +3182,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_65</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Spare-Gain-I</pv_name>
-            <x>543</x>
-            <y>340</y>
+            <x>615</x>
+            <y>370</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3281,8 +3206,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_66</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Reg-Offset-I</pv_name>
-            <x>315</x>
-            <y>357</y>
+            <x>387</x>
+            <y>387</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -3307,8 +3232,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_67</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Reg-Gain-I</pv_name>
-            <x>543</x>
-            <y>357</y>
+            <x>615</x>
+            <y>387</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3331,8 +3256,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_68</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Error-Offset-I</pv_name>
-            <x>315</x>
-            <y>376</y>
+            <x>387</x>
+            <y>406</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -3357,8 +3282,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_69</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Error-Gain-I</pv_name>
-            <x>543</x>
-            <y>376</y>
+            <x>615</x>
+            <y>406</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3381,8 +3306,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_72</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC-I</pv_name>
-            <x>88</x>
-            <y>285</y>
+            <x>160</x>
+            <y>315</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3405,8 +3330,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_73</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Volt-I</pv_name>
-            <x>88</x>
-            <y>304</y>
+            <x>160</x>
+            <y>334</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3429,8 +3354,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_74</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Gnd-I</pv_name>
-            <x>88</x>
-            <y>321</y>
+            <x>160</x>
+            <y>351</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3453,8 +3378,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_75</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Spare-I</pv_name>
-            <x>88</x>
-            <y>340</y>
+            <x>160</x>
+            <y>370</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3477,8 +3402,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_76</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Reg-I</pv_name>
-            <x>88</x>
-            <y>357</y>
+            <x>160</x>
+            <y>387</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3501,8 +3426,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_77</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Error-I</pv_name>
-            <x>88</x>
-            <y>376</y>
+            <x>160</x>
+            <y>406</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3525,8 +3450,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_92</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC-Gain-SP</pv_name>
-            <x>435</x>
-            <y>285</y>
+            <x>507</x>
+            <y>315</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3549,8 +3474,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_93</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Volt-Gain-SP</pv_name>
-            <x>435</x>
-            <y>304</y>
+            <x>507</x>
+            <y>334</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3573,8 +3498,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_94</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Gnd-Gain-SP</pv_name>
-            <x>435</x>
-            <y>321</y>
+            <x>507</x>
+            <y>351</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3597,8 +3522,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_95</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Spare-Gain-SP</pv_name>
-            <x>435</x>
-            <y>340</y>
+            <x>507</x>
+            <y>370</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3621,8 +3546,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_96</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Reg-Gain-SP</pv_name>
-            <x>435</x>
-            <y>357</y>
+            <x>507</x>
+            <y>387</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3645,8 +3570,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_97</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Error-Gain-SP</pv_name>
-            <x>435</x>
-            <y>376</y>
+            <x>507</x>
+            <y>406</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3669,8 +3594,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_100</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC-Offset-SP</pv_name>
-            <x>207</x>
-            <y>285</y>
+            <x>279</x>
+            <y>315</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -3694,8 +3619,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_101</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Volt-Offset-SP</pv_name>
-            <x>207</x>
-            <y>304</y>
+            <x>279</x>
+            <y>334</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -3719,8 +3644,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_102</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Gnd-Offset-SP</pv_name>
-            <x>207</x>
-            <y>321</y>
+            <x>279</x>
+            <y>351</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -3744,8 +3669,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_103</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Spare-Offset-SP</pv_name>
-            <x>207</x>
-            <y>340</y>
+            <x>279</x>
+            <y>370</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -3769,8 +3694,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_104</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Reg-Offset-SP</pv_name>
-            <x>207</x>
-            <y>357</y>
+            <x>279</x>
+            <y>387</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -3794,154 +3719,10 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_105</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):Error-Offset-SP</pv_name>
-            <x>207</x>
-            <y>376</y>
+            <x>279</x>
+            <y>406</y>
             <width>102</width>
             <height>22</height>
-            <font>
-              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-              </font>
-            </font>
-            <background_color>
-              <color red="255" green="255" blue="255">
-              </color>
-            </background_color>
-            <precision>6</precision>
-            <show_units>false</show_units>
-            <horizontal_alignment>1</horizontal_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
-          <widget type="textentry" version="3.0.0">
-            <name>Text Update_119</name>
-            <pv_name>$(PriSys){$(PSC)}$(CHAN):DACMonScaleFactor-I</pv_name>
-            <x>657</x>
-            <y>285</y>
-            <width>102</width>
-            <font>
-              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-              </font>
-            </font>
-            <background_color>
-              <color red="255" green="255" blue="255">
-              </color>
-            </background_color>
-            <precision>6</precision>
-            <show_units>false</show_units>
-            <horizontal_alignment>1</horizontal_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
-          <widget type="textentry" version="3.0.0">
-            <name>Text Update_142</name>
-            <pv_name>$(PriSys){$(PSC)}$(CHAN):VoltScaleFactor-I</pv_name>
-            <x>657</x>
-            <y>304</y>
-            <width>102</width>
-            <font>
-              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-              </font>
-            </font>
-            <background_color>
-              <color red="255" green="255" blue="255">
-              </color>
-            </background_color>
-            <precision>6</precision>
-            <show_units>false</show_units>
-            <horizontal_alignment>1</horizontal_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
-          <widget type="textentry" version="3.0.0">
-            <name>Text Update_143</name>
-            <pv_name>$(PriSys){$(PSC)}$(CHAN):GndScaleFactor-I</pv_name>
-            <x>657</x>
-            <y>324</y>
-            <width>102</width>
-            <font>
-              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-              </font>
-            </font>
-            <background_color>
-              <color red="255" green="255" blue="255">
-              </color>
-            </background_color>
-            <precision>6</precision>
-            <show_units>false</show_units>
-            <horizontal_alignment>1</horizontal_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
-          <widget type="textentry" version="3.0.0">
-            <name>Text Update_151</name>
-            <pv_name>$(PriSys){$(PSC)}$(CHAN):SpareScaleFactor-I</pv_name>
-            <x>657</x>
-            <y>342</y>
-            <width>102</width>
-            <font>
-              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-              </font>
-            </font>
-            <background_color>
-              <color red="255" green="255" blue="255">
-              </color>
-            </background_color>
-            <precision>6</precision>
-            <show_units>false</show_units>
-            <horizontal_alignment>1</horizontal_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
-          <widget type="textentry" version="3.0.0">
-            <name>Text Update_157</name>
-            <pv_name>$(PriSys){$(PSC)}$(CHAN):RegScaleFactor-I</pv_name>
-            <x>657</x>
-            <y>359</y>
-            <width>102</width>
-            <font>
-              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-              </font>
-            </font>
-            <background_color>
-              <color red="255" green="255" blue="255">
-              </color>
-            </background_color>
-            <precision>6</precision>
-            <show_units>false</show_units>
-            <horizontal_alignment>1</horizontal_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
-          <widget type="textentry" version="3.0.0">
-            <name>Text Update_158</name>
-            <pv_name>$(PriSys){$(PSC)}$(CHAN):ErrorScaleFactor-I</pv_name>
-            <x>657</x>
-            <y>377</y>
-            <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
               </font>
@@ -3963,8 +3744,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_69</name>
             <text>Gain Set</text>
-            <x>433</x>
-            <y>263</y>
+            <x>505</x>
+            <y>293</y>
             <width>102</width>
             <horizontal_alignment>1</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -3975,37 +3756,13 @@
               </color>
             </border_color>
           </widget>
-          <widget type="textentry" version="3.0.0">
-            <name>Text Update_160</name>
-            <pv_name>$(PriSys){$(PSC)}$(CHAN):DACRateScaleFactor-I</pv_name>
-            <x>765</x>
-            <y>483</y>
-            <width>102</width>
-            <font>
-              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-              </font>
-            </font>
-            <background_color>
-              <color red="255" green="255" blue="255">
-              </color>
-            </background_color>
-            <precision>6</precision>
-            <show_units>false</show_units>
-            <horizontal_alignment>1</horizontal_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
           <widget type="label" version="2.0.0">
             <name>Label_119</name>
-            <text>Volts/bit</text>
-            <x>653</x>
-            <y>460</y>
+            <text>Amps/Sec</text>
+            <x>44</x>
+            <y>625</y>
             <width>102</width>
-            <horizontal_alignment>1</horizontal_alignment>
+            <horizontal_alignment>2</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
             <actions>
             </actions>
@@ -4016,9 +3773,9 @@
           </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Update_159</name>
-            <pv_name>$(PriSys){$(PSC)}$(CHAN):DACScaleFactor-I</pv_name>
-            <x>657</x>
-            <y>483</y>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):AmpsperSec-SP</pv_name>
+            <x>151</x>
+            <y>627</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -4038,26 +3795,11 @@
               </color>
             </border_color>
           </widget>
-          <widget type="label" version="2.0.0">
-            <name>Label_123</name>
-            <text>Volts/sec</text>
-            <x>758</x>
-            <y>460</y>
-            <width>102</width>
-            <horizontal_alignment>1</horizontal_alignment>
-            <vertical_alignment>1</vertical_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Update_152</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-I</pv_name>
-            <x>84</x>
-            <y>483</y>
+            <x>274</x>
+            <y>513</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -4080,8 +3822,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_153</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-Gain-SP</pv_name>
-            <x>431</x>
-            <y>483</y>
+            <x>621</x>
+            <y>513</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -4104,8 +3846,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_154</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-Offset-SP</pv_name>
-            <x>203</x>
-            <y>483</y>
+            <x>393</x>
+            <y>513</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -4129,8 +3871,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_155</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-Offset-I</pv_name>
-            <x>311</x>
-            <y>483</y>
+            <x>501</x>
+            <y>513</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -4154,8 +3896,8 @@
           <widget type="textentry" version="3.0.0">
             <name>Text Update_156</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-Gain-I</pv_name>
-            <x>539</x>
-            <y>483</y>
+            <x>729</x>
+            <y>513</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -4178,8 +3920,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_117</name>
             <text>Gain Set</text>
-            <x>426</x>
-            <y>460</y>
+            <x>616</x>
+            <y>490</y>
             <width>102</width>
             <horizontal_alignment>1</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -4193,8 +3935,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_118</name>
             <text>Offset Set</text>
-            <x>198</x>
-            <y>460</y>
+            <x>388</x>
+            <y>490</y>
             <width>102</width>
             <height>22</height>
             <horizontal_alignment>1</horizontal_alignment>
@@ -4209,8 +3951,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_120</name>
             <text>Readback</text>
-            <x>79</x>
-            <y>460</y>
+            <x>269</x>
+            <y>490</y>
             <width>102</width>
             <horizontal_alignment>1</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -4224,8 +3966,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_121</name>
             <text>Offset RdBk</text>
-            <x>306</x>
-            <y>460</y>
+            <x>496</x>
+            <y>490</y>
             <width>102</width>
             <height>22</height>
             <horizontal_alignment>1</horizontal_alignment>
@@ -4240,8 +3982,127 @@
           <widget type="label" version="2.0.0">
             <name>Label_122</name>
             <text>Gain RdBk</text>
-            <x>534</x>
-            <y>460</y>
+            <x>724</x>
+            <y>490</y>
+            <width>102</width>
+            <horizontal_alignment>1</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_118</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):AmpsperVolt-I</pv_name>
+            <x>265</x>
+            <y>604</y>
+            <width>102</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <precision>6</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_160</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):AmpsperSec-I</pv_name>
+            <x>265</x>
+            <y>627</y>
+            <width>102</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <precision>6</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_123</name>
+            <text>Set</text>
+            <x>158</x>
+            <y>579</y>
+            <width>102</width>
+            <height>22</height>
+            <horizontal_alignment>1</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_124</name>
+            <text>RdBk</text>
+            <x>253</x>
+            <y>580</y>
+            <width>102</width>
+            <height>22</height>
+            <horizontal_alignment>1</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_161</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC_SetPt-SP</pv_name>
+            <x>161</x>
+            <y>512</y>
+            <width>96</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <precision>6</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_125</name>
+            <text>Set Point (A)</text>
+            <x>150</x>
+            <y>490</y>
             <width>102</width>
             <horizontal_alignment>1</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -4321,7 +4182,7 @@
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:DCCT2Scaled-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:DCCT2-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -4839,7 +4700,7 @@
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:DCCT1Scaled-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:DCCT1-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -4972,7 +4833,7 @@
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:DCCT2Scaled-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:DCCT2-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -5268,7 +5129,7 @@
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:DCCT1Scaled-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:DCCT1-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -5623,7 +5484,7 @@
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:DCCT1Scaled-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:DCCT1-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -5919,7 +5780,7 @@
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:DCCT2Scaled-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:DCCT2-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -6283,7 +6144,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:DCCT1Scaled-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:DCCT1-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -6579,7 +6440,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:DCCT2Scaled-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:DCCT2-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -6943,7 +6804,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:DCCT1Scaled-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:DCCT1-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -7275,7 +7136,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
                       <trace>
                         <name></name>
                         <x_pv></x_pv>
-                        <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:DCCT2Scaled-Wfm</y_pv>
+                        <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:DCCT2-Wfm</y_pv>
                         <err_pv></err_pv>
                         <axis>0</axis>
                         <trace_type>1</trace_type>
@@ -7644,6 +7505,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
             <x>8</x>
             <width>858</width>
             <height>870</height>
+            <active_tab>1</active_tab>
           </widget>
         </children>
       </tab>
@@ -7651,7 +7513,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
     <x>17</x>
     <width>882</width>
     <height>924</height>
-    <active_tab>4</active_tab>
+    <active_tab>5</active_tab>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_36</name>

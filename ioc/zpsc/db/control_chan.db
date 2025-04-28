@@ -214,145 +214,145 @@ record(ao, "$(P){$(NO)}Chan$(CHAN):Error-Gain-SP") {
 }
 
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):OVC1_Flt_Threshold-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):OVC1_Flt_Threshold-SP") {
     field(DESC, "DCCT1 OVC Fault Threshold")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 188")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):OVC2_Flt_Threshold-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):OVC2_Flt_Threshold-SP") {
     field(DESC, "DCCT2 OVC Fault Threshold")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 192")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):OVV_Flt_Threshold-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):OVV_Flt_Threshold-SP") {
     field(DESC, "OVV Fault Threshold")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 196")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):ERR1_Flt_Threshold-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):ERR1_Flt_Threshold-SP") {
     field(DESC, "ERR1 Fault Threshold")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 200")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):ERR2_Flt_Threshold-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):ERR2_Flt_Threshold-SP") {
     field(DESC, "ERR2 Fault Threshold")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 204")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):IGND_Flt_Threshold-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):IGND_Flt_Threshold-SP") {
     field(DESC, "Ignd Fault Threshold")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 208")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):OVC1_Flt_CntLim-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):OVC1_Flt_CntLim-SP") {
     field(DESC, "DCCT1 OVC Fault Counter Limit")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 212")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):OVC2_Flt_CntLim-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):OVC2_Flt_CntLim-SP") {
     field(DESC, "DCCT2 OVC Fault Counter Limit")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 216")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):OVV_Flt_CntLim-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):OVV_Flt_CntLim-SP") {
     field(DESC, "OVV Fault Counter Limit")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 220")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):ERR1_Flt_CntLim-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):ERR1_Flt_CntLim-SP") {
     field(DESC, "PID Error 1 Fault Counter Limit")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 224")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):ERR2_Flt_CntLim-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):ERR2_Flt_CntLim-SP") {
     field(DESC, "PID Error 2  Fault Counter Limit")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 228")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):IGND_Flt_CntLim-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):IGND_Flt_CntLim-SP") {
     field(DESC, "Ignd Fault Counter Limit")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 232")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):DCCT_Flt_CntLim-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):DCCT_Flt_CntLim-SP") {
     field(DESC, "DCCT Fault Counter Limit")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 236")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):FLT1_Flt_CntLim-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):FLT1_Flt_CntLim-SP") {
     field(DESC, "Fault 1 Fault Counter Limit")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 240")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):FLT2_Flt_CntLim-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):FLT2_Flt_CntLim-SP") {
     field(DESC, "Fault 2 Fault Counter Limit")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 244")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):FLT3_Flt_CntLim-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):FLT3_Flt_CntLim-SP") {
     field(DESC, "Fault 3 Fault Counter Limit")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 248")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):ON_Flt_CntLim-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):ON_Flt_CntLim-SP") {
     field(DESC, "PowerSupply ON Fault Counter Limit")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 252")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):HeartBeat_Flt_CntLim-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):HeartBeat_Flt_CntLim-SP") {
     field(DESC, "HeartBeat Fault Counter Limit")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 256")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
@@ -365,15 +365,6 @@ record(bo, "$(P){$(NO)}Chan$(CHAN):FaultClear-SP") {
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
     field(HIGH,".01")    #500 ms after low
 }
-
-#record(bo, "$(P){$(NO)}Chan$(CHAN):DAC_RampRun-SP") {
-#    field(DESC, "DAC Run the Ramp Table")
-#    field(DTYP, "PSC Single U32")
-#    field(OUT , "@Tx$(NO) $(CHAN) 108")
-
-#    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
-#    field(HIGH,".01")    #500 ms after low
-#}
 
 
 record(longout, "$(P){$(NO)}Chan$(CHAN):FaultMask-SP") {
@@ -564,6 +555,21 @@ record(longout, "$(P){$(NO)}Chan$(CHAN):PostTrigNumPts-SP") {
 
 
 
+record(ao, "$(P){$(NO)}Chan$(CHAN):AmpsperVolt-SP") {
+    field(DESC, "ScaleFactor Amps per Volt")
+    field(DTYP, "PSC Single F32")
+    field(OUT , "@Tx$(NO) $(CHAN) 300")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
+
+record(ao, "$(P){$(NO)}Chan$(CHAN):AmpsperSec-SP") {
+    field(DESC, "ScaleFactor Amps per Second")
+    field(DTYP, "PSC Single F32")
+    field(OUT , "@Tx$(NO) $(CHAN) 304")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
 
 
 

@@ -268,145 +268,145 @@ record(longin, "$(P){$(NO)}Chan1:DACRampActive-I") {
 }
 
 
-record(longin, "$(P){$(NO)}Chan1:OVC1_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan1:OVC1_Flt_Threshold-I") {
     field(DESC, "DCCT1 OVC Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 212")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:OVC2_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan1:OVC2_Flt_Threshold-I") {
     field(DESC, "DCCT2 OVC Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 216")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:OVV_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan1:OVV_Flt_Threshold-I") {
     field(DESC, "OVV Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 220")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:ERR1_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan1:ERR1_Flt_Threshold-I") {
     field(DESC, "ERR1 Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 224")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:ERR2_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan1:ERR2_Flt_Threshold-I") {
     field(DESC, "ERR2 Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 228")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:IGND_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan1:IGND_Flt_Threshold-I") {
     field(DESC, "Ignd Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 232")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:OVC1_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan1:OVC1_Flt_CntLim-I") {
     field(DESC, "DCCT1 OVC Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 236")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:OVC2_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan1:OVC2_Flt_CntLim-I") {
     field(DESC, "DCCT2 OVC Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 240")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:OVV_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan1:OVV_Flt_CntLim-I") {
     field(DESC, "OVV Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 244")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:ERR1_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan1:ERR1_Flt_CntLim-I") {
     field(DESC, "PID Error 1 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 248")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:ERR2_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan1:ERR2_Flt_CntLim-I") {
     field(DESC, "PID Error 2  Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 252")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:IGND_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan1:IGND_Flt_CntLim-I") {
     field(DESC, "Ignd Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 256")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:DCCT_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan1:DCCT_Flt_CntLim-I") {
     field(DESC, "DCCT Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 260")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:FLT1_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan1:FLT1_Flt_CntLim-I") {
     field(DESC, "Fault 1 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 264")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:FLT2_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan1:FLT2_Flt_CntLim-I") {
     field(DESC, "Fault 2 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 268")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:FLT3_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan1:FLT3_Flt_CntLim-I") {
     field(DESC, "Fault 3 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 272")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:ON_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan1:ON_Flt_CntLim-I") {
     field(DESC, "PowerSupply ON Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 276")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:HeartBeat_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan1:HeartBeat_Flt_CntLim-I") {
     field(DESC, "HeartBeat Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 280")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -490,23 +490,39 @@ record(mbbiDirect, "$(P){$(NO)}Chan1:FaultsLat-I") {
     field(SCAN, "I/O Intr")
 }
 
+record(ai, "$(P){$(NO)}Chan1:AmpsperVolt-I") {
+    field(DESC, "ScaleFactor Amps/Volt Readback")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 324")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan1:AmpsperSec-I") {
+    field(DESC, "ScaleFactor Amps/Sec Readback")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 328")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
 
 
 
 
 ### PS2 #####
 
-record(longin, "$(P){$(NO)}Chan2:DCCT1-I") {
+record(ai, "$(P){$(NO)}Chan2:DCCT1-I") {
     field(DESC, "DCCT 1 Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 400")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:DCCT1-Offset-I") {
+record(ai, "$(P){$(NO)}Chan2:DCCT1-Offset-I") {
     field(DESC, "DCCT 1 Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 404")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -520,17 +536,17 @@ record(ai, "$(P){$(NO)}Chan2:DCCT1-Gain-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:DCCT2-I") {
+record(ai, "$(P){$(NO)}Chan2:DCCT2-I") {
     field(DESC, "DCCT 2 Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 412")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:DCCT2-Offset-I") {
+record(ai, "$(P){$(NO)}Chan2:DCCT2-Offset-I") {
     field(DESC, "DCCT 2 Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 416")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -544,17 +560,17 @@ record(ai, "$(P){$(NO)}Chan2:DCCT2-Gain-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:DAC-I") {
+record(ai, "$(P){$(NO)}Chan2:DAC-I") {
     field(DESC, "DAC Setpoint Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 424")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:DAC-Offset-I") {
+record(ai, "$(P){$(NO)}Chan2:DAC-Offset-I") {
     field(DESC, "DAC Setpoint Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 428")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -569,17 +585,17 @@ record(ai, "$(P){$(NO)}Chan2:DAC-Gain-I") {
 }
 
 
-record(longin, "$(P){$(NO)}Chan2:Volt-I") {
+record(ai, "$(P){$(NO)}Chan2:Volt-I") {
     field(DESC, "Voltage Monitor Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 436")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:Volt-Offset-I") {
+record(ai, "$(P){$(NO)}Chan2:Volt-Offset-I") {
     field(DESC, "Voltage Monitor Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 440")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -594,17 +610,17 @@ record(ai, "$(P){$(NO)}Chan2:Volt-Gain-I") {
 }
 
 
-record(longin, "$(P){$(NO)}Chan2:Gnd-I") {
+record(ai, "$(P){$(NO)}Chan2:Gnd-I") {
     field(DESC, "Ground Monitor Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 448")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:Gnd-Offset-I") {
+record(ai, "$(P){$(NO)}Chan2:Gnd-Offset-I") {
     field(DESC, "Ground Monitor Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 452")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -618,17 +634,17 @@ record(ai, "$(P){$(NO)}Chan2:Gnd-Gain-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:Spare-I") {
+record(ai, "$(P){$(NO)}Chan2:Spare-I") {
     field(DESC, "Spare Monitor Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 460")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:Spare-Offset-I") {
+record(ai, "$(P){$(NO)}Chan2:Spare-Offset-I") {
     field(DESC, "Spare Monitor Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 464")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -643,17 +659,17 @@ record(ai, "$(P){$(NO)}Chan2:Spare-Gain-I") {
 }
 
 
-record(longin, "$(P){$(NO)}Chan2:Reg-I") {
+record(ai, "$(P){$(NO)}Chan2:Reg-I") {
     field(DESC, "Regulator Output Voltage Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 472")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:Reg-Offset-I") {
+record(ai, "$(P){$(NO)}Chan2:Reg-Offset-I") {
     field(DESC, "Regulator Output Voltage Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 476")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -667,17 +683,17 @@ record(ai, "$(P){$(NO)}Chan2:Reg-Gain-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:Error-I") {
+record(ai, "$(P){$(NO)}Chan2:Error-I") {
     field(DESC, "Error Voltage Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 484")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:Error-Offset-I") {
+record(ai, "$(P){$(NO)}Chan2:Error-Offset-I") {
     field(DESC, "Error Voltage Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 488")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -691,17 +707,17 @@ record(ai, "$(P){$(NO)}Chan2:Error-Gain-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:DACSetPt-I") {
+record(ai, "$(P){$(NO)}Chan2:DACSetPt-I") {
     field(DESC, "DAC SetPoint Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 496")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:DACSetPt-Offset-I") {
+record(ai, "$(P){$(NO)}Chan2:DACSetPt-Offset-I") {
     field(DESC, "DAC SetPoint Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 500")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -716,7 +732,6 @@ record(ai, "$(P){$(NO)}Chan2:DACSetPt-Gain-I") {
 }
 
 
-
 record(longin, "$(P){$(NO)}Chan2:DACRampActive-I") {
     field(DESC, "DAC SetPoint Readback")
     field(DTYP, "PSC Reg")
@@ -725,145 +740,146 @@ record(longin, "$(P){$(NO)}Chan2:DACRampActive-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:OVC1_Flt_Threshold-I") {
+
+record(ai, "$(P){$(NO)}Chan2:OVC1_Flt_Threshold-I") {
     field(DESC, "DCCT1 OVC Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 512")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:OVC2_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan2:OVC2_Flt_Threshold-I") {
     field(DESC, "DCCT2 OVC Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 516")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:OVV_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan2:OVV_Flt_Threshold-I") {
     field(DESC, "OVV Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 520")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:ERR1_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan2:ERR1_Flt_Threshold-I") {
     field(DESC, "ERR1 Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 524")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:ERR2_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan2:ERR2_Flt_Threshold-I") {
     field(DESC, "ERR2 Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 528")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:IGND_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan2:IGND_Flt_Threshold-I") {
     field(DESC, "Ignd Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 532")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:OVC1_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan2:OVC1_Flt_CntLim-I") {
     field(DESC, "DCCT1 OVC Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 536")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:OVC2_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan2:OVC2_Flt_CntLim-I") {
     field(DESC, "DCCT2 OVC Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 540")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:OVV_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan2:OVV_Flt_CntLim-I") {
     field(DESC, "OVV Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 544")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:ERR1_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan2:ERR1_Flt_CntLim-I") {
     field(DESC, "PID Error 1 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 548")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:ERR2_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan2:ERR2_Flt_CntLim-I") {
     field(DESC, "PID Error 2  Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 552")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:IGND_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan2:IGND_Flt_CntLim-I") {
     field(DESC, "Ignd Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 556")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:DCCT_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan2:DCCT_Flt_CntLim-I") {
     field(DESC, "DCCT Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 560")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:FLT1_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan2:FLT1_Flt_CntLim-I") {
     field(DESC, "Fault 1 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 564")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:FLT2_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan2:FLT2_Flt_CntLim-I") {
     field(DESC, "Fault 2 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 568")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:FLT3_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan2:FLT3_Flt_CntLim-I") {
     field(DESC, "Fault 3 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 572")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:ON_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan2:ON_Flt_CntLim-I") {
     field(DESC, "PowerSupply ON Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 576")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:HeartBeat_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan2:HeartBeat_Flt_CntLim-I") {
     field(DESC, "HeartBeat Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 580")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -930,43 +946,54 @@ record(mbbiDirect, "$(P){$(NO)}Chan2:DigIn-I") {
     field(DESC, "Digital Input Bits")
     field(DTYP, "PSC Reg")
     field(INP , "@Rx$(NO) 31 612")
-    field(SCAN, "I/O Intr")
+    field(SCAN,"I/O Intr")
 }
 
-
 record(mbbiDirect, "$(P){$(NO)}Chan2:FaultsLive-I") {
-    field(DESC, "PS2 Live Faults")
+    field(DESC, "PS1 Live Faults")
     field(DTYP, "PSC Reg")
     field(INP , "@Rx$(NO) 31 616")
     field(SCAN, "I/O Intr")
 }
 
-
 record(mbbiDirect, "$(P){$(NO)}Chan2:FaultsLat-I") {
-    field(DESC, "PS2 Latched Faults")
+    field(DESC, "PS1 Latched Faults")
     field(DTYP, "PSC Reg")
     field(INP , "@Rx$(NO) 31 620")
     field(SCAN, "I/O Intr")
 }
 
+record(ai, "$(P){$(NO)}Chan2:AmpsperVolt-I") {
+    field(DESC, "ScaleFactor Amps/Volt Readback")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 624")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
 
-
+record(ai, "$(P){$(NO)}Chan2:AmpsperSec-I") {
+    field(DESC, "ScaleFactor Amps/Sec Readback")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 628")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
 
 
 
 ### PS3 #####
 
-record(longin, "$(P){$(NO)}Chan3:DCCT1-I") {
+record(ai, "$(P){$(NO)}Chan3:DCCT1-I") {
     field(DESC, "DCCT 1 Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 700")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:DCCT1-Offset-I") {
+record(ai, "$(P){$(NO)}Chan3:DCCT1-Offset-I") {
     field(DESC, "DCCT 1 Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 704")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -980,17 +1007,17 @@ record(ai, "$(P){$(NO)}Chan3:DCCT1-Gain-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:DCCT2-I") {
+record(ai, "$(P){$(NO)}Chan3:DCCT2-I") {
     field(DESC, "DCCT 2 Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 712")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:DCCT2-Offset-I") {
+record(ai, "$(P){$(NO)}Chan3:DCCT2-Offset-I") {
     field(DESC, "DCCT 2 Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 716")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1004,17 +1031,17 @@ record(ai, "$(P){$(NO)}Chan3:DCCT2-Gain-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:DAC-I") {
+record(ai, "$(P){$(NO)}Chan3:DAC-I") {
     field(DESC, "DAC Setpoint Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 724")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:DAC-Offset-I") {
+record(ai, "$(P){$(NO)}Chan3:DAC-Offset-I") {
     field(DESC, "DAC Setpoint Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 728")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1029,17 +1056,17 @@ record(ai, "$(P){$(NO)}Chan3:DAC-Gain-I") {
 }
 
 
-record(longin, "$(P){$(NO)}Chan3:Volt-I") {
+record(ai, "$(P){$(NO)}Chan3:Volt-I") {
     field(DESC, "Voltage Monitor Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 736")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:Volt-Offset-I") {
+record(ai, "$(P){$(NO)}Chan3:Volt-Offset-I") {
     field(DESC, "Voltage Monitor Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 740")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1054,17 +1081,17 @@ record(ai, "$(P){$(NO)}Chan3:Volt-Gain-I") {
 }
 
 
-record(longin, "$(P){$(NO)}Chan3:Gnd-I") {
+record(ai, "$(P){$(NO)}Chan3:Gnd-I") {
     field(DESC, "Ground Monitor Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 748")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:Gnd-Offset-I") {
+record(ai, "$(P){$(NO)}Chan3:Gnd-Offset-I") {
     field(DESC, "Ground Monitor Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 752")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1078,17 +1105,17 @@ record(ai, "$(P){$(NO)}Chan3:Gnd-Gain-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:Spare-I") {
+record(ai, "$(P){$(NO)}Chan3:Spare-I") {
     field(DESC, "Spare Monitor Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 760")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:Spare-Offset-I") {
+record(ai, "$(P){$(NO)}Chan3:Spare-Offset-I") {
     field(DESC, "Spare Monitor Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 764")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1103,17 +1130,17 @@ record(ai, "$(P){$(NO)}Chan3:Spare-Gain-I") {
 }
 
 
-record(longin, "$(P){$(NO)}Chan3:Reg-I") {
+record(ai, "$(P){$(NO)}Chan3:Reg-I") {
     field(DESC, "Regulator Output Voltage Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 772")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:Reg-Offset-I") {
+record(ai, "$(P){$(NO)}Chan3:Reg-Offset-I") {
     field(DESC, "Regulator Output Voltage Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 776")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1127,17 +1154,17 @@ record(ai, "$(P){$(NO)}Chan3:Reg-Gain-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:Error-I") {
+record(ai, "$(P){$(NO)}Chan3:Error-I") {
     field(DESC, "Error Voltage Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 784")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:Error-Offset-I") {
+record(ai, "$(P){$(NO)}Chan3:Error-Offset-I") {
     field(DESC, "Error Voltage Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 788")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1151,17 +1178,17 @@ record(ai, "$(P){$(NO)}Chan3:Error-Gain-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:DACSetPt-I") {
+record(ai, "$(P){$(NO)}Chan3:DACSetPt-I") {
     field(DESC, "DAC SetPoint Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 796")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:DACSetPt-Offset-I") {
+record(ai, "$(P){$(NO)}Chan3:DACSetPt-Offset-I") {
     field(DESC, "DAC SetPoint Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 800")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1176,7 +1203,6 @@ record(ai, "$(P){$(NO)}Chan3:DACSetPt-Gain-I") {
 }
 
 
-
 record(longin, "$(P){$(NO)}Chan3:DACRampActive-I") {
     field(DESC, "DAC SetPoint Readback")
     field(DTYP, "PSC Reg")
@@ -1186,145 +1212,145 @@ record(longin, "$(P){$(NO)}Chan3:DACRampActive-I") {
 }
 
 
-record(longin, "$(P){$(NO)}Chan3:OVC1_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan3:OVC1_Flt_Threshold-I") {
     field(DESC, "DCCT1 OVC Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 812")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:OVC2_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan3:OVC2_Flt_Threshold-I") {
     field(DESC, "DCCT2 OVC Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 816")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:OVV_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan3:OVV_Flt_Threshold-I") {
     field(DESC, "OVV Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 820")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:ERR1_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan3:ERR1_Flt_Threshold-I") {
     field(DESC, "ERR1 Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 824")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:ERR2_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan3:ERR2_Flt_Threshold-I") {
     field(DESC, "ERR2 Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 828")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:IGND_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan3:IGND_Flt_Threshold-I") {
     field(DESC, "Ignd Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 832")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:OVC1_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan3:OVC1_Flt_CntLim-I") {
     field(DESC, "DCCT1 OVC Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 836")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:OVC2_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan3:OVC2_Flt_CntLim-I") {
     field(DESC, "DCCT2 OVC Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 840")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:OVV_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan3:OVV_Flt_CntLim-I") {
     field(DESC, "OVV Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 844")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:ERR1_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan3:ERR1_Flt_CntLim-I") {
     field(DESC, "PID Error 1 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 848")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:ERR2_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan3:ERR2_Flt_CntLim-I") {
     field(DESC, "PID Error 2  Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 852")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:IGND_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan3:IGND_Flt_CntLim-I") {
     field(DESC, "Ignd Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 856")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:DCCT_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan3:DCCT_Flt_CntLim-I") {
     field(DESC, "DCCT Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 860")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:FLT1_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan3:FLT1_Flt_CntLim-I") {
     field(DESC, "Fault 1 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 864")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:FLT2_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan3:FLT2_Flt_CntLim-I") {
     field(DESC, "Fault 2 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 868")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:FLT3_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan3:FLT3_Flt_CntLim-I") {
     field(DESC, "Fault 3 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 872")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:ON_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan3:ON_Flt_CntLim-I") {
     field(DESC, "PowerSupply ON Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 876")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:HeartBeat_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan3:HeartBeat_Flt_CntLim-I") {
     field(DESC, "HeartBeat Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 880")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1394,20 +1420,34 @@ record(mbbiDirect, "$(P){$(NO)}Chan3:DigIn-I") {
     field(SCAN,"I/O Intr")
 }
 
-
 record(mbbiDirect, "$(P){$(NO)}Chan3:FaultsLive-I") {
-    field(DESC, "PS3 Live Faults")
+    field(DESC, "PS1 Live Faults")
     field(DTYP, "PSC Reg")
     field(INP , "@Rx$(NO) 31 916")
     field(SCAN, "I/O Intr")
 }
-
 
 record(mbbiDirect, "$(P){$(NO)}Chan3:FaultsLat-I") {
     field(DESC, "PS1 Latched Faults")
     field(DTYP, "PSC Reg")
     field(INP , "@Rx$(NO) 31 920")
     field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P){$(NO)}Chan3:AmpsperVolt-I") {
+    field(DESC, "ScaleFactor Amps/Volt Readback")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 924")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan3:AmpsperSec-I") {
+    field(DESC, "ScaleFactor Amps/Sec Readback")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 928")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
 }
 
 
@@ -1417,17 +1457,17 @@ record(mbbiDirect, "$(P){$(NO)}Chan3:FaultsLat-I") {
 
 ### PS4 #####
 
-record(longin, "$(P){$(NO)}Chan4:DCCT1-I") {
+record(ai, "$(P){$(NO)}Chan4:DCCT1-I") {
     field(DESC, "DCCT 1 Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1000")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:DCCT1-Offset-I") {
+record(ai, "$(P){$(NO)}Chan4:DCCT1-Offset-I") {
     field(DESC, "DCCT 1 Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1004")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1441,17 +1481,17 @@ record(ai, "$(P){$(NO)}Chan4:DCCT1-Gain-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:DCCT2-I") {
+record(ai, "$(P){$(NO)}Chan4:DCCT2-I") {
     field(DESC, "DCCT 2 Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1012")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:DCCT2-Offset-I") {
+record(ai, "$(P){$(NO)}Chan4:DCCT2-Offset-I") {
     field(DESC, "DCCT 2 Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1016")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1465,17 +1505,17 @@ record(ai, "$(P){$(NO)}Chan4:DCCT2-Gain-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:DAC-I") {
+record(ai, "$(P){$(NO)}Chan4:DAC-I") {
     field(DESC, "DAC Setpoint Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1024")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:DAC-Offset-I") {
+record(ai, "$(P){$(NO)}Chan4:DAC-Offset-I") {
     field(DESC, "DAC Setpoint Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1028")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1490,17 +1530,17 @@ record(ai, "$(P){$(NO)}Chan4:DAC-Gain-I") {
 }
 
 
-record(longin, "$(P){$(NO)}Chan4:Volt-I") {
+record(ai, "$(P){$(NO)}Chan4:Volt-I") {
     field(DESC, "Voltage Monitor Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1036")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:Volt-Offset-I") {
+record(ai, "$(P){$(NO)}Chan4:Volt-Offset-I") {
     field(DESC, "Voltage Monitor Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1040")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1515,17 +1555,17 @@ record(ai, "$(P){$(NO)}Chan4:Volt-Gain-I") {
 }
 
 
-record(longin, "$(P){$(NO)}Chan4:Gnd-I") {
+record(ai, "$(P){$(NO)}Chan4:Gnd-I") {
     field(DESC, "Ground Monitor Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1048")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:Gnd-Offset-I") {
+record(ai, "$(P){$(NO)}Chan4:Gnd-Offset-I") {
     field(DESC, "Ground Monitor Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1052")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1539,17 +1579,17 @@ record(ai, "$(P){$(NO)}Chan4:Gnd-Gain-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:Spare-I") {
+record(ai, "$(P){$(NO)}Chan4:Spare-I") {
     field(DESC, "Spare Monitor Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1060")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:Spare-Offset-I") {
+record(ai, "$(P){$(NO)}Chan4:Spare-Offset-I") {
     field(DESC, "Spare Monitor Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1064")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1564,17 +1604,17 @@ record(ai, "$(P){$(NO)}Chan4:Spare-Gain-I") {
 }
 
 
-record(longin, "$(P){$(NO)}Chan4:Reg-I") {
+record(ai, "$(P){$(NO)}Chan4:Reg-I") {
     field(DESC, "Regulator Output Voltage Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1072")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:Reg-Offset-I") {
+record(ai, "$(P){$(NO)}Chan4:Reg-Offset-I") {
     field(DESC, "Regulator Output Voltage Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1076")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1588,17 +1628,17 @@ record(ai, "$(P){$(NO)}Chan4:Reg-Gain-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:Error-I") {
+record(ai, "$(P){$(NO)}Chan4:Error-I") {
     field(DESC, "Error Voltage Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1084")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:Error-Offset-I") {
+record(ai, "$(P){$(NO)}Chan4:Error-Offset-I") {
     field(DESC, "Error Voltage Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1088")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1612,17 +1652,17 @@ record(ai, "$(P){$(NO)}Chan4:Error-Gain-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:DACSetPt-I") {
+record(ai, "$(P){$(NO)}Chan4:DACSetPt-I") {
     field(DESC, "DAC SetPoint Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1096")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:DACSetPt-Offset-I") {
+record(ai, "$(P){$(NO)}Chan4:DACSetPt-Offset-I") {
     field(DESC, "DAC SetPoint Offset Readback")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1100")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1637,7 +1677,6 @@ record(ai, "$(P){$(NO)}Chan4:DACSetPt-Gain-I") {
 }
 
 
-
 record(longin, "$(P){$(NO)}Chan4:DACRampActive-I") {
     field(DESC, "DAC SetPoint Readback")
     field(DTYP, "PSC Reg")
@@ -1647,145 +1686,145 @@ record(longin, "$(P){$(NO)}Chan4:DACRampActive-I") {
 }
 
 
-record(longin, "$(P){$(NO)}Chan4:OVC1_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan4:OVC1_Flt_Threshold-I") {
     field(DESC, "DCCT1 OVC Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1112")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:OVC2_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan4:OVC2_Flt_Threshold-I") {
     field(DESC, "DCCT2 OVC Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1116")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:OVV_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan4:OVV_Flt_Threshold-I") {
     field(DESC, "OVV Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1120")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:ERR1_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan4:ERR1_Flt_Threshold-I") {
     field(DESC, "ERR1 Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1124")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:ERR2_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan4:ERR2_Flt_Threshold-I") {
     field(DESC, "ERR2 Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1128")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:IGND_Flt_Threshold-I") {
+record(ai, "$(P){$(NO)}Chan4:IGND_Flt_Threshold-I") {
     field(DESC, "Ignd Fault Threshold")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1132")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:OVC1_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan4:OVC1_Flt_CntLim-I") {
     field(DESC, "DCCT1 OVC Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1136")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:OVC2_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan4:OVC2_Flt_CntLim-I") {
     field(DESC, "DCCT2 OVC Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1140")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:OVV_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan4:OVV_Flt_CntLim-I") {
     field(DESC, "OVV Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1144")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:ERR1_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan4:ERR1_Flt_CntLim-I") {
     field(DESC, "PID Error 1 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1148")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:ERR2_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan4:ERR2_Flt_CntLim-I") {
     field(DESC, "PID Error 2  Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1152")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:IGND_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan4:IGND_Flt_CntLim-I") {
     field(DESC, "Ignd Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1156")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:DCCT_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan4:DCCT_Flt_CntLim-I") {
     field(DESC, "DCCT Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1160")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:FLT1_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan4:FLT1_Flt_CntLim-I") {
     field(DESC, "Fault 1 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1164")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:FLT2_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan4:FLT2_Flt_CntLim-I") {
     field(DESC, "Fault 2 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1168")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:FLT3_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan4:FLT3_Flt_CntLim-I") {
     field(DESC, "Fault 3 Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1172")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:ON_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan4:ON_Flt_CntLim-I") {
     field(DESC, "PowerSupply ON Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1176")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:HeartBeat_Flt_CntLim-I") {
+record(ai, "$(P){$(NO)}Chan4:HeartBeat_Flt_CntLim-I") {
     field(DESC, "HeartBeat Fault Counter Limit")
-    field(DTYP, "PSC Reg")
+    field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1180")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
@@ -1855,20 +1894,34 @@ record(mbbiDirect, "$(P){$(NO)}Chan4:DigIn-I") {
     field(SCAN,"I/O Intr")
 }
 
-
 record(mbbiDirect, "$(P){$(NO)}Chan4:FaultsLive-I") {
-    field(DESC, "PS4 Live Faults")
+    field(DESC, "PS1 Live Faults")
     field(DTYP, "PSC Reg")
     field(INP , "@Rx$(NO) 31 1216")
     field(SCAN, "I/O Intr")
 }
 
-
 record(mbbiDirect, "$(P){$(NO)}Chan4:FaultsLat-I") {
-    field(DESC, "PS4 Latched Faults")
+    field(DESC, "PS1 Latched Faults")
     field(DTYP, "PSC Reg")
     field(INP , "@Rx$(NO) 31 1220")
     field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P){$(NO)}Chan4:AmpsperVolt-I") {
+    field(DESC, "ScaleFactor Amps/Volt Readback")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 1224")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan4:AmpsperSec-I") {
+    field(DESC, "ScaleFactor Amps/Sec Readback")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 1228")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
 }
 
 
