@@ -490,23 +490,61 @@ record(mbbiDirect, "$(P){$(NO)}Chan1:FaultsLat-I") {
     field(SCAN, "I/O Intr")
 }
 
-record(ai, "$(P){$(NO)}Chan1:AmpsperVolt-I") {
-    field(DESC, "ScaleFactor Amps/Volt Readback")
+record(ai, "$(P){$(NO)}Chan1:SF:AmpsperSec-I") {
+    field(DESC, "ScaleFactor Amps/Sec Readback")
     field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 324")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(ai, "$(P){$(NO)}Chan1:AmpsperSec-I") {
-    field(DESC, "ScaleFactor Amps/Sec Readback")
+record(ai, "$(P){$(NO)}Chan1:SF:DAC_DCCTs-I") {
+    field(DESC, "ScaleFactor for DAC & DCCT's")
     field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 328")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
+record(ai, "$(P){$(NO)}Chan1:SF:Vout-I") {
+    field(DESC, "ScaleFactor for Vout ")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 332")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
 
+record(ai, "$(P){$(NO)}Chan1:SF:Ignd-I") {
+    field(DESC, "ScaleFactor for Ignd")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 336")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan1:SF:Spare-I") {
+    field(DESC, "ScaleFactor for Spare")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 340")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan1:SF:Regulator-I") {
+    field(DESC, "ScaleFactor for Regulator")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 344")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan1:SF:Error-I") {
+    field(DESC, "ScaleFactor for Error")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 348")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
 
 
 
@@ -963,21 +1001,63 @@ record(mbbiDirect, "$(P){$(NO)}Chan2:FaultsLat-I") {
     field(SCAN, "I/O Intr")
 }
 
-record(ai, "$(P){$(NO)}Chan2:AmpsperVolt-I") {
-    field(DESC, "ScaleFactor Amps/Volt Readback")
+
+record(ai, "$(P){$(NO)}Chan2:SF:AmpsperSec-I") {
+    field(DESC, "ScaleFactor Amps/Sec Readback")
     field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 624")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(ai, "$(P){$(NO)}Chan2:AmpsperSec-I") {
-    field(DESC, "ScaleFactor Amps/Sec Readback")
+record(ai, "$(P){$(NO)}Chan2:SF:DAC_DCCTs-I") {
+    field(DESC, "ScaleFactor for DAC & DCCT's")
     field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 628")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
+
+record(ai, "$(P){$(NO)}Chan2:SF:Vout-I") {
+    field(DESC, "ScaleFactor for Vout ")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 632")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan2:SF:Ignd-I") {
+    field(DESC, "ScaleFactor for Ignd")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 636")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan2:SF:Spare-I") {
+    field(DESC, "ScaleFactor for Spare")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 640")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan2:SF:Regulator-I") {
+    field(DESC, "ScaleFactor for Regulator")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 644")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan2:SF:Error-I") {
+    field(DESC, "ScaleFactor for Error")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 648")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
 
 
 
@@ -1434,22 +1514,61 @@ record(mbbiDirect, "$(P){$(NO)}Chan3:FaultsLat-I") {
     field(SCAN, "I/O Intr")
 }
 
-record(ai, "$(P){$(NO)}Chan3:AmpsperVolt-I") {
-    field(DESC, "ScaleFactor Amps/Volt Readback")
+record(ai, "$(P){$(NO)}Chan3:SF:AmpsperSec-I") {
+    field(DESC, "ScaleFactor Amps/Sec Readback")
     field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 924")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(ai, "$(P){$(NO)}Chan3:AmpsperSec-I") {
-    field(DESC, "ScaleFactor Amps/Sec Readback")
+record(ai, "$(P){$(NO)}Chan3:SF:DAC_DCCTs-I") {
+    field(DESC, "ScaleFactor for DAC & DCCT's")
     field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 928")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
+record(ai, "$(P){$(NO)}Chan3:SF:Vout-I") {
+    field(DESC, "ScaleFactor for Vout ")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 932")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan3:SF:Ignd-I") {
+    field(DESC, "ScaleFactor for Ignd")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 936")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan3:SF:Spare-I") {
+    field(DESC, "ScaleFactor for Spare")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 940")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan3:SF:Regulator-I") {
+    field(DESC, "ScaleFactor for Regulator")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 944")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan3:SF:Error-I") {
+    field(DESC, "ScaleFactor for Error")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 948")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
 
 
 
@@ -1908,22 +2027,62 @@ record(mbbiDirect, "$(P){$(NO)}Chan4:FaultsLat-I") {
     field(SCAN, "I/O Intr")
 }
 
-record(ai, "$(P){$(NO)}Chan4:AmpsperVolt-I") {
-    field(DESC, "ScaleFactor Amps/Volt Readback")
+
+record(ai, "$(P){$(NO)}Chan4:SF:AmpsperSec-I") {
+    field(DESC, "ScaleFactor Amps/Sec Readback")
     field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1224")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
-record(ai, "$(P){$(NO)}Chan4:AmpsperSec-I") {
-    field(DESC, "ScaleFactor Amps/Sec Readback")
+record(ai, "$(P){$(NO)}Chan4:SF:DAC_DCCTs-I") {
+    field(DESC, "ScaleFactor for DAC & DCCT's")
     field(DTYP, "PSC Reg F32")
     field(INP , "@Rx$(NO) 31 1228")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
 
+record(ai, "$(P){$(NO)}Chan4:SF:Vout-I") {
+    field(DESC, "ScaleFactor for Vout ")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 1232")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan4:SF:Ignd-I") {
+    field(DESC, "ScaleFactor for Ignd")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 1236")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan4:SF:Spare-I") {
+    field(DESC, "ScaleFactor for Spare")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 1240")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan4:SF:Regulator-I") {
+    field(DESC, "ScaleFactor for Regulator")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 1244")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan4:SF:Error-I") {
+    field(DESC, "ScaleFactor for Error")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 1248")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
 
 
 

@@ -66,7 +66,7 @@ record(longin, "$(P){$(PSC)}Chan2:UsrTrigTS-S-I") {
 }
 
 
-record(longin, "$(P){$(PSC)}Chan2:1UsrTrigTS-NS-I") {
+record(longin, "$(P){$(PSC)}Chan2:UsrTrigTS-NS-I") {
     field(DESC, "User Trigger Timestamp (ns)")
     field(DTYP, "PSC Reg")
     field(INP , "@Wfm$(PSC) 50 36")

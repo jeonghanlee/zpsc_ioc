@@ -551,28 +551,61 @@ record(longout, "$(P){$(NO)}Chan$(CHAN):PostTrigNumPts-SP") {
 }
 
 
-
-
-
-
-record(ao, "$(P){$(NO)}Chan$(CHAN):AmpsperVolt-SP") {
-    field(DESC, "ScaleFactor Amps per Volt")
+record(ao, "$(P){$(NO)}Chan$(CHAN):SF:AmpsperSec-SP") {
+    field(DESC, "ScaleFactor Amps per Second")
     field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 300")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
-record(ao, "$(P){$(NO)}Chan$(CHAN):AmpsperSec-SP") {
-    field(DESC, "ScaleFactor Amps per Second")
+record(ao, "$(P){$(NO)}Chan$(CHAN):SF:DAC_DCCTs-SP") {
+    field(DESC, "ScaleFactor DAC & DCCTs")
     field(DTYP, "PSC Single F32")
     field(OUT , "@Tx$(NO) $(CHAN) 304")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
+record(ao, "$(P){$(NO)}Chan$(CHAN):SF:Vout-SP") {
+    field(DESC, "ScaleFactor Vout")
+    field(DTYP, "PSC Single F32")
+    field(OUT , "@Tx$(NO) $(CHAN) 308")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
 
+record(ao, "$(P){$(NO)}Chan$(CHAN):SF:Ignd-SP") {
+    field(DESC, "ScaleFactor Ignd")
+    field(DTYP, "PSC Single F32")
+    field(OUT , "@Tx$(NO) $(CHAN) 312")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
 
+record(ao, "$(P){$(NO)}Chan$(CHAN):SF:Spare-SP") {
+    field(DESC, "ScaleFactor Spare")
+    field(DTYP, "PSC Single F32")
+    field(OUT , "@Tx$(NO) $(CHAN) 316")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
+
+record(ao, "$(P){$(NO)}Chan$(CHAN):SF:Regulator-SP") {
+    field(DESC, "ScaleFactor Regulator")
+    field(DTYP, "PSC Single F32")
+    field(OUT , "@Tx$(NO) $(CHAN) 320")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
+
+record(ao, "$(P){$(NO)}Chan$(CHAN):SF:Error-SP") {
+    field(DESC, "ScaleFactor Amps per Second")
+    field(DTYP, "PSC Single F32")
+    field(OUT , "@Tx$(NO) $(CHAN) 324")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
 
 
 
