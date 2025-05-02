@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-04-01 15:17:25 by mead-->
+<!--Saved on 2025-05-02 12:07:53 by mead-->
 <display version="2.0.0">
   <name>PSC Top</name>
   <width>300</width>
@@ -51,7 +51,7 @@
       </action>
     </actions>
     <text>Channel 1</text>
-    <x>78</x>
+    <x>12</x>
     <y>103</y>
     <width>113</width>
     <height>31</height>
@@ -77,7 +77,7 @@
       </action>
     </actions>
     <text>Channel 2</text>
-    <x>78</x>
+    <x>12</x>
     <y>144</y>
     <width>113</width>
     <height>31</height>
@@ -103,7 +103,7 @@
       </action>
     </actions>
     <text>Channel 3</text>
-    <x>78</x>
+    <x>12</x>
     <y>186</y>
     <width>113</width>
     <height>31</height>
@@ -129,7 +129,7 @@
       </action>
     </actions>
     <text>Channel 4</text>
-    <x>78</x>
+    <x>12</x>
     <y>228</y>
     <width>113</width>
     <height>31</height>
@@ -154,8 +154,117 @@
       </action>
     </actions>
     <text>Global</text>
-    <x>78</x>
+    <x>84</x>
     <y>55</y>
+    <width>113</width>
+    <height>31</height>
+    <font>
+      <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_31</name>
+    <actions>
+      <action type="open_display">
+        <file>Psc1_fault.opi</file>
+        <macros>
+          <PriSys>lab</PriSys>
+          <PSC>1</PSC>
+          <CHAN>Chan1</CHAN>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Channel 1 
+Fault Snapshot</text>
+    <x>156</x>
+    <y>103</y>
+    <width>113</width>
+    <height>31</height>
+    <font>
+      <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_32</name>
+    <actions>
+      <action type="open_display">
+        <file>Psc1_fault.opi</file>
+        <macros>
+          <PriSys>lab</PriSys>
+          <PSC>1</PSC>
+          <CHAN>Chan2</CHAN>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Channel 2
+Fault Snapshot
+</text>
+    <x>156</x>
+    <y>144</y>
+    <width>113</width>
+    <height>31</height>
+    <font>
+      <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_33</name>
+    <actions>
+      <action type="open_display">
+        <file>Psc1_fault.opi</file>
+        <macros>
+          <PriSys>lab</PriSys>
+          <PSC>1</PSC>
+          <CHAN>Chan3</CHAN>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Channel 3
+Fault Snapshot</text>
+    <x>156</x>
+    <y>186</y>
+    <width>113</width>
+    <height>31</height>
+    <font>
+      <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_34</name>
+    <actions>
+      <action type="open_display">
+        <file>Psc1_fault.opi</file>
+        <macros>
+          <PriSys>lab</PriSys>
+          <PSC>1</PSC>
+          <CHAN>Chan4</CHAN>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Channel 4
+Fault Snapshot</text>
+    <x>156</x>
+    <y>228</y>
     <width>113</width>
     <height>31</height>
     <font>

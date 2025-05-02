@@ -59,7 +59,7 @@ dbLoadRecords("db/wfmstats.db", "P=$(IOCNAME), PSC=1")
 
 
 
-var(PSCDebug, 5)	#5 full debug
+var(PSCDebug, 2)	#5 full debug
 
 #psc1 Create the PSC
 createPSC("Tx1", $(PSC1_IP), 7, 0)
@@ -74,3 +74,74 @@ iocInit
 
 ## Start any sequence programs
 #seq sncxxx,"user=mead"
+
+epicsThreadSleep(2.0)
+
+
+
+dbpf lab{1}Chan1:DigOut_ON1-SP 0
+dbpf lab{1}Chan2:DigOut_ON1-SP 0
+dbpf lab{1}Chan3:DigOut_ON1-SP 0
+dbpf lab{1}Chan4:DigOut_ON1-SP 0
+
+dbpf lab{1}Chan1:DigOut_ON2-SP 0
+dbpf lab{1}Chan2:DigOut_ON2-SP 0
+dbpf lab{1}Chan3:DigOut_ON2-SP 0
+dbpf lab{1}Chan4:DigOut_ON2-SP 0
+
+dbpf lab{1}Chan1:DigOut_Reset-SP 0
+dbpf lab{1}Chan2:DigOut_Reset-SP 0
+dbpf lab{1}Chan3:DigOut_Reset-SP 0
+dbpf lab{1}Chan4:DigOut_Reset-SP 0
+
+dbpf lab{1}Chan1:DigOut_Park-SP 0
+dbpf lab{1}Chan2:DigOut_Park-SP 0
+dbpf lab{1}Chan3:DigOut_Park-SP 0
+dbpf lab{1}Chan4:DigOut_Park-SP 0
+
+dbpf lab{1}Chan1:DAC_SetPt-SP 0
+dbpf lab{1}Chan2:DAC_SetPt-SP 0
+dbpf lab{1}Chan3:DAC_SetPt-SP 0
+dbpf lab{1}Chan4:DAC_SetPt-SP 0
+
+dbpf lab{1}Chan1:DACSetPt-Offset-SP 0.0
+dbpf lab{1}Chan1:DACSetPt-Gain-SP 1.0
+
+dbpf lab{1}Chan1:DAC_OpMode-SP 0
+dbpf lab{1}Chan2:DAC_OpMode-SP 0
+dbpf lab{1}Chan3:DAC_OpMode-SP 0
+dbpf lab{1}Chan4:DAC_OpMode-SP 0
+
+dbpf lab{1}Chan1:FaultMask-SP 0x1DFF
+dbpf lab{1}Chan2:FaultMask-SP 0x1DFF
+dbpf lab{1}Chan3:FaultMask-SP 0x1DFF
+dbpf lab{1}Chan4:FaultMask-SP 0x1DFF
+
+dbpf lab{1}Chan1:SF:AmpsperSec-SP 1.0
+dbpf lab{1}Chan1:SF:DAC_DCCTs-SP 1.0
+dbpf lab{1}Chan1:SF:Vout-SP 1.0
+dbpf lab{1}Chan1:SF:Ignd-SP 1.0
+dbpf lab{1}Chan1:SF:Spare-SP 1.0
+dbpf lab{1}Chan1:SF:Regulator-SP 1.0
+dbpf lab{1}Chan1:SF:Error-SP 1.0
+
+
+
+
+dbpf lab{1}Chan1:DCCT1-Offset-SP 0.0
+dbpf lab{1}Chan1:DCCT1-Gain-SP 1.0
+dbpf lab{1}Chan1:DCCT2-Offset-SP 0.0
+dbpf lab{1}Chan1:DCCT2-Gain-SP 1.0
+dbpf lab{1}Chan1:DAC-Offset-SP 0.0
+dbpf lab{1}Chan1:DAC-Gain-SP 1.0
+dbpf lab{1}Chan1:Volt-Offset-SP 0.0
+dbpf lab{1}Chan1:Volt-Gain-SP 1.0
+dbpf lab{1}Chan1:Gnd-Offset-SP 0.0
+dbpf lab{1}Chan1:Gnd-Gain-SP 1.0
+dbpf lab{1}Chan1:Spare-Offset-SP 0.0
+dbpf lab{1}Chan1:Spare-Gain-SP 1.0
+dbpf lab{1}Chan1:Reg-Offset-SP 0.0
+dbpf lab{1}Chan1:Reg-Gain-SP 1.0
+dbpf lab{1}Chan1:Error-Offset-SP 0.0
+dbpf lab{1}Chan1:Error-Gain-SP 1.0
+

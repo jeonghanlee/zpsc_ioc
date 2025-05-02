@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-04-21 15:39:42 by mead-->
+<!--Saved on 2025-05-02 07:43:19 by mead-->
 <display version="2.0.0">
   <name>$(PriSys):$(PSC)</name>
-  <width>700</width>
-  <height>700</height>
+  <width>750</width>
+  <height>860</height>
   <background_color>
     <color red="200" green="215" blue="255">
     </color>
@@ -14,9 +14,9 @@
   <grid_step_y>6</grid_step_y>
   <widget type="group" version="3.0.0">
     <name>Triggers</name>
-    <x>42</x>
-    <y>255</y>
-    <width>588</width>
+    <x>22</x>
+    <y>447</y>
+    <width>713</width>
     <height>375</height>
     <style>1</style>
     <foreground_color>
@@ -459,9 +459,9 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>General Readbacks</name>
-    <x>49</x>
+    <x>28</x>
     <y>82</y>
-    <width>329</width>
+    <width>358</width>
     <height>162</height>
     <style>1</style>
     <foreground_color>
@@ -776,8 +776,8 @@ $(pv_value)</tooltip>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_48</name>
     <pv_name>$(PriSys){$(PSC)}Chan1:UsrTrigBufAddr-I</pv_name>
-    <x>269</x>
-    <y>318</y>
+    <x>249</x>
+    <y>510</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -801,8 +801,8 @@ $(pv_value)</tooltip>
   <widget type="bool_button" version="2.0.0">
     <name>Boolean Button</name>
     <pv_name>$(PriSys){$(PSC)}Trig:Strig-SP</pv_name>
-    <x>159</x>
-    <y>318</y>
+    <x>139</x>
+    <y>510</y>
     <height>20</height>
     <off_label>Soft</off_label>
     <off_color>
@@ -815,8 +815,8 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label_44</name>
     <text>Soft Trigger </text>
-    <x>42</x>
-    <y>318</y>
+    <x>22</x>
+    <y>510</y>
     <width>117</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -893,8 +893,8 @@ $(pv_value)</tooltip>
     <name>Label_48</name>
     <text>    Simulate  
 Fault Triggers</text>
-    <x>53</x>
-    <y>370</y>
+    <x>33</x>
+    <y>562</y>
     <height>56</height>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -912,8 +912,8 @@ Fault Triggers</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_53</name>
     <pv_name>$(PriSys){$(PSC)}Chan1:FltTrigBufAddr-I</pv_name>
-    <x>269</x>
-    <y>350</y>
+    <x>249</x>
+    <y>542</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -938,8 +938,8 @@ Fault Triggers</text>
     <name>Label_49</name>
     <text>   Latched 
 Buffer Addr</text>
-    <x>269</x>
-    <y>278</y>
+    <x>249</x>
+    <y>470</y>
     <height>36</height>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -957,8 +957,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_54</name>
     <pv_name>$(PriSys){$(PSC)}Chan2:FltTrigBufAddr-I</pv_name>
-    <x>269</x>
-    <y>370</y>
+    <x>249</x>
+    <y>562</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -982,8 +982,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_55</name>
     <pv_name>$(PriSys){$(PSC)}Chan3:FltTrigBufAddr-I</pv_name>
-    <x>269</x>
-    <y>390</y>
+    <x>249</x>
+    <y>582</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1007,8 +1007,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_56</name>
     <pv_name>$(PriSys){$(PSC)}Chan4:FltTrigBufAddr-I</pv_name>
-    <x>269</x>
-    <y>410</y>
+    <x>249</x>
+    <y>602</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1032,8 +1032,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_57</name>
     <pv_name>$(PriSys){$(PSC)}Chan1:ErrTrigBufAddr-I</pv_name>
-    <x>269</x>
-    <y>430</y>
+    <x>249</x>
+    <y>622</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1057,8 +1057,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_58</name>
     <pv_name>$(PriSys){$(PSC)}Chan2:ErrTrigBufAddr-I</pv_name>
-    <x>269</x>
-    <y>450</y>
+    <x>249</x>
+    <y>642</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1082,8 +1082,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_59</name>
     <pv_name>$(PriSys){$(PSC)}Chan3:ErrTrigBufAddr-I</pv_name>
-    <x>269</x>
-    <y>470</y>
+    <x>249</x>
+    <y>662</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1107,8 +1107,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_60</name>
     <pv_name>$(PriSys){$(PSC)}Chan4:ErrTrigBufAddr-I</pv_name>
-    <x>269</x>
-    <y>490</y>
+    <x>249</x>
+    <y>682</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1132,8 +1132,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_62</name>
     <pv_name>$(PriSys){$(PSC)}Chan1:FltTrigTS-S-I</pv_name>
-    <x>378</x>
-    <y>351</y>
+    <x>358</x>
+    <y>543</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1156,8 +1156,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_63</name>
     <pv_name>$(PriSys){$(PSC)}Chan1:FltTrigTS-NS-I</pv_name>
-    <x>474</x>
-    <y>351</y>
+    <x>454</x>
+    <y>543</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1181,8 +1181,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_64</name>
     <pv_name>$(PriSys){$(PSC)}Chan2:FltTrigTS-S-I</pv_name>
-    <x>378</x>
-    <y>371</y>
+    <x>358</x>
+    <y>563</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1206,8 +1206,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_65</name>
     <pv_name>$(PriSys){$(PSC)}Chan2:FltTrigTS-NS-I</pv_name>
-    <x>474</x>
-    <y>371</y>
+    <x>454</x>
+    <y>563</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1230,8 +1230,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_66</name>
     <pv_name>$(PriSys){$(PSC)}Chan3:FltTrigTS-S-I</pv_name>
-    <x>378</x>
-    <y>391</y>
+    <x>358</x>
+    <y>583</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1255,8 +1255,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_67</name>
     <pv_name>$(PriSys){$(PSC)}Chan3:FltTrigTS-NS-I</pv_name>
-    <x>474</x>
-    <y>391</y>
+    <x>454</x>
+    <y>583</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1280,8 +1280,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_68</name>
     <pv_name>$(PriSys){$(PSC)}Chan4:FltTrigTS-S-I</pv_name>
-    <x>378</x>
-    <y>411</y>
+    <x>358</x>
+    <y>603</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1305,8 +1305,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_69</name>
     <pv_name>$(PriSys){$(PSC)}Chan4:FltTrigTS-NS-I</pv_name>
-    <x>474</x>
-    <y>411</y>
+    <x>454</x>
+    <y>603</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1330,8 +1330,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_70</name>
     <pv_name>$(PriSys){$(PSC)}Chan1:ErrTrigTS-S-I</pv_name>
-    <x>378</x>
-    <y>431</y>
+    <x>358</x>
+    <y>623</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1355,8 +1355,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_71</name>
     <pv_name>$(PriSys){$(PSC)}Chan1:ErrTrigTS-NS-I</pv_name>
-    <x>474</x>
-    <y>431</y>
+    <x>454</x>
+    <y>623</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1380,8 +1380,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_72</name>
     <pv_name>$(PriSys){$(PSC)}Chan2:ErrTrigTS-S-I</pv_name>
-    <x>378</x>
-    <y>451</y>
+    <x>358</x>
+    <y>643</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1405,8 +1405,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_73</name>
     <pv_name>$(PriSys){$(PSC)}Chan2:ErrTrigTS-NS-I</pv_name>
-    <x>474</x>
-    <y>451</y>
+    <x>454</x>
+    <y>643</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1430,8 +1430,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_74</name>
     <pv_name>$(PriSys){$(PSC)}Chan3:ErrTrigTS-S-I</pv_name>
-    <x>378</x>
-    <y>471</y>
+    <x>358</x>
+    <y>663</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1455,8 +1455,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_75</name>
     <pv_name>$(PriSys){$(PSC)}Chan3:ErrTrigTS-NS-I</pv_name>
-    <x>474</x>
-    <y>471</y>
+    <x>454</x>
+    <y>663</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1480,8 +1480,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_76</name>
     <pv_name>$(PriSys){$(PSC)}Chan4:ErrTrigTS-S-I</pv_name>
-    <x>378</x>
-    <y>491</y>
+    <x>358</x>
+    <y>683</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1505,8 +1505,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_77</name>
     <pv_name>$(PriSys){$(PSC)}Chan4:ErrTrigTS-NS-I</pv_name>
-    <x>474</x>
-    <y>491</y>
+    <x>454</x>
+    <y>683</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1530,8 +1530,8 @@ Buffer Addr</text>
   <widget type="label" version="2.0.0">
     <name>Label_50</name>
     <text>Latched TimeStamp</text>
-    <x>396</x>
-    <y>278</y>
+    <x>376</x>
+    <y>470</y>
     <width>136</width>
     <height>24</height>
     <font>
@@ -1550,8 +1550,8 @@ Buffer Addr</text>
   <widget type="label" version="2.0.0">
     <name>Label_51</name>
     <text>sec</text>
-    <x>413</x>
-    <y>292</y>
+    <x>393</x>
+    <y>484</y>
     <width>36</width>
     <height>24</height>
     <font>
@@ -1570,8 +1570,8 @@ Buffer Addr</text>
   <widget type="label" version="2.0.0">
     <name>Label_52</name>
     <text>ns</text>
-    <x>485</x>
-    <y>292</y>
+    <x>465</x>
+    <y>484</y>
     <width>36</width>
     <height>24</height>
     <font>
@@ -1590,8 +1590,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_80</name>
     <pv_name>$(PriSys){$(PSC)}Chan1:UsrTrigTS-S-I</pv_name>
-    <x>378</x>
-    <y>318</y>
+    <x>358</x>
+    <y>510</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1614,8 +1614,8 @@ Buffer Addr</text>
   <widget type="textentry" version="3.0.0">
     <name>Text Update_81</name>
     <pv_name>$(PriSys){$(PSC)}Chan1:UsrTrigTS-NS-I</pv_name>
-    <x>474</x>
-    <y>318</y>
+    <x>454</x>
+    <y>510</y>
     <width>90</width>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1638,60 +1638,60 @@ Buffer Addr</text>
   <widget type="led" version="2.0.0">
     <name>LED</name>
     <pv_name>$(PriSys){$(PSC)}Chan1:UsrTrigActive-I</pv_name>
-    <x>588</x>
-    <y>318</y>
+    <x>568</x>
+    <y>510</y>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_1</name>
     <pv_name>$(PriSys){$(PSC)}Chan1:FltTrigActive-I</pv_name>
-    <x>588</x>
-    <y>351</y>
+    <x>568</x>
+    <y>543</y>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_2</name>
     <pv_name>$(PriSys){$(PSC)}Chan2:FltTrigActive-I</pv_name>
-    <x>588</x>
-    <y>371</y>
+    <x>568</x>
+    <y>563</y>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_3</name>
     <pv_name>$(PriSys){$(PSC)}Chan3:FltTrigActive-I</pv_name>
-    <x>588</x>
-    <y>391</y>
+    <x>568</x>
+    <y>583</y>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_4</name>
     <pv_name>$(PriSys){$(PSC)}Chan4:FltTrigActive-I</pv_name>
-    <x>588</x>
-    <y>411</y>
+    <x>568</x>
+    <y>603</y>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_5</name>
     <pv_name>$(PriSys){$(PSC)}Chan1:ErrTrigActive-I</pv_name>
-    <x>588</x>
-    <y>431</y>
+    <x>568</x>
+    <y>623</y>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_6</name>
     <pv_name>$(PriSys){$(PSC)}Chan2:ErrTrigActive-I</pv_name>
-    <x>588</x>
-    <y>451</y>
+    <x>568</x>
+    <y>643</y>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_7</name>
     <pv_name>$(PriSys){$(PSC)}Chan3:ErrTrigActive-I</pv_name>
-    <x>588</x>
-    <y>471</y>
+    <x>568</x>
+    <y>663</y>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_8</name>
     <pv_name>$(PriSys){$(PSC)}Chan4:ErrTrigActive-I</pv_name>
-    <x>588</x>
-    <y>491</y>
+    <x>568</x>
+    <y>683</y>
   </widget>
   <widget type="group" version="3.0.0">
     <name>Event Codes</name>
-    <x>401</x>
+    <x>498</x>
     <y>82</y>
     <width>229</width>
     <height>162</height>
@@ -1835,6 +1835,727 @@ Buffer Addr</text>
         <color red="0" green="128" blue="255">
         </color>
       </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Power Supply Digital I/O</name>
+    <x>24</x>
+    <y>258</y>
+    <width>711</width>
+    <height>170</height>
+    <style>1</style>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="TabBG" red="224" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="LabelBG" red="65" green="105" blue="225">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="led" version="2.0.0">
+      <name>LED_51</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:DigIn-I.B2</pv_name>
+      <x>550</x>
+      <y>31</y>
+      <width>65</width>
+      <height>21</height>
+      <off_color>
+        <color red="0" green="95" blue="0">
+        </color>
+      </off_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_50</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:DigIn-I.B1</pv_name>
+      <x>470</x>
+      <y>31</y>
+      <width>65</width>
+      <height>21</height>
+      <off_color>
+        <color red="0" green="95" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_49</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:DigIn-I.B0</pv_name>
+      <x>390</x>
+      <y>31</y>
+      <width>65</width>
+      <height>21</height>
+      <off_color>
+        <color red="0" green="95" blue="0">
+        </color>
+      </off_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_145</name>
+      <text>PS On</text>
+      <x>392</x>
+      <y>7</y>
+      <width>55</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_135</name>
+      <text>  PS Flt </text>
+      <x>461</x>
+      <y>7</y>
+      <width>73</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_137</name>
+      <text>HeartBeat</text>
+      <x>532</x>
+      <y>7</y>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_129</name>
+      <text>PS Reset</text>
+      <x>238</x>
+      <y>8</y>
+      <width>72</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_148</name>
+      <text>PWR (On1)</text>
+      <x>83</x>
+      <y>8</y>
+      <width>78</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_149</name>
+      <text>ENB (On2)</text>
+      <x>163</x>
+      <y>8</y>
+      <width>73</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_9</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:DigOut_ON1-SP</pv_name>
+      <x>85</x>
+      <y>31</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_11</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:DigOut_Reset-SP</pv_name>
+      <x>235</x>
+      <y>31</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_12</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:DigOut_ON2-SP</pv_name>
+      <x>160</x>
+      <y>31</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_13</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:DigOut_Park-SP</pv_name>
+      <x>310</x>
+      <y>31</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_150</name>
+      <text>Park</text>
+      <x>310</x>
+      <y>8</y>
+      <width>66</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_151</name>
+      <text>Chan 1</text>
+      <x>13</x>
+      <y>31</y>
+      <width>60</width>
+      <height>30</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_52</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:DigIn-I.B2</pv_name>
+      <x>550</x>
+      <y>58</y>
+      <width>65</width>
+      <height>21</height>
+      <off_color>
+        <color red="0" green="95" blue="0">
+        </color>
+      </off_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_53</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:DigIn-I.B1</pv_name>
+      <x>470</x>
+      <y>58</y>
+      <width>65</width>
+      <height>21</height>
+      <off_color>
+        <color red="0" green="95" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_54</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:DigIn-I.B0</pv_name>
+      <x>390</x>
+      <y>58</y>
+      <width>65</width>
+      <height>21</height>
+      <off_color>
+        <color red="0" green="95" blue="0">
+        </color>
+      </off_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_14</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:DigOut_ON1-SP</pv_name>
+      <x>85</x>
+      <y>58</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_15</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:DigOut_Reset-SP</pv_name>
+      <x>235</x>
+      <y>58</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_16</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:DigOut_ON2-SP</pv_name>
+      <x>160</x>
+      <y>58</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_17</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:DigOut_Park-SP</pv_name>
+      <x>310</x>
+      <y>58</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_159</name>
+      <text>Chan 2</text>
+      <x>12</x>
+      <y>58</y>
+      <width>60</width>
+      <height>30</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_61</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:DigIn-I.B2</pv_name>
+      <x>550</x>
+      <y>86</y>
+      <width>65</width>
+      <height>21</height>
+      <off_color>
+        <color red="0" green="95" blue="0">
+        </color>
+      </off_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_62</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:DigIn-I.B1</pv_name>
+      <x>470</x>
+      <y>86</y>
+      <width>65</width>
+      <height>21</height>
+      <off_color>
+        <color red="0" green="95" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_63</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:DigIn-I.B0</pv_name>
+      <x>390</x>
+      <y>86</y>
+      <width>65</width>
+      <height>21</height>
+      <off_color>
+        <color red="0" green="95" blue="0">
+        </color>
+      </off_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_26</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:DigOut_ON1-SP</pv_name>
+      <x>85</x>
+      <y>86</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_27</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:DigOut_Reset-SP</pv_name>
+      <x>235</x>
+      <y>86</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_28</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:DigOut_ON2-SP</pv_name>
+      <x>160</x>
+      <y>86</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_29</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:DigOut_Park-SP</pv_name>
+      <x>310</x>
+      <y>86</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_169</name>
+      <text>Chan 3</text>
+      <x>12</x>
+      <y>86</y>
+      <width>60</width>
+      <height>30</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_64</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:DigIn-I.B2</pv_name>
+      <x>550</x>
+      <y>113</y>
+      <width>65</width>
+      <height>21</height>
+      <off_color>
+        <color red="0" green="95" blue="0">
+        </color>
+      </off_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_65</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:DigIn-I.B1</pv_name>
+      <x>470</x>
+      <y>113</y>
+      <width>65</width>
+      <height>21</height>
+      <off_color>
+        <color red="0" green="95" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_66</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:DigIn-I.B0</pv_name>
+      <x>390</x>
+      <y>113</y>
+      <width>65</width>
+      <height>21</height>
+      <off_color>
+        <color red="0" green="95" blue="0">
+        </color>
+      </off_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_30</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:DigOut_ON1-SP</pv_name>
+      <x>85</x>
+      <y>113</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_31</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:DigOut_Reset-SP</pv_name>
+      <x>235</x>
+      <y>113</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_32</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:DigOut_ON2-SP</pv_name>
+      <x>160</x>
+      <y>113</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_33</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:DigOut_Park-SP</pv_name>
+      <x>310</x>
+      <y>113</y>
+      <width>70</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_170</name>
+      <text>Chan 4</text>
+      <x>11</x>
+      <y>113</y>
+      <width>60</width>
+      <height>30</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_67</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:FaultsLat-I</pv_name>
+      <x>630</x>
+      <y>31</y>
+      <width>64</width>
+      <height>21</height>
+      <on_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_171</name>
+      <text>Sum Flt</text>
+      <x>626</x>
+      <y>7</y>
+      <width>70</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_68</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:FaultsLat-I</pv_name>
+      <x>630</x>
+      <y>58</y>
+      <width>64</width>
+      <height>21</height>
+      <on_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_69</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:FaultsLat-I</pv_name>
+      <x>630</x>
+      <y>86</y>
+      <width>64</width>
+      <height>21</height>
+      <on_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_70</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:FaultsLat-I</pv_name>
+      <x>630</x>
+      <y>113</y>
+      <width>64</width>
+      <height>21</height>
+      <on_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
     </widget>
   </widget>
 </display>
