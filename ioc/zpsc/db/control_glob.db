@@ -70,15 +70,36 @@ record(stringin, "$(P){$(NO)}RampTableFile") {
 
 ### Global Settings
 
-record(bo, "$(P){$(NO)}Trig:Strig-SP") {
+#record(bo, "$(P){$(NO)}Trig:Usr-SP") {
+#    field(DESC, "Soft Trigger by user")
+#    field(DTYP, "PSC Single U32")
+#    field(OUT , "@Tx$(NO) 0 0")
+#    field(ZNAM,"Rdy")
+#    field(ONAM,"Trig")
+#    field(FLNK, "$(P){$(NO)}GoRegSingleWrite0")
+#    field(HIGH,".5")    #500 ms after low
+#}
+
+record(mbbo, "$(P){$(NO)}Trig:Usr-SP") {
     field(DESC, "Soft Trigger by user")
     field(DTYP, "PSC Single U32")
     field(OUT , "@Tx$(NO) 0 0")
-    field(ZNAM,"Rdy")
-    field(ONAM,"Trig")
+    field( ZRST, "User Chan1")
+    field( ONST, "User Chan2")
+    field( TWST, "User Chan3")
+    field( THST, "User Chan4")
+    field( ZRVL, "1")
+    field( ONVL, "2")
+    field( TWVL, "4")
+    field( THVL, "8")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite0")
     field(HIGH,".5")    #500 ms after low
 }
+
+
+
+
+
 
 # Testing PV's, will be removed
 record(mbbo, "$(P){$(NO)}Trig:Fault-SP") {

@@ -29,8 +29,8 @@ record(mbbo, "$(P){$(NO)}Chan$(CHAN):DAC_OpMode-SP") {
     field(DTYP, "PSC Single U32")
     field(OUT , "@Tx$(NO) $(CHAN) 100")
     #field( PINI, "YES")
-    field( ZRST, "SmoothRamp")
-    field( ONST, "RampTable")
+    field( ZRST, "Smooth")
+    field( ONST, "Table")
     field( TWST, "FOFB")
     field( THST, "Jump")
     field( ZRVL, "0")
@@ -371,10 +371,12 @@ record(longout, "$(P){$(NO)}Chan$(CHAN):FaultMask-SP") {
     field(DESC, "Fault Mask")
     field(DTYP, "PSC Single I32")  
     field(OUT , "@Tx$(NO) $(CHAN) 264")
+    field(VAL, "7679")            # 0x1DFF in decimal
+    field(OMSL, "supervisory")    # Make sure we use VAL
+    field(PINI, "YES")            # Process on IOC startup    
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
-
 
 
 record(bo, "$(P){$(NO)}Chan$(CHAN):FaultMask:B0-SP") {
@@ -433,7 +435,7 @@ record(bo, "$(P){$(NO)}Chan$(CHAN):FaultMask:B8-SP") {
 }
 record(bo, "$(P){$(NO)}Chan$(CHAN):FaultMask:B9-SP") {
     field(DESC, "Fault Mask Bit 9")
-    field(VAL, "1")
+    field(VAL, "0")
     field(PINI, "YES")       
     field(FLNK, "$(P){$(NO)}Chan$(CHAN):FaultMask:Mid6")
 }

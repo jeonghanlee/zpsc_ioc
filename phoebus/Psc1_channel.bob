@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-02 07:48:31 by mead-->
+<!--Saved on 2025-05-04 10:52:28 by mead-->
 <display version="2.0.0">
   <name>$(CHAN):$(PriSys)</name>
   <width>900</width>
@@ -3289,6 +3289,13 @@
               <color red="0" green="128" blue="255">
               </color>
             </border_color>
+          </widget>
+          <widget type="combo" version="2.0.0">
+            <name>Combo Box</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC_OpMode-SP</pv_name>
+            <x>490</x>
+            <y>106</y>
+            <width>120</width>
           </widget>
         </children>
       </tab>
@@ -10570,7 +10577,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
     <x>18</x>
     <width>882</width>
     <height>924</height>
-    <active_tab>3</active_tab>
+    <active_tab>2</active_tab>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_36</name>
@@ -10760,8 +10767,8 @@ $(pv_value)</tooltip>
     <name>Symbol</name>
     <x>996</x>
     <y>426</y>
-    <width>0</width>
-    <height>0</height>
+    <width>1</width>
+    <height>1</height>
     <tooltip>$(pv_name)
 $(pv_value)
 $(actions)</tooltip>

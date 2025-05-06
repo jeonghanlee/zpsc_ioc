@@ -35,6 +35,36 @@ record(longin, "$(P){$(NO)}Resolution-I") {
     field(SCAN,"I/O Intr")
 }
 
+record(longin, "$(P){$(NO)}GitHash-I") {
+    field(DESC, "Git Hash")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Rx$(NO) 31 16")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai, "$(P){$(NO)}DieTemp-I") {
+    field(DESC, "Git Hash")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 20")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai, "$(P){$(NO)}VCCInt-I") {
+    field(DESC, "Git Hash")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 24")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai, "$(P){$(NO)}VCCAux-I") {
+    field(DESC, "Git Hash")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 31 28")
+    field(SCAN,"I/O Intr")
+}
+
+
+
 
 
 ### PS1 #####

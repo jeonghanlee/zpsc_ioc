@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-02 07:43:19 by mead-->
+<!--Saved on 2025-05-05 10:53:47 by mead-->
 <display version="2.0.0">
   <name>$(PriSys):$(PSC)</name>
-  <width>750</width>
-  <height>860</height>
+  <width>860</width>
+  <height>890</height>
   <background_color>
     <color red="200" green="215" blue="255">
     </color>
@@ -14,10 +14,10 @@
   <grid_step_y>6</grid_step_y>
   <widget type="group" version="3.0.0">
     <name>Triggers</name>
-    <x>22</x>
-    <y>447</y>
-    <width>713</width>
-    <height>375</height>
+    <x>24</x>
+    <y>450</y>
+    <width>822</width>
+    <height>429</height>
     <style>1</style>
     <foreground_color>
       <color red="255" green="255" blue="255">
@@ -32,7 +32,7 @@
       <name>Choice Button_1</name>
       <pv_name>$(PriSys){$(PSC)}Trig:Fault-SP</pv_name>
       <x>116</x>
-      <y>76</y>
+      <y>135</y>
       <height>268</height>
       <horizontal>false</horizontal>
       <items>
@@ -55,7 +55,7 @@
       <name>Text Update_78</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:EvrTrigTS-S-I</pv_name>
       <x>335</x>
-      <y>317</y>
+      <y>376</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -80,7 +80,7 @@
       <name>Text Update_79</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:EvrTrigTS-NS-I</pv_name>
       <x>431</x>
-      <y>317</y>
+      <y>376</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -105,13 +105,13 @@
       <name>LED_9</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:EvrTrigActive-I</pv_name>
       <x>545</x>
-      <y>317</y>
+      <y>376</y>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Update_61</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:EvrTrigBufAddr-I</pv_name>
       <x>226</x>
-      <y>316</y>
+      <y>375</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -136,7 +136,7 @@
       <name>Text Update_91</name>
       <pv_name>$(PriSys){$(PSC)}Chan1:InjTrigTS-S-I</pv_name>
       <x>335</x>
-      <y>236</y>
+      <y>295</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -161,7 +161,7 @@
       <name>Text Update_92</name>
       <pv_name>$(PriSys){$(PSC)}Chan1:InjTrigTS-NS-I</pv_name>
       <x>431</x>
-      <y>236</y>
+      <y>295</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -186,7 +186,7 @@
       <name>Text Update_93</name>
       <pv_name>$(PriSys){$(PSC)}Chan2:InjTrigTS-S-I</pv_name>
       <x>335</x>
-      <y>256</y>
+      <y>315</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -211,7 +211,7 @@
       <name>Text Update_94</name>
       <pv_name>$(PriSys){$(PSC)}Chan2:InjTrigTS-NS-I</pv_name>
       <x>431</x>
-      <y>256</y>
+      <y>315</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -236,7 +236,7 @@
       <name>Text Update_95</name>
       <pv_name>$(PriSys){$(PSC)}Chan3:InjTrigTS-S-I</pv_name>
       <x>335</x>
-      <y>276</y>
+      <y>335</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -261,7 +261,7 @@
       <name>Text Update_96</name>
       <pv_name>$(PriSys){$(PSC)}Chan3:InjTrigTS-NS-I</pv_name>
       <x>431</x>
-      <y>276</y>
+      <y>335</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -286,7 +286,7 @@
       <name>Text Update_97</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:InjTrigTS-S-I</pv_name>
       <x>335</x>
-      <y>296</y>
+      <y>355</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -311,7 +311,7 @@
       <name>Text Update_98</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:InjTrigTS-NS-I</pv_name>
       <x>431</x>
-      <y>296</y>
+      <y>355</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -336,31 +336,31 @@
       <name>LED_10</name>
       <pv_name>$(PriSys){$(PSC)}Chan1:InjTrigActive-I</pv_name>
       <x>545</x>
-      <y>236</y>
+      <y>295</y>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_11</name>
       <pv_name>$(PriSys){$(PSC)}Chan2:InjTrigActive-I</pv_name>
       <x>545</x>
-      <y>256</y>
+      <y>315</y>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_12</name>
       <pv_name>$(PriSys){$(PSC)}Chan3:InjTrigActive-I</pv_name>
       <x>545</x>
-      <y>276</y>
+      <y>335</y>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_13</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:InjTrigActive-I</pv_name>
       <x>545</x>
-      <y>296</y>
+      <y>355</y>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Update_99</name>
       <pv_name>$(PriSys){$(PSC)}Chan2:InjTrigBufAddr-I</pv_name>
       <x>226</x>
-      <y>255</y>
+      <y>314</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -385,7 +385,7 @@
       <name>Text Update_100</name>
       <pv_name>$(PriSys){$(PSC)}Chan3:InjTrigBufAddr-I</pv_name>
       <x>226</x>
-      <y>275</y>
+      <y>334</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -410,7 +410,7 @@
       <name>Text Update_101</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:InjTrigBufAddr-I</pv_name>
       <x>226</x>
-      <y>295</y>
+      <y>354</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -435,7 +435,7 @@
       <name>Text Update_102</name>
       <pv_name>$(PriSys){$(PSC)}Chan1:InjTrigBufAddr-I</pv_name>
       <x>226</x>
-      <y>236</y>
+      <y>295</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -456,12 +456,1008 @@
         </color>
       </border_color>
     </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_68</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:FltTrigTS-S-I</pv_name>
+      <x>335</x>
+      <y>196</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_69</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:FltTrigTS-NS-I</pv_name>
+      <x>431</x>
+      <y>196</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_70</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:ErrTrigTS-S-I</pv_name>
+      <x>335</x>
+      <y>216</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_71</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:ErrTrigTS-NS-I</pv_name>
+      <x>431</x>
+      <y>216</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_72</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:ErrTrigTS-S-I</pv_name>
+      <x>335</x>
+      <y>236</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_73</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:ErrTrigTS-NS-I</pv_name>
+      <x>431</x>
+      <y>236</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_74</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:ErrTrigTS-S-I</pv_name>
+      <x>335</x>
+      <y>256</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_75</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:ErrTrigTS-NS-I</pv_name>
+      <x>431</x>
+      <y>256</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_76</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:ErrTrigTS-S-I</pv_name>
+      <x>335</x>
+      <y>276</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_77</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:ErrTrigTS-NS-I</pv_name>
+      <x>431</x>
+      <y>276</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_1</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:FltTrigActive-I</pv_name>
+      <x>545</x>
+      <y>136</y>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_2</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:FltTrigActive-I</pv_name>
+      <x>545</x>
+      <y>156</y>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_3</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:FltTrigActive-I</pv_name>
+      <x>545</x>
+      <y>176</y>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_4</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:FltTrigActive-I</pv_name>
+      <x>545</x>
+      <y>196</y>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_5</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:ErrTrigActive-I</pv_name>
+      <x>545</x>
+      <y>216</y>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_6</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:ErrTrigActive-I</pv_name>
+      <x>545</x>
+      <y>236</y>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_7</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:ErrTrigActive-I</pv_name>
+      <x>545</x>
+      <y>256</y>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_8</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:ErrTrigActive-I</pv_name>
+      <x>545</x>
+      <y>276</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_48</name>
+      <text>    Simulate  
+Fault Triggers</text>
+      <x>10</x>
+      <y>139</y>
+      <height>56</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_53</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:FltTrigBufAddr-I</pv_name>
+      <x>226</x>
+      <y>135</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>4</format>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_54</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:FltTrigBufAddr-I</pv_name>
+      <x>226</x>
+      <y>155</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>4</format>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_55</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:FltTrigBufAddr-I</pv_name>
+      <x>226</x>
+      <y>175</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>4</format>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_56</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:FltTrigBufAddr-I</pv_name>
+      <x>226</x>
+      <y>195</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>4</format>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_57</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:ErrTrigBufAddr-I</pv_name>
+      <x>226</x>
+      <y>215</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>4</format>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_58</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:ErrTrigBufAddr-I</pv_name>
+      <x>226</x>
+      <y>235</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>4</format>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_59</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:ErrTrigBufAddr-I</pv_name>
+      <x>226</x>
+      <y>255</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>4</format>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_60</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:ErrTrigBufAddr-I</pv_name>
+      <x>226</x>
+      <y>275</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>4</format>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_62</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:FltTrigTS-S-I</pv_name>
+      <x>335</x>
+      <y>136</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_63</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:FltTrigTS-NS-I</pv_name>
+      <x>431</x>
+      <y>136</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_64</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:FltTrigTS-S-I</pv_name>
+      <x>335</x>
+      <y>156</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_65</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:FltTrigTS-NS-I</pv_name>
+      <x>431</x>
+      <y>156</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_66</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:FltTrigTS-S-I</pv_name>
+      <x>335</x>
+      <y>176</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_67</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:FltTrigTS-NS-I</pv_name>
+      <x>431</x>
+      <y>176</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_2</name>
+      <pv_name>$(PriSys){$(PSC)}Trig:Usr-SP</pv_name>
+      <x>116</x>
+      <y>44</y>
+      <height>84</height>
+      <horizontal>false</horizontal>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+      </items>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_81</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:UsrTrigTS-NS-I</pv_name>
+      <x>431</x>
+      <y>45</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_80</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:UsrTrigTS-S-I</pv_name>
+      <x>335</x>
+      <y>45</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_48</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:UsrTrigBufAddr-I</pv_name>
+      <x>226</x>
+      <y>45</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>4</format>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:UsrTrigActive-I</pv_name>
+      <x>545</x>
+      <y>44</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_49</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:UsrTrigBufAddr-I</pv_name>
+      <x>226</x>
+      <y>66</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>4</format>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_85</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:UsrTrigTS-S-I</pv_name>
+      <x>335</x>
+      <y>66</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_86</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:UsrTrigTS-NS-I</pv_name>
+      <x>431</x>
+      <y>66</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_14</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:UsrTrigActive-I</pv_name>
+      <x>545</x>
+      <y>65</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_88</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:UsrTrigBufAddr-I</pv_name>
+      <x>226</x>
+      <y>87</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>4</format>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_104</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:UsrTrigTS-S-I</pv_name>
+      <x>335</x>
+      <y>87</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_105</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:UsrTrigTS-NS-I</pv_name>
+      <x>431</x>
+      <y>87</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_15</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:UsrTrigActive-I</pv_name>
+      <x>545</x>
+      <y>86</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_106</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:UsrTrigBufAddr-I</pv_name>
+      <x>226</x>
+      <y>108</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>4</format>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_107</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:UsrTrigTS-S-I</pv_name>
+      <x>335</x>
+      <y>108</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_108</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:UsrTrigTS-NS-I</pv_name>
+      <x>431</x>
+      <y>108</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_16</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:UsrTrigActive-I</pv_name>
+      <x>545</x>
+      <y>107</y>
+    </widget>
   </widget>
   <widget type="group" version="3.0.0">
     <name>General Readbacks</name>
     <x>28</x>
     <y>82</y>
-    <width>358</width>
+    <width>572</width>
     <height>162</height>
     <style>1</style>
     <foreground_color>
@@ -714,6 +1710,175 @@
         </color>
       </border_color>
     </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_58</name>
+      <text>Git Hash</text>
+      <x>301</x>
+      <y>5</y>
+      <width>114</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_109</name>
+      <pv_name>$(PriSys){$(PSC)}GitHash-I</pv_name>
+      <x>431</x>
+      <y>5</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>4</format>
+      <precision>0</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_110</name>
+      <pv_name>$(PriSys){$(PSC)}DieTemp-I</pv_name>
+      <x>431</x>
+      <y>25</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>3</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_62</name>
+      <text>Die Temp (C)</text>
+      <x>301</x>
+      <y>25</y>
+      <width>114</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_111</name>
+      <pv_name>$(PriSys){$(PSC)}VCCInt-I</pv_name>
+      <x>431</x>
+      <y>45</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>3</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_63</name>
+      <text>VCC Int (V)</text>
+      <x>301</x>
+      <y>45</y>
+      <width>114</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_112</name>
+      <pv_name>$(PriSys){$(PSC)}VCCAux-I</pv_name>
+      <x>431</x>
+      <y>65</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>3</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_64</name>
+      <text>Vcc Aux (V)</text>
+      <x>301</x>
+      <y>65</y>
+      <width>114</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Text Input</name>
@@ -772,45 +1937,6 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255">
       </color>
     </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_48</name>
-    <pv_name>$(PriSys){$(PSC)}Chan1:UsrTrigBufAddr-I</pv_name>
-    <x>249</x>
-    <y>510</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>4</format>
-    <precision>6</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="bool_button" version="2.0.0">
-    <name>Boolean Button</name>
-    <pv_name>$(PriSys){$(PSC)}Trig:Strig-SP</pv_name>
-    <x>139</x>
-    <y>510</y>
-    <height>20</height>
-    <off_label>Soft</off_label>
-    <off_color>
-      <color name="Button_Background" red="210" green="210" blue="210">
-      </color>
-    </off_color>
-    <on_label>Soft</on_label>
-    <show_led>false</show_led>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_44</name>
@@ -890,51 +2016,6 @@ $(pv_value)</tooltip>
     </border_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label_48</name>
-    <text>    Simulate  
-Fault Triggers</text>
-    <x>33</x>
-    <y>562</y>
-    <height>56</height>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_53</name>
-    <pv_name>$(PriSys){$(PSC)}Chan1:FltTrigBufAddr-I</pv_name>
-    <x>249</x>
-    <y>542</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>4</format>
-    <precision>6</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
     <name>Label_49</name>
     <text>   Latched 
 Buffer Addr</text>
@@ -947,579 +2028,6 @@ Buffer Addr</text>
     </font>
     <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_54</name>
-    <pv_name>$(PriSys){$(PSC)}Chan2:FltTrigBufAddr-I</pv_name>
-    <x>249</x>
-    <y>562</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>4</format>
-    <precision>6</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_55</name>
-    <pv_name>$(PriSys){$(PSC)}Chan3:FltTrigBufAddr-I</pv_name>
-    <x>249</x>
-    <y>582</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>4</format>
-    <precision>6</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_56</name>
-    <pv_name>$(PriSys){$(PSC)}Chan4:FltTrigBufAddr-I</pv_name>
-    <x>249</x>
-    <y>602</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>4</format>
-    <precision>6</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_57</name>
-    <pv_name>$(PriSys){$(PSC)}Chan1:ErrTrigBufAddr-I</pv_name>
-    <x>249</x>
-    <y>622</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>4</format>
-    <precision>6</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_58</name>
-    <pv_name>$(PriSys){$(PSC)}Chan2:ErrTrigBufAddr-I</pv_name>
-    <x>249</x>
-    <y>642</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>4</format>
-    <precision>6</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_59</name>
-    <pv_name>$(PriSys){$(PSC)}Chan3:ErrTrigBufAddr-I</pv_name>
-    <x>249</x>
-    <y>662</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>4</format>
-    <precision>6</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_60</name>
-    <pv_name>$(PriSys){$(PSC)}Chan4:ErrTrigBufAddr-I</pv_name>
-    <x>249</x>
-    <y>682</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>4</format>
-    <precision>6</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_62</name>
-    <pv_name>$(PriSys){$(PSC)}Chan1:FltTrigTS-S-I</pv_name>
-    <x>358</x>
-    <y>543</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_63</name>
-    <pv_name>$(PriSys){$(PSC)}Chan1:FltTrigTS-NS-I</pv_name>
-    <x>454</x>
-    <y>543</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_64</name>
-    <pv_name>$(PriSys){$(PSC)}Chan2:FltTrigTS-S-I</pv_name>
-    <x>358</x>
-    <y>563</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_65</name>
-    <pv_name>$(PriSys){$(PSC)}Chan2:FltTrigTS-NS-I</pv_name>
-    <x>454</x>
-    <y>563</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_66</name>
-    <pv_name>$(PriSys){$(PSC)}Chan3:FltTrigTS-S-I</pv_name>
-    <x>358</x>
-    <y>583</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_67</name>
-    <pv_name>$(PriSys){$(PSC)}Chan3:FltTrigTS-NS-I</pv_name>
-    <x>454</x>
-    <y>583</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_68</name>
-    <pv_name>$(PriSys){$(PSC)}Chan4:FltTrigTS-S-I</pv_name>
-    <x>358</x>
-    <y>603</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_69</name>
-    <pv_name>$(PriSys){$(PSC)}Chan4:FltTrigTS-NS-I</pv_name>
-    <x>454</x>
-    <y>603</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_70</name>
-    <pv_name>$(PriSys){$(PSC)}Chan1:ErrTrigTS-S-I</pv_name>
-    <x>358</x>
-    <y>623</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_71</name>
-    <pv_name>$(PriSys){$(PSC)}Chan1:ErrTrigTS-NS-I</pv_name>
-    <x>454</x>
-    <y>623</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_72</name>
-    <pv_name>$(PriSys){$(PSC)}Chan2:ErrTrigTS-S-I</pv_name>
-    <x>358</x>
-    <y>643</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_73</name>
-    <pv_name>$(PriSys){$(PSC)}Chan2:ErrTrigTS-NS-I</pv_name>
-    <x>454</x>
-    <y>643</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_74</name>
-    <pv_name>$(PriSys){$(PSC)}Chan3:ErrTrigTS-S-I</pv_name>
-    <x>358</x>
-    <y>663</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_75</name>
-    <pv_name>$(PriSys){$(PSC)}Chan3:ErrTrigTS-NS-I</pv_name>
-    <x>454</x>
-    <y>663</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_76</name>
-    <pv_name>$(PriSys){$(PSC)}Chan4:ErrTrigTS-S-I</pv_name>
-    <x>358</x>
-    <y>683</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_77</name>
-    <pv_name>$(PriSys){$(PSC)}Chan4:ErrTrigTS-NS-I</pv_name>
-    <x>454</x>
-    <y>683</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
     <actions>
     </actions>
     <border_color>
@@ -1587,111 +2095,9 @@ Buffer Addr</text>
       </color>
     </border_color>
   </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_80</name>
-    <pv_name>$(PriSys){$(PSC)}Chan1:UsrTrigTS-S-I</pv_name>
-    <x>358</x>
-    <y>510</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_81</name>
-    <pv_name>$(PriSys){$(PSC)}Chan1:UsrTrigTS-NS-I</pv_name>
-    <x>454</x>
-    <y>510</y>
-    <width>90</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED</name>
-    <pv_name>$(PriSys){$(PSC)}Chan1:UsrTrigActive-I</pv_name>
-    <x>568</x>
-    <y>510</y>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED_1</name>
-    <pv_name>$(PriSys){$(PSC)}Chan1:FltTrigActive-I</pv_name>
-    <x>568</x>
-    <y>543</y>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED_2</name>
-    <pv_name>$(PriSys){$(PSC)}Chan2:FltTrigActive-I</pv_name>
-    <x>568</x>
-    <y>563</y>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED_3</name>
-    <pv_name>$(PriSys){$(PSC)}Chan3:FltTrigActive-I</pv_name>
-    <x>568</x>
-    <y>583</y>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED_4</name>
-    <pv_name>$(PriSys){$(PSC)}Chan4:FltTrigActive-I</pv_name>
-    <x>568</x>
-    <y>603</y>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED_5</name>
-    <pv_name>$(PriSys){$(PSC)}Chan1:ErrTrigActive-I</pv_name>
-    <x>568</x>
-    <y>623</y>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED_6</name>
-    <pv_name>$(PriSys){$(PSC)}Chan2:ErrTrigActive-I</pv_name>
-    <x>568</x>
-    <y>643</y>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED_7</name>
-    <pv_name>$(PriSys){$(PSC)}Chan3:ErrTrigActive-I</pv_name>
-    <x>568</x>
-    <y>663</y>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED_8</name>
-    <pv_name>$(PriSys){$(PSC)}Chan4:ErrTrigActive-I</pv_name>
-    <x>568</x>
-    <y>683</y>
-  </widget>
   <widget type="group" version="3.0.0">
     <name>Event Codes</name>
-    <x>498</x>
+    <x>614</x>
     <y>82</y>
     <width>229</width>
     <height>162</height>
@@ -1838,16 +2244,12 @@ Buffer Addr</text>
     </widget>
   </widget>
   <widget type="group" version="3.0.0">
-    <name>Power Supply Digital I/O</name>
+    <name>Power Supply Main Controls &amp; Readbacks</name>
     <x>24</x>
     <y>258</y>
-    <width>711</width>
+    <width>822</width>
     <height>170</height>
     <style>1</style>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
     <foreground_color>
       <color name="TabBG" red="224" green="255" blue="255">
       </color>
@@ -1865,9 +2267,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_51</name>
       <pv_name>$(PriSys){$(PSC)}Chan1:DigIn-I.B2</pv_name>
-      <x>550</x>
+      <x>415</x>
       <y>31</y>
-      <width>65</width>
+      <width>50</width>
       <height>21</height>
       <off_color>
         <color red="0" green="95" blue="0">
@@ -1888,9 +2290,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_50</name>
       <pv_name>$(PriSys){$(PSC)}Chan1:DigIn-I.B1</pv_name>
-      <x>470</x>
+      <x>355</x>
       <y>31</y>
-      <width>65</width>
+      <width>50</width>
       <height>21</height>
       <off_color>
         <color red="0" green="95" blue="0">
@@ -1915,9 +2317,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_49</name>
       <pv_name>$(PriSys){$(PSC)}Chan1:DigIn-I.B0</pv_name>
-      <x>390</x>
+      <x>295</x>
       <y>31</y>
-      <width>65</width>
+      <width>50</width>
       <height>21</height>
       <off_color>
         <color red="0" green="95" blue="0">
@@ -1937,8 +2339,8 @@ Buffer Addr</text>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_145</name>
-      <text>PS On</text>
-      <x>392</x>
+      <text>On</text>
+      <x>294</x>
       <y>7</y>
       <width>55</width>
       <horizontal_alignment>1</horizontal_alignment>
@@ -1952,10 +2354,10 @@ Buffer Addr</text>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_135</name>
-      <text>  PS Flt </text>
-      <x>461</x>
+      <text>Flt</text>
+      <x>356</x>
       <y>7</y>
-      <width>73</width>
+      <width>48</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -1967,9 +2369,10 @@ Buffer Addr</text>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_137</name>
-      <text>HeartBeat</text>
-      <x>532</x>
+      <text>HB</text>
+      <x>422</x>
       <y>7</y>
+      <width>32</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -1981,10 +2384,10 @@ Buffer Addr</text>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_129</name>
-      <text>PS Reset</text>
-      <x>238</x>
+      <text>Rst</text>
+      <x>185</x>
       <y>8</y>
-      <width>72</width>
+      <width>41</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -1996,10 +2399,10 @@ Buffer Addr</text>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_148</name>
-      <text>PWR (On1)</text>
-      <x>83</x>
+      <text>Pwr</text>
+      <x>73</x>
       <y>8</y>
-      <width>78</width>
+      <width>43</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -2011,10 +2414,10 @@ Buffer Addr</text>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_149</name>
-      <text>ENB (On2)</text>
-      <x>163</x>
+      <text>Enb</text>
+      <x>127</x>
       <y>8</y>
-      <width>73</width>
+      <width>46</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -2027,9 +2430,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_9</name>
       <pv_name>$(PriSys){$(PSC)}Chan1:DigOut_ON1-SP</pv_name>
-      <x>85</x>
+      <x>70</x>
       <y>31</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2037,9 +2440,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_11</name>
       <pv_name>$(PriSys){$(PSC)}Chan1:DigOut_Reset-SP</pv_name>
-      <x>235</x>
+      <x>180</x>
       <y>31</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2047,9 +2450,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_12</name>
       <pv_name>$(PriSys){$(PSC)}Chan1:DigOut_ON2-SP</pv_name>
-      <x>160</x>
+      <x>125</x>
       <y>31</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2057,9 +2460,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_13</name>
       <pv_name>$(PriSys){$(PSC)}Chan1:DigOut_Park-SP</pv_name>
-      <x>310</x>
+      <x>235</x>
       <y>31</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2067,9 +2470,9 @@ Buffer Addr</text>
     <widget type="label" version="2.0.0">
       <name>Label_150</name>
       <text>Park</text>
-      <x>310</x>
+      <x>235</x>
       <y>8</y>
-      <width>66</width>
+      <width>50</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -2090,9 +2493,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_52</name>
       <pv_name>$(PriSys){$(PSC)}Chan2:DigIn-I.B2</pv_name>
-      <x>550</x>
+      <x>415</x>
       <y>58</y>
-      <width>65</width>
+      <width>50</width>
       <height>21</height>
       <off_color>
         <color red="0" green="95" blue="0">
@@ -2113,9 +2516,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_53</name>
       <pv_name>$(PriSys){$(PSC)}Chan2:DigIn-I.B1</pv_name>
-      <x>470</x>
+      <x>355</x>
       <y>58</y>
-      <width>65</width>
+      <width>50</width>
       <height>21</height>
       <off_color>
         <color red="0" green="95" blue="0">
@@ -2140,9 +2543,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_54</name>
       <pv_name>$(PriSys){$(PSC)}Chan2:DigIn-I.B0</pv_name>
-      <x>390</x>
+      <x>295</x>
       <y>58</y>
-      <width>65</width>
+      <width>50</width>
       <height>21</height>
       <off_color>
         <color red="0" green="95" blue="0">
@@ -2163,9 +2566,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_14</name>
       <pv_name>$(PriSys){$(PSC)}Chan2:DigOut_ON1-SP</pv_name>
-      <x>85</x>
+      <x>70</x>
       <y>58</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2173,9 +2576,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_15</name>
       <pv_name>$(PriSys){$(PSC)}Chan2:DigOut_Reset-SP</pv_name>
-      <x>235</x>
+      <x>180</x>
       <y>58</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2183,9 +2586,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_16</name>
       <pv_name>$(PriSys){$(PSC)}Chan2:DigOut_ON2-SP</pv_name>
-      <x>160</x>
+      <x>125</x>
       <y>58</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2193,9 +2596,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_17</name>
       <pv_name>$(PriSys){$(PSC)}Chan2:DigOut_Park-SP</pv_name>
-      <x>310</x>
+      <x>235</x>
       <y>58</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2211,9 +2614,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_61</name>
       <pv_name>$(PriSys){$(PSC)}Chan3:DigIn-I.B2</pv_name>
-      <x>550</x>
+      <x>415</x>
       <y>86</y>
-      <width>65</width>
+      <width>50</width>
       <height>21</height>
       <off_color>
         <color red="0" green="95" blue="0">
@@ -2234,9 +2637,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_62</name>
       <pv_name>$(PriSys){$(PSC)}Chan3:DigIn-I.B1</pv_name>
-      <x>470</x>
+      <x>355</x>
       <y>86</y>
-      <width>65</width>
+      <width>50</width>
       <height>21</height>
       <off_color>
         <color red="0" green="95" blue="0">
@@ -2261,9 +2664,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_63</name>
       <pv_name>$(PriSys){$(PSC)}Chan3:DigIn-I.B0</pv_name>
-      <x>390</x>
+      <x>295</x>
       <y>86</y>
-      <width>65</width>
+      <width>50</width>
       <height>21</height>
       <off_color>
         <color red="0" green="95" blue="0">
@@ -2284,9 +2687,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_26</name>
       <pv_name>$(PriSys){$(PSC)}Chan3:DigOut_ON1-SP</pv_name>
-      <x>85</x>
+      <x>70</x>
       <y>86</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2294,9 +2697,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_27</name>
       <pv_name>$(PriSys){$(PSC)}Chan3:DigOut_Reset-SP</pv_name>
-      <x>235</x>
+      <x>180</x>
       <y>86</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2304,9 +2707,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_28</name>
       <pv_name>$(PriSys){$(PSC)}Chan3:DigOut_ON2-SP</pv_name>
-      <x>160</x>
+      <x>125</x>
       <y>86</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2314,9 +2717,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_29</name>
       <pv_name>$(PriSys){$(PSC)}Chan3:DigOut_Park-SP</pv_name>
-      <x>310</x>
+      <x>235</x>
       <y>86</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2332,9 +2735,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_64</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:DigIn-I.B2</pv_name>
-      <x>550</x>
+      <x>415</x>
       <y>113</y>
-      <width>65</width>
+      <width>50</width>
       <height>21</height>
       <off_color>
         <color red="0" green="95" blue="0">
@@ -2355,9 +2758,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_65</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:DigIn-I.B1</pv_name>
-      <x>470</x>
+      <x>355</x>
       <y>113</y>
-      <width>65</width>
+      <width>50</width>
       <height>21</height>
       <off_color>
         <color red="0" green="95" blue="0">
@@ -2382,9 +2785,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_66</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:DigIn-I.B0</pv_name>
-      <x>390</x>
+      <x>295</x>
       <y>113</y>
-      <width>65</width>
+      <width>50</width>
       <height>21</height>
       <off_color>
         <color red="0" green="95" blue="0">
@@ -2405,9 +2808,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_30</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:DigOut_ON1-SP</pv_name>
-      <x>85</x>
+      <x>70</x>
       <y>113</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2415,9 +2818,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_31</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:DigOut_Reset-SP</pv_name>
-      <x>235</x>
+      <x>180</x>
       <y>113</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2425,9 +2828,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_32</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:DigOut_ON2-SP</pv_name>
-      <x>160</x>
+      <x>125</x>
       <y>113</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2435,9 +2838,9 @@ Buffer Addr</text>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_33</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:DigOut_Park-SP</pv_name>
-      <x>310</x>
+      <x>235</x>
       <y>113</y>
-      <width>70</width>
+      <width>50</width>
       <height>21</height>
       <off_label></off_label>
       <on_label></on_label>
@@ -2453,9 +2856,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_67</name>
       <pv_name>$(PriSys){$(PSC)}Chan1:FaultsLat-I</pv_name>
-      <x>630</x>
+      <x>475</x>
       <y>31</y>
-      <width>64</width>
+      <width>50</width>
       <height>21</height>
       <on_color>
         <color red="255" green="0" blue="0">
@@ -2476,9 +2879,9 @@ Buffer Addr</text>
     <widget type="label" version="2.0.0">
       <name>Label_171</name>
       <text>Sum Flt</text>
-      <x>626</x>
+      <x>476</x>
       <y>7</y>
-      <width>70</width>
+      <width>50</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -2491,9 +2894,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_68</name>
       <pv_name>$(PriSys){$(PSC)}Chan2:FaultsLat-I</pv_name>
-      <x>630</x>
+      <x>475</x>
       <y>58</y>
-      <width>64</width>
+      <width>50</width>
       <height>21</height>
       <on_color>
         <color red="255" green="0" blue="0">
@@ -2514,9 +2917,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_69</name>
       <pv_name>$(PriSys){$(PSC)}Chan3:FaultsLat-I</pv_name>
-      <x>630</x>
+      <x>475</x>
       <y>86</y>
-      <width>64</width>
+      <width>50</width>
       <height>21</height>
       <on_color>
         <color red="255" green="0" blue="0">
@@ -2537,9 +2940,9 @@ Buffer Addr</text>
     <widget type="led" version="2.0.0">
       <name>LED_70</name>
       <pv_name>$(PriSys){$(PSC)}Chan4:FaultsLat-I</pv_name>
-      <x>630</x>
+      <x>475</x>
       <y>113</y>
-      <width>64</width>
+      <width>50</width>
       <height>21</height>
       <on_color>
         <color red="255" green="0" blue="0">
@@ -2556,6 +2959,275 @@ Buffer Addr</text>
       <square>true</square>
       <actions>
       </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_172</name>
+      <text>DAC SetPt</text>
+      <x>632</x>
+      <y>7</y>
+      <width>70</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_161</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:DAC_SetPt-SP</pv_name>
+      <x>632</x>
+      <y>31</y>
+      <width>80</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_162</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:DACSetPt-I</pv_name>
+      <x>722</x>
+      <y>31</y>
+      <width>80</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_173</name>
+      <text>DAC RdBk</text>
+      <x>730</x>
+      <y>7</y>
+      <width>70</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_163</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:DAC_SetPt-SP</pv_name>
+      <x>632</x>
+      <y>58</y>
+      <width>80</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_164</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:DACSetPt-I</pv_name>
+      <x>722</x>
+      <y>58</y>
+      <width>80</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_165</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:DAC_SetPt-SP</pv_name>
+      <x>632</x>
+      <y>86</y>
+      <width>80</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_166</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:DACSetPt-I</pv_name>
+      <x>722</x>
+      <y>86</y>
+      <width>80</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_167</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:DAC_SetPt-SP</pv_name>
+      <x>632</x>
+      <y>113</y>
+      <width>80</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_168</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:DACSetPt-I</pv_name>
+      <x>722</x>
+      <y>113</y>
+      <width>80</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>6</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:DAC_OpMode-SP</pv_name>
+      <x>538</x>
+      <y>31</y>
+      <width>85</width>
+      <height>20</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_174</name>
+      <text>DAC Mode</text>
+      <x>544</x>
+      <y>7</y>
+      <width>76</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_1</name>
+      <pv_name>$(PriSys){$(PSC)}Chan2:DAC_OpMode-SP</pv_name>
+      <x>538</x>
+      <y>58</y>
+      <width>85</width>
+      <height>20</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_2</name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:DAC_OpMode-SP</pv_name>
+      <x>538</x>
+      <y>86</y>
+      <width>85</width>
+      <height>20</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_3</name>
+      <pv_name>$(PriSys){$(PSC)}Chan4:DAC_OpMode-SP</pv_name>
+      <x>538</x>
+      <y>113</y>
+      <width>85</width>
+      <height>20</height>
     </widget>
   </widget>
 </display>
