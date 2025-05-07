@@ -16,7 +16,7 @@ def read_filedata(fname):
 
 
 def calc_ppm(samples,reference):
-    ppm_values = (samples - reference) / reference * 1e6
+    ppm_values = (samples - reference) / 10 * 1e6
     ave_ppm = np.abs(np.mean(ppm_values))
     return ave_ppm
 
@@ -31,7 +31,7 @@ def plot_all(title,time,dietemp,dcct1,dcct2,dac,vout,ignd,spare,reg,error):
 
 
    sigma_dcct1 = np.std(dcct1) * 1e6  # uA
-   ppm_dcct1 = calc_ppm(dcct1,-0.006)
+   ppm_dcct1 = calc_ppm(dcct1,-8.933)
    ax1=plt.subplot(331)
    plt.plot(time,dcct1,'b')
    plt.ylabel('DCCT 1 (A)')
@@ -41,7 +41,7 @@ def plot_all(title,time,dietemp,dcct1,dcct2,dac,vout,ignd,spare,reg,error):
    plt.grid()
    
    sigma_dcct2 = np.std(dcct2) * 1e6  # uA 
-   ppm_dcct2 = calc_ppm(dcct2,-0.006)   
+   ppm_dcct2 = calc_ppm(dcct2,-8.948)   
    ax2=plt.subplot(332, sharex=ax1)
    plt.plot(time,dcct2,'b')
    plt.ylabel('DCCT 2 (A)')

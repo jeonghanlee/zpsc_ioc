@@ -49,9 +49,9 @@ def main():
             % (i,ts,data[0],data[1],data[2],data[3],data[4],data[5],data[6],data[7],data[8]))
          print("%10d\t %2.3f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f" 
             % (ts,data[0],data[1],data[2],data[3],data[4],data[5],data[6],data[7],data[8]),file=outfile)
-         while (ts == caget(psc+"TS-S-I")):
+         #while (ts == caget(psc+"TS-S-I")):
             #print("Waiting")
-            time.sleep(0.1) 
+         time.sleep(0.1) 
 
 
 if __name__ == "__main__":
