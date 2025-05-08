@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-05 12:49:34 by mead-->
+<!--Saved on 2025-05-08 10:11:31 by mead-->
 <display version="2.0.0">
   <name>PSC Top</name>
   <width>420</width>
@@ -373,6 +373,31 @@ User Snapshot</text>
 User Snapshot</text>
     <x>282</x>
     <y>228</y>
+    <width>113</width>
+    <height>31</height>
+    <font>
+      <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_39</name>
+    <actions>
+      <action type="open_display">
+        <file>Psc1_global2.opi</file>
+        <macros>
+          <PriSys>lab</PriSys>
+          <PSC>1</PSC>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Global2</text>
+    <x>282</x>
+    <y>55</y>
     <width>113</width>
     <height>31</height>
     <font>
