@@ -112,11 +112,6 @@ dbpf lab{1}Chan2:DAC_OpMode-SP 0
 dbpf lab{1}Chan3:DAC_OpMode-SP 0
 dbpf lab{1}Chan4:DAC_OpMode-SP 0
 
-dbpf lab{1}Chan1:FaultMask-SP 0x1DFF
-dbpf lab{1}Chan2:FaultMask-SP 0x1DFF
-dbpf lab{1}Chan3:FaultMask-SP 0x1DFF
-dbpf lab{1}Chan4:FaultMask-SP 0x1DFF
-
 dbpf lab{1}Chan1:SF:AmpsperSec-SP 1.0
 dbpf lab{1}Chan1:SF:DAC_DCCTs-SP 1.0
 dbpf lab{1}Chan1:SF:Vout-SP 1.0
