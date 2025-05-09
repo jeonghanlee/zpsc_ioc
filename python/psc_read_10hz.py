@@ -12,14 +12,14 @@ def get_sa_data(psc_prefix):
   #create pv list 
   sa_pv = []
   sa_pv.append(psc_prefix+"DieTemp-I") 
-  sa_pv.append(psc_prefix+"Chan1:DCCT1-I")
-  sa_pv.append(psc_prefix+"Chan1:DCCT2-I") 
-  sa_pv.append(psc_prefix+"Chan1:DAC-I")
-  sa_pv.append(psc_prefix+"Chan1:Volt-I")
-  sa_pv.append(psc_prefix+"Chan1:Gnd-I")
-  sa_pv.append(psc_prefix+"Chan1:Spare-I")
-  sa_pv.append(psc_prefix+"Chan1:Reg-I")
-  sa_pv.append(psc_prefix+"Chan1:Error-I") 
+  sa_pv.append(psc_prefix+"Chan2:DCCT1-I")
+  sa_pv.append(psc_prefix+"Chan2:DCCT2-I") 
+  sa_pv.append(psc_prefix+"Chan2:DAC-I")
+  sa_pv.append(psc_prefix+"Chan2:Volt-I")
+  sa_pv.append(psc_prefix+"Chan2:Gnd-I")
+  sa_pv.append(psc_prefix+"Chan2:Spare-I")
+  sa_pv.append(psc_prefix+"Chan2:Reg-I")
+  sa_pv.append(psc_prefix+"Chan2:Error-I") 
 
   #collect SA data points
   waveform = np.asarray(caget(sa_pv), dtype=np.float32)

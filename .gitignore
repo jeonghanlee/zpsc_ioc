@@ -6,7 +6,7 @@
 /include/
 /lib/
 /templates/
-
+/python/data/
 # Local configuration files
 #/configure/*.local
 
