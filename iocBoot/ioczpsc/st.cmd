@@ -8,7 +8,7 @@
 epicsEnvSet("IOCNAME", "lab")
 
 # PSC IP address
-epicsEnvSet("PSC1_IP", "10.0.142.40"); 
+epicsEnvSet("PSC1_IP", "10.0.142.43"); 
 epicsEnvSet("BLEN",100000);        # Snapshot DMA Length
 
 cd "${TOP}"
@@ -104,39 +104,39 @@ dbpf lab{1}Chan2:DAC_SetPt-SP 0
 dbpf lab{1}Chan3:DAC_SetPt-SP 0
 dbpf lab{1}Chan4:DAC_SetPt-SP 0
 
-dbpf lab{1}Chan1:DACSetPt-Offset-SP 0.0
-dbpf lab{1}Chan1:DACSetPt-Gain-SP 1.0
+#dbpf lab{1}Chan1:DACSetPt-Offset-SP 0.0
+#dbpf lab{1}Chan1:DACSetPt-Gain-SP 1.0
 
 dbpf lab{1}Chan1:DAC_OpMode-SP 0
 dbpf lab{1}Chan2:DAC_OpMode-SP 0
 dbpf lab{1}Chan3:DAC_OpMode-SP 0
 dbpf lab{1}Chan4:DAC_OpMode-SP 0
 
-dbpf lab{1}Chan1:SF:AmpsperSec-SP 1.0
-dbpf lab{1}Chan1:SF:DAC_DCCTs-SP 1.0
-dbpf lab{1}Chan1:SF:Vout-SP 1.0
-dbpf lab{1}Chan1:SF:Ignd-SP 1.0
-dbpf lab{1}Chan1:SF:Spare-SP 1.0
-dbpf lab{1}Chan1:SF:Regulator-SP 1.0
-dbpf lab{1}Chan1:SF:Error-SP 1.0
+#dbpf lab{1}Chan1:SF:AmpsperSec-SP 1.0
+#dbpf lab{1}Chan1:SF:DAC_DCCTs-SP 1.0
+#dbpf lab{1}Chan1:SF:Vout-SP 1.0
+#dbpf lab{1}Chan1:SF:Ignd-SP 1.0
+#dbpf lab{1}Chan1:SF:Spare-SP 1.0
+#dbpf lab{1}Chan1:SF:Regulator-SP 1.0
+#dbpf lab{1}Chan1:SF:Error-SP 1.0
 
 
 
 
-dbpf lab{1}Chan1:DCCT1-Offset-SP 0.0
-dbpf lab{1}Chan1:DCCT1-Gain-SP 1.0
-dbpf lab{1}Chan1:DCCT2-Offset-SP 0.0
-dbpf lab{1}Chan1:DCCT2-Gain-SP 1.0
-dbpf lab{1}Chan1:DAC-Offset-SP 0.0
-dbpf lab{1}Chan1:DAC-Gain-SP 1.0
-dbpf lab{1}Chan1:Volt-Offset-SP 0.0
-dbpf lab{1}Chan1:Volt-Gain-SP 1.0
-dbpf lab{1}Chan1:Gnd-Offset-SP 0.0
-dbpf lab{1}Chan1:Gnd-Gain-SP 1.0
-dbpf lab{1}Chan1:Spare-Offset-SP 0.0
-dbpf lab{1}Chan1:Spare-Gain-SP 1.0
-dbpf lab{1}Chan1:Reg-Offset-SP 0.0
-dbpf lab{1}Chan1:Reg-Gain-SP 1.0
-dbpf lab{1}Chan1:Error-Offset-SP 0.0
-dbpf lab{1}Chan1:Error-Gain-SP 1.0
+#dbpf lab{1}Chan1:DCCT1-Offset-SP 0.0
+#dbpf lab{1}Chan1:DCCT1-Gain-SP 1.0
+#dbpf lab{1}Chan1:DCCT2-Offset-SP 0.0
+#dbpf lab{1}Chan1:DCCT2-Gain-SP 1.0
+#dbpf lab{1}Chan1:DAC-Offset-SP 0.0
+#dbpf lab{1}Chan1:DAC-Gain-SP 1.0
+#dbpf lab{1}Chan1:Volt-Offset-SP 0.0
+#dbpf lab{1}Chan1:Volt-Gain-SP 1.0
+#dbpf lab{1}Chan1:Gnd-Offset-SP 0.0
+#dbpf lab{1}Chan1:Gnd-Gain-SP 1.0
+#dbpf lab{1}Chan1:Spare-Offset-SP 0.0
+#dbpf lab{1}Chan1:Spare-Gain-SP 1.0
+#dbpf lab{1}Chan1:Reg-Offset-SP 0.0
+#dbpf lab{1}Chan1:Reg-Gain-SP 1.0
+#dbpf lab{1}Chan1:Error-Offset-SP 0.0
+#dbpf lab{1}Chan1:Error-Gain-SP 1.0
 

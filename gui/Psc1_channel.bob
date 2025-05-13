@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-09 08:36:00 by mead-->
+<!--Saved on 2025-05-12 16:29:26 by mead-->
 <display version="2.0.0">
   <name>$(CHAN):$(PriSys)</name>
   <width>900</width>
@@ -1158,7 +1158,6 @@
               <name>Label_163</name>
               <text>Average Mode</text>
               <x>618</x>
-              <y>-2</y>
               <width>117</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -6618,6 +6617,32 @@
               </color>
             </border_color>
           </widget>
+          <widget type="bool_button" version="2.0.0">
+            <name>Boolean Button_13</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):WriteQspi-SP</pv_name>
+            <x>508</x>
+            <y>82</y>
+            <width>78</width>
+            <height>23</height>
+            <off_label></off_label>
+            <on_label></on_label>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_159</name>
+            <text>Write Values to QSPI FLASH</text>
+            <x>490</x>
+            <y>38</y>
+            <width>126</width>
+            <height>44</height>
+            <horizontal_alignment>1</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
         </children>
       </tab>
       <tab>
@@ -10017,6 +10042,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
     <x>18</x>
     <width>882</width>
     <height>924</height>
+    <active_tab>4</active_tab>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_36</name>

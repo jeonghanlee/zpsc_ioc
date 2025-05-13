@@ -629,5 +629,12 @@ record(mbbo, "$(P){$(NO)}Chan$(CHAN):AveMode-SP") {
 }
 
 
+record(bo, "$(P){$(NO)}Chan$(CHAN):WriteQspi-SP") {
+    field(DESC, "Write Current Settings to Qspi")
+    field(DTYP, "PSC Single U32")
+    field(OUT , "@Tx$(NO) $(CHAN) 400")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+    field(HIGH,".01")    #500 ms after low
+}
 
 
