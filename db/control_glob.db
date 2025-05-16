@@ -6,7 +6,7 @@
 # Flush reg to socket buffer, trigger send to send all socket buffer to PSC 
 record(bo, "$(P){$(NO)}send") { 
     field(DTYP, "PSC Ctrl Send All") 
-    field(OUT , "@Tx$(NO)") 
+    field(OUT , "@PSC$(NO)") 
     field(ZNAM, "Send") 
     field(ONAM, "Send") 
 } 
@@ -17,7 +17,7 @@ record(bo, "$(P){$(NO)}send") {
 # Write a single register
 record(longout, "$(P){$(NO)}GoRegSingleWrite0") {
     field(DTYP, "PSC Ctrl Send")
-    field(OUT , "@Tx$(NO)")
+    field(OUT , "@PSC$(NO)")
     field(VAL , "0") 
     field(FLNK, "$(P){$(NO)}send")
 }
@@ -25,7 +25,7 @@ record(longout, "$(P){$(NO)}GoRegSingleWrite0") {
 # Write a single register
 record(longout, "$(P){$(NO)}GoRegSingleWrite1") {
     field(DTYP, "PSC Ctrl Send")
-    field(OUT , "@Tx$(NO)")
+    field(OUT , "@PSC$(NO)")
     field(VAL , "1") 
     field(FLNK, "$(P){$(NO)}send")
 }
@@ -33,7 +33,7 @@ record(longout, "$(P){$(NO)}GoRegSingleWrite1") {
 # Write a single register
 record(longout, "$(P){$(NO)}GoRegSingleWrite2") {
     field(DTYP, "PSC Ctrl Send")
-    field(OUT , "@Tx$(NO)")
+    field(OUT , "@PSC$(NO)")
     field(VAL , "2") 
     field(FLNK, "$(P){$(NO)}send")
 }
@@ -41,7 +41,7 @@ record(longout, "$(P){$(NO)}GoRegSingleWrite2") {
 # Write a single register
 record(longout, "$(P){$(NO)}GoRegSingleWrite3") {
     field(DTYP, "PSC Ctrl Send")
-    field(OUT , "@Tx$(NO)")
+    field(OUT , "@PSC$(NO)")
     field(VAL , "3") 
     field(FLNK, "$(P){$(NO)}send")
 }
@@ -50,7 +50,7 @@ record(longout, "$(P){$(NO)}GoRegSingleWrite3") {
 # Write a single register
 record(longout, "$(P){$(NO)}GoRegSingleWrite4") {
     field(DTYP, "PSC Ctrl Send")
-    field(OUT , "@Tx$(NO)")
+    field(OUT , "@PSC$(NO)")
     field(VAL , "4") 
     field(FLNK, "$(P){$(NO)}send")
 }
@@ -70,10 +70,20 @@ record(stringin, "$(P){$(NO)}RampTableFile") {
 
 ### Global Settings
 
+record(bo, "$(P){$(NO)}KeepAlive-SP") {
+    field(DESC, "Keeps the socket active")
+    field(DTYP, "PSC Single U32")
+    field(OUT , "@PSC$(NO) 5 100")
+    field(SCAN, "1 second")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite0")
+}
+
+
+
 #record(bo, "$(P){$(NO)}Trig:Usr-SP") {
 #    field(DESC, "Soft Trigger by user")
 #    field(DTYP, "PSC Single U32")
-#    field(OUT , "@Tx$(NO) 0 0")
+#    field(OUT , "@PSC$(NO) 0 0")
 #    field(ZNAM,"Rdy")
 #    field(ONAM,"Trig")
 #    field(FLNK, "$(P){$(NO)}GoRegSingleWrite0")
@@ -83,7 +93,7 @@ record(stringin, "$(P){$(NO)}RampTableFile") {
 record(mbbo, "$(P){$(NO)}Trig:Usr-SP") {
     field(DESC, "Soft Trigger by user")
     field(DTYP, "PSC Single U32")
-    field(OUT , "@Tx$(NO) 0 0")
+    field(OUT , "@PSC$(NO) 0 0")
     field( ZRST, "User Chan1")
     field( ONST, "User Chan2")
     field( TWST, "User Chan3")
@@ -98,14 +108,11 @@ record(mbbo, "$(P){$(NO)}Trig:Usr-SP") {
  
 
 
-
-
-
 # Testing PV's, will be removed
 record(mbbo, "$(P){$(NO)}Trig:Fault-SP") {
     field(DESC, "Simulate a fault trigger")
     field(DTYP, "PSC Single U32")
-    field(OUT , "@Tx$(NO) 0 4")
+    field(OUT , "@PSC$(NO) 0 4")
     #field( PINI, "YES")
     field( ZRST, "Flt Chan1")
     field( ONST, "Flt Chan2")
@@ -138,10 +145,12 @@ record(mbbo, "$(P){$(NO)}Trig:Fault-SP") {
 }
 
 
+
+
 record(bo, "$(P){$(NO)}LEDs-SP") {
     field(DESC, "Control the LEDs on the PSC")
     field(DTYP, "PSC Single U32")
-    field(OUT , "@Tx$(NO) 0 8")
+    field(OUT , "@PSC$(NO) 0 8")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite0")
 }
 
@@ -149,7 +158,7 @@ record(bo, "$(P){$(NO)}LEDs-SP") {
 record(longout, "$(P){$(NO)}EVR_Inj_EventNo-SP") {
     field(DESC, "EVR Event Code for Injection")
     field(DTYP, "PSC Single I32")  
-    field(OUT , "@Tx$(NO) 0 20")
+    field(OUT , "@PSC$(NO) 0 20")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite0")
 }
@@ -158,7 +167,7 @@ record(longout, "$(P){$(NO)}EVR_Inj_EventNo-SP") {
 record(longout, "$(P){$(NO)}EVR_PM_EventNo-SP") {
     field(DESC, "EVR Event Code for Post Mortem")
     field(DTYP, "PSC Single I32")  
-    field(OUT , "@Tx$(NO) 0 24")
+    field(OUT , "@PSC$(NO) 0 24")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite0")
 }

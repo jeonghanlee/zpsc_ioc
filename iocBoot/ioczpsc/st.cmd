@@ -8,7 +8,7 @@
 epicsEnvSet("IOCNAME", "lab")
 
 # PSC IP address
-epicsEnvSet("PSC1_IP", "10.0.142.43"); 
+epicsEnvSet("PSC1_IP", "10.0.142.102");  #was 43
 epicsEnvSet("BLEN",100000);        # Snapshot DMA Length
 
 cd "${TOP}"
@@ -18,6 +18,8 @@ dbLoadDatabase "dbd/zpsc.dbd"
 zpsc_registerRecordDeviceDriver pdbbase
 
 ## Load record instances
+dbLoadRecords("db/lstats.db", "P=$(IOCNAME), NO=1")
+
 dbLoadRecords("db/status10hz.db", "P=$(IOCNAME), NO=1, OFFSET=100")
 
 dbLoadRecords("db/control_glob.db", "P=$(IOCNAME), NO=1")
@@ -62,9 +64,10 @@ dbLoadRecords("db/wfmstats.db", "P=$(IOCNAME), PSC=1")
 var(PSCDebug, 2)	#5 full debug
 
 #psc1 Create the PSC
-createPSC("Tx1", $(PSC1_IP), 7, 0)
-createPSC("Wfm1", $(PSC1_IP), 20, 1)
-createPSC("Rx1", $(PSC1_IP), 600, 1)
+#createPSC("Tx1", $(PSC1_IP), 7, 0)
+createPSC("PSC1", $(PSC1_IP), 3000, 0)
+#createPSC("Wfm1", $(PSC1_IP), 20, 1)
+#createPSC("Rx1", $(PSC1_IP), 600, 1)
 
 
 
@@ -75,7 +78,7 @@ iocInit
 ## Start any sequence programs
 #seq sncxxx,"user=mead"
 
-epicsThreadSleep(2.0)
+epicsThreadSleep(1.0)
 
 
 
