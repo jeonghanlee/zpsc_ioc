@@ -4,13 +4,13 @@
 ############# 10Hz Status PV's (MSG ID 30) #########################
 
 
-
-record(longin, "$(P){$(NO)}LiveTime-I") {
-    field(DESC, "LiveTime Counter (in sec)")
+record(longin, "$(P){$(NO)}NumChannels-I") {
+    field(DESC, "Number of Channels")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 31 0")
+    #field(ZNAM,"2 Channel")
+    #field(ONAM,"4 Channel")
     field(SCAN,"I/O Intr")
-    field(EGU, "sec")
 }
 
 record(longin, "$(P){$(NO)}TS-NS-I") {
@@ -31,8 +31,8 @@ record(longin, "$(P){$(NO)}Resolution-I") {
     field(DESC, "DCCT, DAC Resolution")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 31 12")
-    #field(ZNAM,"HS")
-    #field(ONAM,"MS")
+    #field(ZNAM,"MS")
+    #field(ONAM,"HS")
     field(SCAN,"I/O Intr")
 }
 

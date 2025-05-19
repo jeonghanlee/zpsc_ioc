@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-17 17:18:20 by mead-->
+<!--Saved on 2025-05-19 09:36:24 by mead-->
 <display version="2.0.0">
   <name>$(PriSys):$(PSC)</name>
   <width>860</width>
@@ -1653,7 +1653,7 @@ Buffer Addr</text>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Update_84</name>
-      <pv_name>$(PriSys){$(PSC)}LiveTime-I</pv_name>
+      <pv_name>$(PriSys){$(PSC)}NumChannels-I</pv_name>
       <x>105</x>
       <y>5</y>
       <width>90</width>
@@ -1665,11 +1665,21 @@ Buffer Addr</text>
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <format>1</format>
       <precision>0</precision>
       <horizontal_alignment>1</horizontal_alignment>
       <actions>
       </actions>
+      <rules>
+        <rule name="New Rule" prop_id="name" out_exp="false">
+          <exp bool_exp="0">
+            <value>MS</value>
+          </exp>
+          <exp bool_exp="1">
+            <value>HS</value>
+          </exp>
+          <pv_name>$(pv_name)</pv_name>
+        </rule>
+      </rules>
       <border_color>
         <color red="0" green="128" blue="255">
         </color>
@@ -1677,10 +1687,10 @@ Buffer Addr</text>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_56</name>
-      <text>LiveTime</text>
-      <x>13</x>
+      <text>Num Channels</text>
+      <x>-1</x>
       <y>5</y>
-      <width>88</width>
+      <width>102</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -1694,7 +1704,7 @@ Buffer Addr</text>
       <name>Text Update_47</name>
       <pv_name>$(PriSys){$(PSC)}CurrBufAddr-I</pv_name>
       <x>105</x>
-      <y>43</y>
+      <y>113</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1719,7 +1729,7 @@ Buffer Addr</text>
       <name>Label_38</name>
       <text>Buffer Addr</text>
       <x>10</x>
-      <y>42</y>
+      <y>112</y>
       <width>91</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -1734,7 +1744,7 @@ Buffer Addr</text>
       <name>Text Update_52</name>
       <pv_name>$(PriSys){$(PSC)}TotalTrigs-I</pv_name>
       <x>105</x>
-      <y>23</y>
+      <y>94</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1759,7 +1769,7 @@ Buffer Addr</text>
       <name>Label_43</name>
       <text>10KHz Count</text>
       <x>11</x>
-      <y>23</y>
+      <y>94</y>
       <width>90</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -1774,7 +1784,7 @@ Buffer Addr</text>
       <name>Text Update_103</name>
       <pv_name>$(PriSys){$(PSC)}Resolution-I</pv_name>
       <x>105</x>
-      <y>85</y>
+      <y>24</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1784,7 +1794,6 @@ Buffer Addr</text>
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <format>1</format>
       <precision>0</precision>
       <horizontal_alignment>1</horizontal_alignment>
       <actions>
@@ -1798,7 +1807,7 @@ Buffer Addr</text>
       <name>Label_61</name>
       <text>Resolution</text>
       <x>22</x>
-      <y>85</y>
+      <y>24</y>
       <width>79</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
