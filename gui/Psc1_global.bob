@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-19 09:36:24 by mead-->
+<!--Saved on 2025-05-20 10:52:31 by mead-->
 <display version="2.0.0">
   <name>$(PriSys):$(PSC)</name>
   <width>860</width>
@@ -1653,7 +1653,7 @@ Buffer Addr</text>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Update_84</name>
-      <pv_name>$(PriSys){$(PSC)}NumChannels-I</pv_name>
+      <pv_name>$(PriSys){$(PSC)}NumChannels-Mode</pv_name>
       <x>105</x>
       <y>5</y>
       <width>90</width>
@@ -1782,7 +1782,7 @@ Buffer Addr</text>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Update_103</name>
-      <pv_name>$(PriSys){$(PSC)}Resolution-I</pv_name>
+      <pv_name>$(PriSys){$(PSC)}Resolution-Mode</pv_name>
       <x>105</x>
       <y>24</y>
       <width>90</width>

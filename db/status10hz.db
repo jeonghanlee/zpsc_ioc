@@ -8,9 +8,15 @@ record(longin, "$(P){$(NO)}NumChannels-I") {
     field(DESC, "Number of Channels")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 31 0")
-    #field(ZNAM,"2 Channel")
-    #field(ONAM,"4 Channel")
+    field(FLNK, "$(P){$(NO)}NumChannels-Mode")
     field(SCAN,"I/O Intr")
+}
+
+record(bi, "$(P){$(NO)}NumChannels-Mode") {
+    field(INP, "$(P){$(NO)}NumChannels-I")
+    field(ZNAM, "2 Channel")
+    field(ONAM, "4 Channel")
+    field(SCAN, "Passive")
 }
 
 record(longin, "$(P){$(NO)}TS-NS-I") {
@@ -31,10 +37,22 @@ record(longin, "$(P){$(NO)}Resolution-I") {
     field(DESC, "DCCT, DAC Resolution")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 31 12")
-    #field(ZNAM,"MS")
-    #field(ONAM,"HS")
+    field(FLNK, "$(P){$(NO)}Resolution-Mode")
     field(SCAN,"I/O Intr")
 }
+
+
+record(bi, "$(P){$(NO)}Resolution-Mode") {
+    field(INP, "$(P){$(NO)}Resolution-I")
+    field(ZNAM, "MS")
+    field(ONAM, "HS")
+    field(SCAN, "Passive")
+}
+
+
+
+
+
 
 record(longin, "$(P){$(NO)}GitHash-I") {
     field(DESC, "Git Hash")
