@@ -25,8 +25,8 @@ sp0 = i1
 A = (i2-i1)/N*pi/2
 
 for i in range(N):
-   dcos = A*np.sin(pi*i/N)
-   sp1 = sp0 + dcos
+   dI = A*np.sin(pi*i/N)
+   sp1 = sp0 + dI
    sp0 = sp1
    #print(sp1)
    Y[i] = sp1
