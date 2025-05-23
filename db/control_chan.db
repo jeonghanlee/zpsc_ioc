@@ -638,3 +638,13 @@ record(bo, "$(P){$(NO)}Chan$(CHAN):WriteQspi-SP") {
 }
 
 
+record(bo, "$(P){$(NO)}Chan$(CHAN):ReadQspi-SP") {
+    field(DESC, "Read Current Settings from Qspi")
+    field(DTYP, "PSC Single U32")
+    field(OUT , "@PSC$(NO) $(CHAN) 404")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+    field(HIGH,".01")    #500 ms after low
+}
+
+
+

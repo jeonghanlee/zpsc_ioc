@@ -50,10 +50,6 @@ record(bi, "$(P){$(NO)}Resolution-Mode") {
 }
 
 
-
-
-
-
 record(longin, "$(P){$(NO)}GitHash-I") {
     field(DESC, "Git Hash")
     field(DTYP, "PSC Reg")
@@ -81,6 +77,39 @@ record(ai, "$(P){$(NO)}VCCAux-I") {
     field(INP , "@PSC$(NO) 31 28")
     field(SCAN,"I/O Intr")
 }
+
+record(longin, "$(P){$(NO)}Bandwidth-I") {
+    field(DESC, "Bandwidth of Unit ")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 31 32")
+    field(FLNK, "$(P){$(NO)}Bandwidth-Mode")
+    field(SCAN,"I/O Intr")
+}
+
+
+record(bi, "$(P){$(NO)}Bandwidth-Mode") {
+    field(INP, "$(P){$(NO)}Bandwidth-I")
+    field(ZNAM, "Fast")
+    field(ONAM, "Medium")
+    field(SCAN, "Passive")
+}
+
+record(longin, "$(P){$(NO)}Polarity-I") {
+    field(DESC, "Polarity of Unit ")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 31 36")
+    field(FLNK, "$(P){$(NO)}Polarity-Mode")
+    field(SCAN,"I/O Intr")
+}
+
+
+record(bi, "$(P){$(NO)}Polarity-Mode") {
+    field(INP, "$(P){$(NO)}Polarity-I")
+    field(ZNAM, "Bipolar")
+    field(ONAM, "Unipolar")
+    field(SCAN, "Passive")
+}
+
 
 
 
@@ -595,6 +624,15 @@ record(ai, "$(P){$(NO)}Chan1:SF:Error-I") {
     field(EGU,  "")
 }
 
+record(longin, "$(P){$(NO)}Chan1:DACSetPtRaw-I") {
+    field(DESC, "DAC SetPoint Raw Readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 31 352")
+    field(SCAN,"I/O Intr")
+}
+
+
+
 
 
 ### PS2 #####
@@ -1107,6 +1145,12 @@ record(ai, "$(P){$(NO)}Chan2:SF:Error-I") {
     field(EGU,  "")
 }
 
+record(longin, "$(P){$(NO)}Chan2:DACSetPtRaw-I") {
+    field(DESC, "DAC SetPoint Raw Readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 31 652")
+    field(SCAN,"I/O Intr")
+}
 
 
 
@@ -1619,7 +1663,12 @@ record(ai, "$(P){$(NO)}Chan3:SF:Error-I") {
     field(EGU,  "")
 }
 
-
+record(longin, "$(P){$(NO)}Chan3:DACSetPtRaw-I") {
+    field(DESC, "DAC SetPoint Raw Readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 31 952")
+    field(SCAN,"I/O Intr")
+}
 
 
 
@@ -2133,5 +2182,13 @@ record(ai, "$(P){$(NO)}Chan4:SF:Error-I") {
     field(EGU,  "")
 }
 
+
+record(longin, "$(P){$(NO)}Chan4:DACSetPtRaw-I") {
+    field(DESC, "DAC SetPoint Raw Readback")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 31 1252")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
 
 

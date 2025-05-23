@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-23 10:53:15 by mead-->
+<!--Saved on 2025-05-23 11:32:44 by mead-->
 <display version="2.0.0">
   <name>PSC Top</name>
-  <width>750</width>
+  <width>850</width>
   <height>325</height>
   <background_color>
-    <color red="240" green="240" blue="240">
+    <color red="200" green="215" blue="255">
     </color>
   </background_color>
   <actions>
@@ -14,10 +14,10 @@
   <grid_step_y>6</grid_step_y>
   <widget type="label" version="2.0.0">
     <name>Label_7</name>
-    <text>PSC AR-1 Rack</text>
-    <x>266</x>
+    <text>AR-1 Rack Power Supply Controllers</text>
+    <x>202</x>
     <y>11</y>
-    <width>207</width>
+    <width>444</width>
     <height>55</height>
     <font>
       <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
@@ -165,7 +165,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_113</name>
     <pv_name>lab{1}Rtos-Uptime-I</pv_name>
-    <x>636</x>
+    <x>600</x>
     <y>104</y>
     <width>90</width>
     <font>
@@ -188,9 +188,9 @@
   <widget type="label" version="2.0.0">
     <name>Label_161</name>
     <text>Uptime</text>
-    <x>636</x>
+    <x>618</x>
     <y>80</y>
-    <width>71</width>
+    <width>52</width>
     <horizontal_alignment>2</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
     <actions>
@@ -203,7 +203,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_114</name>
     <pv_name>lab{2}Rtos-Uptime-I</pv_name>
-    <x>636</x>
+    <x>600</x>
     <y>139</y>
     <width>90</width>
     <font>
@@ -226,7 +226,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_115</name>
     <pv_name>lab{1}Sys-Temp-I</pv_name>
-    <x>741</x>
+    <x>700</x>
     <y>104</y>
     <width>90</width>
     <font>
@@ -249,7 +249,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_162</name>
     <text>Die Temp (C)</text>
-    <x>741</x>
+    <x>697</x>
     <y>80</y>
     <width>92</width>
     <horizontal_alignment>2</horizontal_alignment>
@@ -264,7 +264,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_116</name>
     <pv_name>lab{2}Sys-Temp-I</pv_name>
-    <x>741</x>
+    <x>700</x>
     <y>139</y>
     <width>90</width>
     <font>
@@ -287,7 +287,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_117</name>
     <pv_name>lab{3}Rtos-Uptime-I</pv_name>
-    <x>636</x>
+    <x>600</x>
     <y>172</y>
     <width>90</width>
     <font>
@@ -310,7 +310,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_118</name>
     <pv_name>lab{4}Rtos-Uptime-I</pv_name>
-    <x>636</x>
+    <x>600</x>
     <y>206</y>
     <width>90</width>
     <font>
@@ -333,7 +333,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_119</name>
     <pv_name>lab{3}Sys-Temp-I</pv_name>
-    <x>741</x>
+    <x>700</x>
     <y>172</y>
     <width>90</width>
     <font>
@@ -356,7 +356,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_120</name>
     <pv_name>lab{4}Sys-Temp-I</pv_name>
-    <x>741</x>
+    <x>700</x>
     <y>206</y>
     <width>90</width>
     <font>
@@ -379,7 +379,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_121</name>
     <pv_name>lab{5}Rtos-Uptime-I</pv_name>
-    <x>636</x>
+    <x>600</x>
     <y>239</y>
     <width>90</width>
     <font>
@@ -402,7 +402,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_122</name>
     <pv_name>lab{5}Sys-Temp-I</pv_name>
-    <x>741</x>
+    <x>700</x>
     <y>239</y>
     <width>90</width>
     <font>
@@ -425,7 +425,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_123</name>
     <pv_name>lab{1}NumChannels-Mode</pv_name>
-    <x>203</x>
+    <x>200</x>
     <y>104</y>
     <width>90</width>
     <font>
@@ -463,7 +463,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_124</name>
     <pv_name>lab{1}Resolution-Mode</pv_name>
-    <x>308</x>
+    <x>300</x>
     <y>104</y>
     <width>90</width>
     <font>
@@ -486,7 +486,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_165</name>
     <text>Resolution</text>
-    <x>319</x>
+    <x>312</x>
     <y>80</y>
     <width>72</width>
     <horizontal_alignment>2</horizontal_alignment>
@@ -501,7 +501,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_125</name>
     <pv_name>lab{1}Bandwidth-Mode</pv_name>
-    <x>414</x>
+    <x>400</x>
     <y>104</y>
     <width>90</width>
     <font>
@@ -524,7 +524,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_166</name>
     <text>Bandwidth</text>
-    <x>421</x>
+    <x>410</x>
     <y>80</y>
     <width>72</width>
     <horizontal_alignment>2</horizontal_alignment>
@@ -539,7 +539,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_126</name>
     <pv_name>lab{2}NumChannels-Mode</pv_name>
-    <x>203</x>
+    <x>200</x>
     <y>139</y>
     <width>90</width>
     <font>
@@ -562,7 +562,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_127</name>
     <pv_name>lab{2}Resolution-Mode</pv_name>
-    <x>308</x>
+    <x>300</x>
     <y>139</y>
     <width>90</width>
     <font>
@@ -585,7 +585,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_128</name>
     <pv_name>lab{2}Bandwidth-Mode</pv_name>
-    <x>414</x>
+    <x>400</x>
     <y>139</y>
     <width>90</width>
     <font>
@@ -608,7 +608,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_129</name>
     <pv_name>lab{3}NumChannels-Mode</pv_name>
-    <x>203</x>
+    <x>200</x>
     <y>172</y>
     <width>90</width>
     <font>
@@ -631,7 +631,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_130</name>
     <pv_name>lab{3}Resolution-Mode</pv_name>
-    <x>308</x>
+    <x>300</x>
     <y>172</y>
     <width>90</width>
     <font>
@@ -654,7 +654,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_131</name>
     <pv_name>lab{3}Bandwidth-Mode</pv_name>
-    <x>414</x>
+    <x>400</x>
     <y>172</y>
     <width>90</width>
     <font>
@@ -677,7 +677,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_132</name>
     <pv_name>lab{4}NumChannels-Mode</pv_name>
-    <x>203</x>
+    <x>200</x>
     <y>206</y>
     <width>90</width>
     <font>
@@ -700,7 +700,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_133</name>
     <pv_name>lab{4}Resolution-Mode</pv_name>
-    <x>308</x>
+    <x>300</x>
     <y>206</y>
     <width>90</width>
     <font>
@@ -723,7 +723,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_134</name>
     <pv_name>lab{4}Bandwidth-Mode</pv_name>
-    <x>414</x>
+    <x>400</x>
     <y>206</y>
     <width>90</width>
     <font>
@@ -746,7 +746,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_135</name>
     <pv_name>lab{5}NumChannels-Mode</pv_name>
-    <x>203</x>
+    <x>200</x>
     <y>239</y>
     <width>90</width>
     <font>
@@ -769,7 +769,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_136</name>
     <pv_name>lab{5}Resolution-Mode</pv_name>
-    <x>308</x>
+    <x>300</x>
     <y>239</y>
     <width>90</width>
     <font>
@@ -792,7 +792,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_137</name>
     <pv_name>lab{5}Bandwidth-Mode</pv_name>
-    <x>414</x>
+    <x>400</x>
     <y>239</y>
     <width>90</width>
     <font>
@@ -840,7 +840,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_138</name>
     <pv_name>lab{6}Rtos-Uptime-I</pv_name>
-    <x>636</x>
+    <x>600</x>
     <y>274</y>
     <width>90</width>
     <font>
@@ -863,7 +863,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_139</name>
     <pv_name>lab{6}Sys-Temp-I</pv_name>
-    <x>741</x>
+    <x>700</x>
     <y>274</y>
     <width>90</width>
     <font>
@@ -886,7 +886,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_140</name>
     <pv_name>lab{6}NumChannels-Mode</pv_name>
-    <x>203</x>
+    <x>200</x>
     <y>274</y>
     <width>90</width>
     <font>
@@ -909,7 +909,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_141</name>
     <pv_name>lab{6}Resolution-Mode</pv_name>
-    <x>308</x>
+    <x>300</x>
     <y>274</y>
     <width>90</width>
     <font>
@@ -932,7 +932,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_142</name>
     <pv_name>lab{6}Bandwidth-Mode</pv_name>
-    <x>414</x>
+    <x>400</x>
     <y>274</y>
     <width>90</width>
     <font>
@@ -955,7 +955,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_143</name>
     <pv_name>lab{1}Polarity-Mode</pv_name>
-    <x>523</x>
+    <x>500</x>
     <y>104</y>
     <width>90</width>
     <font>
@@ -978,7 +978,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_167</name>
     <text>Polarity</text>
-    <x>534</x>
+    <x>511</x>
     <y>80</y>
     <width>62</width>
     <horizontal_alignment>2</horizontal_alignment>
@@ -993,7 +993,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_144</name>
     <pv_name>lab{2}Polarity-Mode</pv_name>
-    <x>523</x>
+    <x>500</x>
     <y>139</y>
     <width>90</width>
     <font>
@@ -1016,7 +1016,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_145</name>
     <pv_name>lab{3}Polarity-Mode</pv_name>
-    <x>523</x>
+    <x>500</x>
     <y>172</y>
     <width>90</width>
     <font>
@@ -1039,7 +1039,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_146</name>
     <pv_name>lab{4}Polarity-Mode</pv_name>
-    <x>523</x>
+    <x>500</x>
     <y>206</y>
     <width>90</width>
     <font>
@@ -1062,7 +1062,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_147</name>
     <pv_name>lab{5}Polarity-Mode</pv_name>
-    <x>523</x>
+    <x>500</x>
     <y>239</y>
     <width>90</width>
     <font>
@@ -1085,7 +1085,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Update_148</name>
     <pv_name>lab{6}Polarity-Mode</pv_name>
-    <x>523</x>
+    <x>500</x>
     <y>274</y>
     <width>90</width>
     <font>
