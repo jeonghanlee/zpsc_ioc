@@ -31,7 +31,21 @@ record(longin, "$(P){$(NO)}TS-S-I") {
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 31 8")
     field(SCAN,"I/O Intr")
+    field(FLNK, "lab{1}Timestamp-I")     
 }
+
+record(aSub, "$(P){$(NO)}Timestamp-I") {
+    field(DESC, "Convert epoch to string")
+    field(INPA, "$(P){$(NO)}TS-S-I NPP NMS")    # Input: epoch time (int)
+    field(FTA, "LONG")                          # Input type
+    field(FTVA, "UCHAR")                        # Output type (string)
+    field(NOVA, "40")                           # Max string length
+    field(SNAM, "epoch2string")                 # C function to call
+}
+
+
+
+
 
 record(longin, "$(P){$(NO)}Resolution-I") {
     field(DESC, "DCCT, DAC Resolution")

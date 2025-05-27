@@ -186,10 +186,10 @@ var(PSCDebug, 2)	#5 full debug
 
 #psc1 Create the PSC
 createPSC("PSC1", $(PSC1_IP), 3000, 0)
-createPSC("PSC2", $(PSC2_IP), 3000, 0)
-createPSC("PSC3", $(PSC3_IP), 3000, 0)
-createPSC("PSC4", $(PSC4_IP), 3000, 0)
-createPSC("PSC5", $(PSC5_IP), 3000, 0)
+#createPSC("PSC2", $(PSC2_IP), 3000, 0)
+#createPSC("PSC3", $(PSC3_IP), 3000, 0)
+#createPSC("PSC4", $(PSC4_IP), 3000, 0)
+#createPSC("PSC5", $(PSC5_IP), 3000, 0)
 
 
 cd "${TOP}/iocBoot/${IOC}"

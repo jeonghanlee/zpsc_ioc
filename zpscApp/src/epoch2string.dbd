@@ -1,0 +1,2 @@
+#registrar(epoch2stringRegistrar)
+function(epoch2string)
