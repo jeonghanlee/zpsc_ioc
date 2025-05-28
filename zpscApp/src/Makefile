@@ -19,6 +19,7 @@ zpsc_DBD += base.dbd
 zpsc_DBD += pscCore.dbd
 zpsc_DBD += scaleWaveform.dbd
 zpsc_DBD += epoch2string.dbd
+zpsc_DBD += devRollingBuf.dbd
 
 # Add all the support libraries needed by this IOC
 zpsc_LIBS += pscCore
@@ -26,6 +27,7 @@ zpsc_LIBS += pscCore
 # Add your custom C source here:
 zpsc_SRCS += scaleWaveform.c  
 zpsc_SRCS += epoch2string.c 
+zpsc_SRCS += devRollingBuf.c
 
 # zpsc_registerRecordDeviceDriver.cpp derives from zpsc.dbd
 zpsc_SRCS += zpsc_registerRecordDeviceDriver.cpp

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-27 14:19:39 by mead-->
+<!--Saved on 2025-05-28 09:49:23 by mead-->
 <display version="2.0.0">
   <name>$(CHAN):$(PriSys)</name>
   <width>900</width>
@@ -21,7 +21,7 @@
           <widget type="group" version="3.0.0">
             <name>Common Settings and Status</name>
             <x>34</x>
-            <y>35</y>
+            <y>13</y>
             <width>792</width>
             <height>115</height>
             <style>1</style>
@@ -381,9 +381,9 @@
           <widget type="group" version="3.0.0">
             <name>Current Control</name>
             <x>34</x>
-            <y>161</y>
+            <y>134</y>
             <width>790</width>
-            <height>273</height>
+            <height>230</height>
             <style>1</style>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -432,7 +432,7 @@
               <name>Label_151</name>
               <text>Loopback (A)</text>
               <x>70</x>
-              <y>77</y>
+              <y>49</y>
               <width>91</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -451,7 +451,7 @@
               <name>Label_152</name>
               <text>Dcct1 (A)</text>
               <x>170</x>
-              <y>77</y>
+              <y>49</y>
               <width>91</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -470,7 +470,7 @@
               <name>Label_153</name>
               <text>Dcct2 (A)</text>
               <x>270</x>
-              <y>77</y>
+              <y>49</y>
               <width>91</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -489,7 +489,7 @@
               <name>Label_154</name>
               <text>Error (V)</text>
               <x>370</x>
-              <y>77</y>
+              <y>49</y>
               <width>91</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -508,7 +508,7 @@
               <name>Label_155</name>
               <text>Ch1 Ctrl (V)</text>
               <x>470</x>
-              <y>77</y>
+              <y>49</y>
               <width>91</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -527,7 +527,7 @@
               <name>Label_156</name>
               <text>Vout (V)</text>
               <x>570</x>
-              <y>77</y>
+              <y>49</y>
               <width>91</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -546,7 +546,7 @@
               <name>Label_157</name>
               <text>Gnd Curr (mA)</text>
               <x>662</x>
-              <y>77</y>
+              <y>49</y>
               <width>107</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -565,7 +565,7 @@
               <name>Text Update_52</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):Gnd-I</pv_name>
               <x>670</x>
-              <y>97</y>
+              <y>69</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -591,7 +591,7 @@
               <name>Text Update_119</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):Volt-I</pv_name>
               <x>570</x>
-              <y>97</y>
+              <y>69</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -617,7 +617,7 @@
               <name>Text Update_142</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):Reg-I</pv_name>
               <x>470</x>
-              <y>97</y>
+              <y>69</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -643,7 +643,7 @@
               <name>Text Update_143</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):Error-I</pv_name>
               <x>370</x>
-              <y>97</y>
+              <y>69</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -669,7 +669,7 @@
               <name>Text Update_151</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT2-I</pv_name>
               <x>270</x>
-              <y>97</y>
+              <y>69</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -695,7 +695,7 @@
               <name>Text Update_157</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT1-I</pv_name>
               <x>170</x>
-              <y>97</y>
+              <y>69</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -721,7 +721,7 @@
               <name>Text Update_158</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC-I</pv_name>
               <x>70</x>
-              <y>97</y>
+              <y>69</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -746,7 +746,7 @@
             <widget type="label" version="2.0.0">
               <name>Label_158</name>
               <text>PSI Read</text>
-              <y>98</y>
+              <y>70</y>
               <width>69</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -764,7 +764,7 @@
               <name>Text Update_169</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):Gnd-Gain-I</pv_name>
               <x>670</x>
-              <y>127</y>
+              <y>99</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -788,7 +788,7 @@
               <name>Text Update_171</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):Volt-Gain-I</pv_name>
               <x>570</x>
-              <y>127</y>
+              <y>99</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -812,7 +812,7 @@
               <name>Text Update_174</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):Reg-Gain-I</pv_name>
               <x>470</x>
-              <y>127</y>
+              <y>99</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -836,7 +836,7 @@
               <name>Text Update_175</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):Error-Gain-I</pv_name>
               <x>370</x>
-              <y>127</y>
+              <y>99</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -860,7 +860,7 @@
               <name>Text Update_176</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT2-Gain-I</pv_name>
               <x>270</x>
-              <y>127</y>
+              <y>99</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -884,7 +884,7 @@
               <name>Text Update_177</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT1-Gain-I</pv_name>
               <x>170</x>
-              <y>127</y>
+              <y>99</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -908,7 +908,7 @@
               <name>Text Update_178</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC-Gain-I</pv_name>
               <x>70</x>
-              <y>127</y>
+              <y>99</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -932,7 +932,7 @@
               <name>Text Update_179</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):Gnd-Offset-I</pv_name>
               <x>670</x>
-              <y>148</y>
+              <y>120</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -956,7 +956,7 @@
               <name>Text Update_180</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):Volt-Offset-I</pv_name>
               <x>570</x>
-              <y>148</y>
+              <y>120</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -980,7 +980,7 @@
               <name>Text Update_181</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):Reg-Offset-I</pv_name>
               <x>470</x>
-              <y>148</y>
+              <y>120</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1004,7 +1004,7 @@
               <name>Text Update_182</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):Error-Offset-I</pv_name>
               <x>370</x>
-              <y>148</y>
+              <y>120</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1028,7 +1028,7 @@
               <name>Text Update_183</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT2-Offset-I</pv_name>
               <x>270</x>
-              <y>148</y>
+              <y>120</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1052,7 +1052,7 @@
               <name>Text Update_184</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):DCCT1-Offset-I</pv_name>
               <x>170</x>
-              <y>148</y>
+              <y>120</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1076,7 +1076,7 @@
               <name>Text Update_185</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC-Offset-I</pv_name>
               <x>70</x>
-              <y>148</y>
+              <y>120</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1100,7 +1100,7 @@
               <name>Label_160</name>
               <text>Gain</text>
               <x>10</x>
-              <y>127</y>
+              <y>99</y>
               <width>60</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1119,7 +1119,7 @@
               <name>Label_161</name>
               <text>Offset</text>
               <x>10</x>
-              <y>145</y>
+              <y>117</y>
               <width>60</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1176,7 +1176,7 @@
               <name>Text Update_186</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):OVC1_Flt_Threshold-I</pv_name>
               <x>171</x>
-              <y>210</y>
+              <y>182</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1200,7 +1200,7 @@
               <name>Text Update_187</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):OVC2_Flt_Threshold-I</pv_name>
               <x>270</x>
-              <y>210</y>
+              <y>182</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1224,7 +1224,7 @@
               <name>Text Update_188</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):ERR1_Flt_Threshold-I</pv_name>
               <x>370</x>
-              <y>210</y>
+              <y>182</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1248,7 +1248,7 @@
               <name>Text Update_189</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):ERR2_Flt_Threshold-I</pv_name>
               <x>471</x>
-              <y>210</y>
+              <y>182</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1272,7 +1272,7 @@
               <name>Text Update_190</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):OVV_Flt_Threshold-I</pv_name>
               <x>570</x>
-              <y>210</y>
+              <y>182</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1296,7 +1296,7 @@
               <name>Text Update_191</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):IGND_Flt_Threshold-I</pv_name>
               <x>671</x>
-              <y>210</y>
+              <y>182</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1320,7 +1320,7 @@
               <name>Label_164</name>
               <text>Dcct1 Intrlck</text>
               <x>169</x>
-              <y>186</y>
+              <y>158</y>
               <width>91</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1339,7 +1339,7 @@
               <name>Label_165</name>
               <text>Dcct2 Intrlck</text>
               <x>269</x>
-              <y>186</y>
+              <y>158</y>
               <width>91</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1358,7 +1358,7 @@
               <name>Label_166</name>
               <text>Error Intrlck</text>
               <x>369</x>
-              <y>186</y>
+              <y>158</y>
               <width>91</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1377,7 +1377,7 @@
               <name>Label_167</name>
               <text>Error Glitch</text>
               <x>469</x>
-              <y>186</y>
+              <y>158</y>
               <width>91</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1396,7 +1396,7 @@
               <name>Label_168</name>
               <text>Volt Intrlck</text>
               <x>569</x>
-              <y>186</y>
+              <y>158</y>
               <width>91</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1415,7 +1415,7 @@
               <name>Label_169</name>
               <text>Gnd I Intrlck</text>
               <x>669</x>
-              <y>186</y>
+              <y>158</y>
               <width>91</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1528,9 +1528,9 @@
           <widget type="group" version="3.0.0">
             <name>Digital Command and Status</name>
             <x>34</x>
-            <y>437</y>
+            <y>369</y>
             <width>790</width>
-            <height>139</height>
+            <height>109</height>
             <style>1</style>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1554,7 +1554,7 @@
               <name>Label_172</name>
               <text>DCCT Flt</text>
               <x>369</x>
-              <y>62</y>
+              <y>43</y>
               <width>78</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1573,7 +1573,7 @@
               <name>LED_53</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLat-I.B6</pv_name>
               <x>376</x>
-              <y>83</y>
+              <y>64</y>
               <width>57</width>
               <height>21</height>
               <on_color>
@@ -1596,7 +1596,7 @@
               <name>Label_174</name>
               <text>Volt Flt</text>
               <x>565</x>
-              <y>62</y>
+              <y>43</y>
               <width>78</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1615,7 +1615,7 @@
               <name>LED_54</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLat-I.B1</pv_name>
               <x>644</x>
-              <y>83</y>
+              <y>64</y>
               <width>57</width>
               <height>21</height>
               <on_color>
@@ -1638,7 +1638,7 @@
               <name>LED_55</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLat-I.B0</pv_name>
               <x>715</x>
-              <y>83</y>
+              <y>64</y>
               <width>57</width>
               <height>21</height>
               <on_color>
@@ -1661,7 +1661,7 @@
               <name>LED_56</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLat-I.B3</pv_name>
               <x>510</x>
-              <y>83</y>
+              <y>64</y>
               <width>57</width>
               <height>21</height>
               <on_color>
@@ -1684,7 +1684,7 @@
               <name>LED_57</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLat-I.B5</pv_name>
               <x>443</x>
-              <y>83</y>
+              <y>64</y>
               <width>57</width>
               <height>21</height>
               <on_color>
@@ -1707,7 +1707,7 @@
               <name>Label_176</name>
               <text>Error Flt</text>
               <x>501</x>
-              <y>62</y>
+              <y>43</y>
               <width>78</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1726,7 +1726,7 @@
               <name>Label_177</name>
               <text>Gnd Flt</text>
               <x>434</x>
-              <y>62</y>
+              <y>43</y>
               <width>78</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1745,7 +1745,7 @@
               <name>LED_59</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLat-I.B2</pv_name>
               <x>577</x>
-              <y>83</y>
+              <y>64</y>
               <width>57</width>
               <height>21</height>
               <on_color>
@@ -1768,7 +1768,7 @@
               <name>Label_178</name>
               <text>Curr Flt2</text>
               <x>639</x>
-              <y>62</y>
+              <y>43</y>
               <width>78</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1787,7 +1787,7 @@
               <name>Label_179</name>
               <text>Curr Flt1</text>
               <x>710</x>
-              <y>62</y>
+              <y>43</y>
               <width>68</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1806,7 +1806,7 @@
               <name>Label_180</name>
               <text>HrtBt Flt</text>
               <x>245</x>
-              <y>62</y>
+              <y>43</y>
               <width>67</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1825,7 +1825,7 @@
               <name>LED_61</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLat-I.BB</pv_name>
               <x>242</x>
-              <y>83</y>
+              <y>64</y>
               <width>57</width>
               <height>21</height>
               <on_color>
@@ -1848,8 +1848,7 @@
               <name>Boolean Button_7</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):DigOut_Park-SP</pv_name>
               <bit>-1</bit>
-              <x>337</x>
-              <y>28</y>
+              <x>507</x>
               <height>24</height>
               <off_label>OFF</off_label>
               <off_color>
@@ -1873,8 +1872,8 @@
             <widget type="label" version="2.0.0">
               <name>Label_182</name>
               <text>Park</text>
-              <x>342</x>
-              <y>10</y>
+              <x>436</x>
+              <y>2</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1893,7 +1892,6 @@
               <name>Label_183</name>
               <text>Clear Channel Faults</text>
               <x>14</x>
-              <y>10</y>
               <width>180</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1912,8 +1910,8 @@
               <name>Boolean Button_8</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultClear-SP</pv_name>
               <x>41</x>
-              <y>28</y>
-              <width>114</width>
+              <y>17</y>
+              <height>25</height>
               <off_label></off_label>
               <on_label></on_label>
             </widget>
@@ -1921,7 +1919,7 @@
               <name>LED_63</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLat-I.B7</pv_name>
               <x>309</x>
-              <y>83</y>
+              <y>64</y>
               <width>57</width>
               <height>21</height>
               <on_color>
@@ -1944,7 +1942,7 @@
               <name>Label_185</name>
               <text>PS Flt</text>
               <x>311</x>
-              <y>62</y>
+              <y>43</y>
               <width>66</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1963,7 +1961,7 @@
               <name>LED_62</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLat-I.B9</pv_name>
               <x>175</x>
-              <y>83</y>
+              <y>64</y>
               <width>57</width>
               <height>21</height>
               <on_color>
@@ -1986,7 +1984,7 @@
               <name>Label_181</name>
               <text>Klix Flt</text>
               <x>179</x>
-              <y>62</y>
+              <y>43</y>
               <width>56</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2005,7 +2003,7 @@
               <name>LED_58</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLat-I.BA</pv_name>
               <x>108</x>
-              <y>83</y>
+              <y>64</y>
               <width>57</width>
               <height>21</height>
               <on_color>
@@ -2028,7 +2026,7 @@
               <name>Label_173</name>
               <text>ON Flt</text>
               <x>107</x>
-              <y>62</y>
+              <y>43</y>
               <width>66</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2047,7 +2045,7 @@
               <name>LED_64</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLat-I.BC</pv_name>
               <x>41</x>
-              <y>83</y>
+              <y>64</y>
               <width>57</width>
               <height>21</height>
               <on_color>
@@ -2069,8 +2067,8 @@
             <widget type="led" version="2.0.0">
               <name>LED_60</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLat-I</pv_name>
-              <x>209</x>
-              <y>29</y>
+              <x>297</x>
+              <y>1</y>
               <width>64</width>
               <height>21</height>
               <on_color>
@@ -2092,8 +2090,8 @@
             <widget type="label" version="2.0.0">
               <name>Label_175</name>
               <text>Sum Fault</text>
-              <x>210</x>
-              <y>10</y>
+              <x>218</x>
+              <y>1</y>
               <width>68</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2112,7 +2110,7 @@
               <name>Label_186</name>
               <text>EVR Flt</text>
               <x>33</x>
-              <y>62</y>
+              <y>43</y>
               <width>66</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2127,6 +2125,302 @@
                 </color>
               </border_color>
             </widget>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_64</name>
+            <x>430</x>
+            <y>484</y>
+            <height>175</height>
+            <title>DCCT1</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <x_axis>
+              <title></title>
+              <autoscale>true</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>100000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):DCCT1-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_66</name>
+            <x>15</x>
+            <y>484</y>
+            <height>175</height>
+            <title>DAC Loop Back</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <x_axis>
+              <title></title>
+              <autoscale>true</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>100000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):DAC-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_68</name>
+            <x>15</x>
+            <y>670</y>
+            <height>175</height>
+            <title>Regulator Output</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <x_axis>
+              <title></title>
+              <autoscale>true</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>100000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):Reg-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_69</name>
+            <x>430</x>
+            <y>670</y>
+            <height>175</height>
+            <title>Error</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <x_axis>
+              <title></title>
+              <autoscale>true</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>100000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):Error-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
           </widget>
         </children>
       </tab>
@@ -10099,7 +10393,6 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
     <x>18</x>
     <width>882</width>
     <height>924</height>
-    <active_tab>2</active_tab>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_36</name>
