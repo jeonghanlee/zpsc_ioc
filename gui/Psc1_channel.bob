@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-28 09:49:23 by mead-->
+<!--Saved on 2025-05-30 15:56:18 by pstester-->
 <display version="2.0.0">
   <name>$(CHAN):$(PriSys)</name>
   <width>900</width>
@@ -417,7 +417,7 @@
                 <color red="255" green="255" blue="255">
                 </color>
               </background_color>
-              <precision>3</precision>
+              <precision>5</precision>
               <show_units>false</show_units>
               <horizontal_alignment>1</horizontal_alignment>
               <actions>
