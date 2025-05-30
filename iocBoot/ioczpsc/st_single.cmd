@@ -56,7 +56,7 @@ var(PSCDebug, 2)	#5 full debug
 
 #psc1 Create the PSC
 createPSC("PSC1", $(PSC1_IP), 3000, 0)
-
+setPSCSendBlockSize("PSC1", 1100, 512)
 
 cd "${TOP}/iocBoot/${IOC}"
 iocInit
@@ -68,38 +68,38 @@ epicsThreadSleep(1.0)
 
 
 
-dbpf lab{1}Chan1:DigOut_ON1-SP 0
-dbpf lab{1}Chan2:DigOut_ON1-SP 0
-dbpf lab{1}Chan3:DigOut_ON1-SP 0
-dbpf lab{1}Chan4:DigOut_ON1-SP 0
+#dbpf lab{1}Chan1:DigOut_ON1-SP 0
+#dbpf lab{1}Chan2:DigOut_ON1-SP 0
+#dbpf lab{1}Chan3:DigOut_ON1-SP 0
+#dbpf lab{1}Chan4:DigOut_ON1-SP 0
 
-dbpf lab{1}Chan1:DigOut_ON2-SP 0
-dbpf lab{1}Chan2:DigOut_ON2-SP 0
-dbpf lab{1}Chan3:DigOut_ON2-SP 0
-dbpf lab{1}Chan4:DigOut_ON2-SP 0
+#dbpf lab{1}Chan1:DigOut_ON2-SP 0
+#dbpf lab{1}Chan2:DigOut_ON2-SP 0
+#dbpf lab{1}Chan3:DigOut_ON2-SP 0
+#dbpf lab{1}Chan4:DigOut_ON2-SP 0
 
-dbpf lab{1}Chan1:DigOut_Reset-SP 0
-dbpf lab{1}Chan2:DigOut_Reset-SP 0
-dbpf lab{1}Chan3:DigOut_Reset-SP 0
-dbpf lab{1}Chan4:DigOut_Reset-SP 0
+#dbpf lab{1}Chan1:DigOut_Reset-SP 0
+#dbpf lab{1}Chan2:DigOut_Reset-SP 0
+#dbpf lab{1}Chan3:DigOut_Reset-SP 0
+#dbpf lab{1}Chan4:DigOut_Reset-SP 0
 
-dbpf lab{1}Chan1:DigOut_Park-SP 0
-dbpf lab{1}Chan2:DigOut_Park-SP 0
-dbpf lab{1}Chan3:DigOut_Park-SP 0
-dbpf lab{1}Chan4:DigOut_Park-SP 0
+#dbpf lab{1}Chan1:DigOut_Park-SP 0
+#dbpf lab{1}Chan2:DigOut_Park-SP 0
+#dbpf lab{1}Chan3:DigOut_Park-SP 0
+#dbpf lab{1}Chan4:DigOut_Park-SP 0
 
-dbpf lab{1}Chan1:DAC_SetPt-SP 0
-dbpf lab{1}Chan2:DAC_SetPt-SP 0
-dbpf lab{1}Chan3:DAC_SetPt-SP 0
-dbpf lab{1}Chan4:DAC_SetPt-SP 0
+#dbpf lab{1}Chan1:DAC_SetPt-SP 0
+#dbpf lab{1}Chan2:DAC_SetPt-SP 0
+#dbpf lab{1}Chan3:DAC_SetPt-SP 0
+#dbpf lab{1}Chan4:DAC_SetPt-SP 0
 
 #dbpf lab{1}Chan1:DACSetPt-Offset-SP 0.0
 #dbpf lab{1}Chan1:DACSetPt-Gain-SP 1.0
 
-dbpf lab{1}Chan1:DAC_OpMode-SP 0
-dbpf lab{1}Chan2:DAC_OpMode-SP 0
-dbpf lab{1}Chan3:DAC_OpMode-SP 0
-dbpf lab{1}Chan4:DAC_OpMode-SP 0
+#dbpf lab{1}Chan1:DAC_OpMode-SP 0
+#dbpf lab{1}Chan2:DAC_OpMode-SP 0
+#dbpf lab{1}Chan3:DAC_OpMode-SP 0
+#dbpf lab{1}Chan4:DAC_OpMode-SP 0
 
 #dbpf lab{1}Chan1:SF:AmpsperSec-SP 1.0
 #dbpf lab{1}Chan1:SF:DAC_DCCTs-SP 1.0
