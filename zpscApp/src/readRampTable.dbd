@@ -1,0 +1,2 @@
+#registrar(readRampTableRegistrar)
+function(readRampTable)
