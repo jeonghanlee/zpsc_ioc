@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-06-02 08:46:52 by mead-->
+<!--Saved on 2025-06-02 10:57:08 by mead-->
 <display version="2.0.0">
   <name>$(CHAN):$(PriSys)</name>
   <width>900</width>
@@ -2901,87 +2901,12 @@
             <x>22</x>
             <y>262</y>
             <width>780</width>
-            <height>420</height>
-            <widget type="xyplot" version="3.0.0">
-              <name>XY Graph_65</name>
-              <x>42</x>
-              <y>126</y>
-              <width>654</width>
-              <height>230</height>
-              <title>RampTable Preview</title>
-              <title_font>
-                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-                </font>
-              </title_font>
-              <show_legend>false</show_legend>
-              <actions>
-              </actions>
-              <x_axis>
-                <title></title>
-                <autoscale>true</autoscale>
-                <log_scale>false</log_scale>
-                <minimum>0.0</minimum>
-                <maximum>100000.0</maximum>
-                <show_grid>true</show_grid>
-                <title_font>
-                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-                  </font>
-                </title_font>
-                <scale_font>
-                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-                  </font>
-                </scale_font>
-                <visible>true</visible>
-              </x_axis>
-              <y_axes>
-                <y_axis>
-                  <title>Amps</title>
-                  <autoscale>true</autoscale>
-                  <log_scale>false</log_scale>
-                  <minimum>0.0</minimum>
-                  <maximum>100.0</maximum>
-                  <show_grid>true</show_grid>
-                  <title_font>
-                    <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-                    </font>
-                  </title_font>
-                  <scale_font>
-                    <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-                    </font>
-                  </scale_font>
-                  <on_right>false</on_right>
-                  <visible>true</visible>
-                  <color>
-                    <color name="Text" red="0" green="0" blue="0">
-                    </color>
-                  </color>
-                </y_axis>
-              </y_axes>
-              <traces>
-                <trace>
-                  <name></name>
-                  <x_pv></x_pv>
-                  <y_pv>$(PriSys){$(PSC)}$(CHAN):RampTable-Wfm</y_pv>
-                  <err_pv></err_pv>
-                  <axis>0</axis>
-                  <trace_type>1</trace_type>
-                  <color>
-                    <color red="21" green="21" blue="196">
-                    </color>
-                  </color>
-                  <line_width>1</line_width>
-                  <line_style>0</line_style>
-                  <point_type>0</point_type>
-                  <point_size>4</point_size>
-                  <visible>true</visible>
-                </trace>
-              </traces>
-            </widget>
+            <height>519</height>
             <widget type="textentry" version="3.0.0">
               <name>Text Update_51</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):RampTableLen-SP</pv_name>
               <x>327</x>
-              <y>60</y>
+              <y>136</y>
               <width>90</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3006,7 +2931,7 @@
               <name>Label_42</name>
               <text>RampTable Length</text>
               <x>306</x>
-              <y>35</y>
+              <y>111</y>
               <width>132</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3026,7 +2951,7 @@
               <pv_name>$(PriSys){$(PSC)}$(CHAN):RampTable-FilePath</pv_name>
               <x>109</x>
               <y>38</y>
-              <width>162</width>
+              <width>365</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
                 </font>
@@ -3051,7 +2976,7 @@
               <pv_name>$(PriSys){$(PSC)}$(CHAN):RampTable-FileName</pv_name>
               <x>109</x>
               <y>56</y>
-              <width>162</width>
+              <width>365</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
                 </font>
@@ -3105,14 +3030,14 @@
               <name>Boolean Button_2</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):RampTable-Read</pv_name>
               <x>480</x>
-              <y>54</y>
+              <y>130</y>
             </widget>
             <widget type="label" version="2.0.0">
               <name>Label_88</name>
               <text>Load RampTable 
 From File</text>
               <x>466</x>
-              <y>8</y>
+              <y>84</y>
               <width>122</width>
               <height>54</height>
               <font>
@@ -3132,13 +3057,13 @@ From File</text>
               <name>Boolean Button_1</name>
               <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC_RampRun-SP</pv_name>
               <x>618</x>
-              <y>54</y>
+              <y>130</y>
             </widget>
             <widget type="label" version="2.0.0">
               <name>Label_40</name>
               <text>Run Ramp</text>
               <x>618</x>
-              <y>23</y>
+              <y>99</y>
               <width>98</width>
               <font>
                 <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3152,6 +3077,90 @@ From File</text>
                 <color red="0" green="128" blue="255">
                 </color>
               </border_color>
+            </widget>
+            <widget type="xyplot" version="3.0.0">
+              <name>XY Graph_86</name>
+              <x>42</x>
+              <y>190</y>
+              <width>648</width>
+              <height>228</height>
+              <title>RampTable Preview</title>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <show_legend>false</show_legend>
+              <actions>
+              </actions>
+              <scripts>
+                <script file="EmbeddedPy">
+                  <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
+                  <pv_name>$(PriSys){$(PSC)}$(CHAN):RampTableLen-SP</pv_name>
+                </script>
+              </scripts>
+              <x_axis>
+                <title></title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <visible>true</visible>
+              </x_axis>
+              <y_axes>
+                <y_axis>
+                  <title>Amps</title>
+                  <autoscale>true</autoscale>
+                  <log_scale>false</log_scale>
+                  <minimum>0.0</minimum>
+                  <maximum>100000.0</maximum>
+                  <show_grid>true</show_grid>
+                  <title_font>
+                    <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                    </font>
+                  </title_font>
+                  <scale_font>
+                    <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                    </font>
+                  </scale_font>
+                  <on_right>false</on_right>
+                  <visible>true</visible>
+                  <color>
+                    <color name="Text" red="0" green="0" blue="0">
+                    </color>
+                  </color>
+                </y_axis>
+              </y_axes>
+              <traces>
+                <trace>
+                  <name></name>
+                  <x_pv></x_pv>
+                  <y_pv>$(PriSys){$(PSC)}$(CHAN):RampTable-Wfm</y_pv>
+                  <err_pv></err_pv>
+                  <axis>0</axis>
+                  <trace_type>1</trace_type>
+                  <color>
+                    <color red="21" green="21" blue="196">
+                    </color>
+                  </color>
+                  <line_width>1</line_width>
+                  <line_style>0</line_style>
+                  <point_type>0</point_type>
+                  <point_size>4</point_size>
+                  <visible>true</visible>
+                </trace>
+              </traces>
             </widget>
           </widget>
         </children>
@@ -10539,6 +10548,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
             <x>8</x>
             <width>858</width>
             <height>870</height>
+            <active_tab>4</active_tab>
           </widget>
         </children>
       </tab>

@@ -694,7 +694,7 @@ record(waveform, "$(P){$(NO)}Chan$(CHAN):RampTable-Wfm") {
     field(DTYP, "PSC Block F32 Out")
     field(INP , "@PSC$(NO) 101")   
     field(FTVL, "DOUBLE")
-    field(NELM, "20")
+    field(NELM, "50000")
     field(FLNK, "$(P){$(NO)}send")
 }
 
