@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-06-02 10:57:08 by mead-->
+<!--Saved on 2025-06-02 12:02:47 by pstester-->
 <display version="2.0.0">
   <name>$(CHAN):$(PriSys)</name>
   <width>900</width>
@@ -1523,6 +1523,84 @@
               <y>17</y>
               <width>120</width>
               <height>25</height>
+            </widget>
+            <widget type="textentry" version="3.0.0">
+              <name>Text Update_152</name>
+              <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-I</pv_name>
+              <x>450</x>
+              <y>8</y>
+              <width>102</width>
+              <font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </font>
+              <background_color>
+                <color red="255" green="255" blue="255">
+                </color>
+              </background_color>
+              <precision>6</precision>
+              <show_units>false</show_units>
+              <horizontal_alignment>1</horizontal_alignment>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="textentry" version="3.0.0">
+              <name>Text Update_194</name>
+              <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPtRaw-I</pv_name>
+              <x>451</x>
+              <y>29</y>
+              <width>102</width>
+              <font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </font>
+              <background_color>
+                <color red="255" green="255" blue="255">
+                </color>
+              </background_color>
+              <precision>0</precision>
+              <show_units>false</show_units>
+              <horizontal_alignment>1</horizontal_alignment>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_188</name>
+              <text>DAC (A)</text>
+              <x>383</x>
+              <y>8</y>
+              <width>53</width>
+              <horizontal_alignment>2</horizontal_alignment>
+              <vertical_alignment>1</vertical_alignment>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_120</name>
+              <text>Readback</text>
+              <x>353</x>
+              <y>25</y>
+              <width>130</width>
+              <horizontal_alignment>1</horizontal_alignment>
+              <vertical_alignment>1</vertical_alignment>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
             </widget>
           </widget>
           <widget type="group" version="3.0.0">
@@ -5436,21 +5514,6 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
             </border_color>
           </widget>
           <widget type="label" version="2.0.0">
-            <name>Label_68</name>
-            <text>DAC (A)</text>
-            <x>73</x>
-            <y>475</y>
-            <width>53</width>
-            <horizontal_alignment>2</horizontal_alignment>
-            <vertical_alignment>1</vertical_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
-          <widget type="label" version="2.0.0">
             <name>Label_71</name>
             <text>Offset Set</text>
             <x>254</x>
@@ -6305,34 +6368,10 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
             </border_color>
           </widget>
           <widget type="textentry" version="3.0.0">
-            <name>Text Update_152</name>
-            <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-I</pv_name>
-            <x>140</x>
-            <y>475</y>
-            <width>102</width>
-            <font>
-              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-              </font>
-            </font>
-            <background_color>
-              <color red="255" green="255" blue="255">
-              </color>
-            </background_color>
-            <precision>6</precision>
-            <show_units>false</show_units>
-            <horizontal_alignment>1</horizontal_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
-          <widget type="textentry" version="3.0.0">
             <name>Text Update_153</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-Gain-SP</pv_name>
-            <x>487</x>
-            <y>475</y>
+            <x>489</x>
+            <y>111</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -6355,8 +6394,8 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
           <widget type="textentry" version="3.0.0">
             <name>Text Update_154</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-Offset-SP</pv_name>
-            <x>259</x>
-            <y>475</y>
+            <x>261</x>
+            <y>111</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -6380,8 +6419,8 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
           <widget type="textentry" version="3.0.0">
             <name>Text Update_155</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-Offset-I</pv_name>
-            <x>367</x>
-            <y>475</y>
+            <x>369</x>
+            <y>111</y>
             <width>102</width>
             <height>22</height>
             <font>
@@ -6405,8 +6444,8 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
           <widget type="textentry" version="3.0.0">
             <name>Text Update_156</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-Gain-I</pv_name>
-            <x>595</x>
-            <y>475</y>
+            <x>597</x>
+            <y>111</y>
             <width>102</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -6429,8 +6468,8 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
           <widget type="label" version="2.0.0">
             <name>Label_117</name>
             <text>Gain Set</text>
-            <x>482</x>
-            <y>452</y>
+            <x>484</x>
+            <y>88</y>
             <width>102</width>
             <horizontal_alignment>1</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -6444,8 +6483,8 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
           <widget type="label" version="2.0.0">
             <name>Label_118</name>
             <text>Offset Set</text>
-            <x>254</x>
-            <y>452</y>
+            <x>256</x>
+            <y>88</y>
             <width>102</width>
             <height>22</height>
             <horizontal_alignment>1</horizontal_alignment>
@@ -6458,25 +6497,10 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
             </border_color>
           </widget>
           <widget type="label" version="2.0.0">
-            <name>Label_120</name>
-            <text>Readback</text>
-            <x>135</x>
-            <y>452</y>
-            <width>102</width>
-            <horizontal_alignment>1</horizontal_alignment>
-            <vertical_alignment>1</vertical_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
-          <widget type="label" version="2.0.0">
             <name>Label_121</name>
             <text>Offset RdBk</text>
-            <x>362</x>
-            <y>452</y>
+            <x>364</x>
+            <y>88</y>
             <width>102</width>
             <height>22</height>
             <horizontal_alignment>1</horizontal_alignment>
@@ -6491,8 +6515,8 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
           <widget type="label" version="2.0.0">
             <name>Label_122</name>
             <text>Gain RdBk</text>
-            <x>590</x>
-            <y>452</y>
+            <x>592</x>
+            <y>88</y>
             <width>102</width>
             <horizontal_alignment>1</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -6586,8 +6610,8 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
           <widget type="textentry" version="3.0.0">
             <name>Text Update_161</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC_SetPt-SP</pv_name>
-            <x>148</x>
-            <y>82</y>
+            <x>147</x>
+            <y>110</y>
             <width>96</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -6610,8 +6634,8 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
           <widget type="label" version="2.0.0">
             <name>Label_125</name>
             <text>DAC Set Point (A)</text>
-            <x>137</x>
-            <y>60</y>
+            <x>136</x>
+            <y>88</y>
             <width>126</width>
             <horizontal_alignment>1</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
@@ -7064,8 +7088,8 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
           <widget type="label" version="2.0.0">
             <name>Label_142</name>
             <text>Gains &amp; Offsets</text>
-            <x>341</x>
-            <y>142</y>
+            <x>346</x>
+            <y>148</y>
             <width>126</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -7083,8 +7107,8 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
           <widget type="bool_button" version="2.0.0">
             <name>Boolean Button_13</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):WriteQspi-SP</pv_name>
-            <x>508</x>
-            <y>82</y>
+            <x>616</x>
+            <y>48</y>
             <width>78</width>
             <height>23</height>
             <off_label></off_label>
@@ -7093,8 +7117,8 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
           <widget type="label" version="2.0.0">
             <name>Label_159</name>
             <text>Write Values to QSPI FLASH</text>
-            <x>490</x>
-            <y>38</y>
+            <x>598</x>
+            <y>4</y>
             <width>126</width>
             <height>44</height>
             <horizontal_alignment>1</horizontal_alignment>
@@ -7109,8 +7133,8 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
           <widget type="bool_button" version="2.0.0">
             <name>Boolean Button_14</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):ReadQspi-SP</pv_name>
-            <x>646</x>
-            <y>82</y>
+            <x>754</x>
+            <y>48</y>
             <width>78</width>
             <height>23</height>
             <off_label></off_label>
@@ -7119,36 +7143,12 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
           <widget type="label" version="2.0.0">
             <name>Label_187</name>
             <text>Read Values from QSPI FLASH</text>
-            <x>622</x>
-            <y>38</y>
+            <x>730</x>
+            <y>4</y>
             <width>126</width>
             <height>44</height>
             <horizontal_alignment>1</horizontal_alignment>
             <vertical_alignment>1</vertical_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
-          <widget type="textentry" version="3.0.0">
-            <name>Text Update_194</name>
-            <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPtRaw-I</pv_name>
-            <x>141</x>
-            <y>496</y>
-            <width>102</width>
-            <font>
-              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-              </font>
-            </font>
-            <background_color>
-              <color red="255" green="255" blue="255">
-              </color>
-            </background_color>
-            <precision>0</precision>
-            <show_units>false</show_units>
-            <horizontal_alignment>1</horizontal_alignment>
             <actions>
             </actions>
             <border_color>
@@ -10556,7 +10556,6 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
     <x>18</x>
     <width>882</width>
     <height>924</height>
-    <active_tab>2</active_tab>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_36</name>
