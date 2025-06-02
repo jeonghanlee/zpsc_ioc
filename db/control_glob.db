@@ -11,8 +11,8 @@ record(bo, "$(P){$(NO)}send") {
     field(ONAM, "Send") 
 } 
  
- 
- 
+
+
  
 # Write a single register
 record(longout, "$(P){$(NO)}GoRegSingleWrite0") {
@@ -54,6 +54,16 @@ record(longout, "$(P){$(NO)}GoRegSingleWrite4") {
     field(VAL , "4") 
     field(FLNK, "$(P){$(NO)}send")
 }
+
+#record(waveform, "$(P){$(NO)}Waveform-Test") {
+#    field(DESC, "Buffer to PSC")
+#    field(DTYP, "PSC Block F32 Out")
+#    field(INP , "@PSC$(NO) 101")   
+#    field(FTVL, "DOUBLE")
+#    field(NELM, "20")
+#    #field(SCAN, "1 second")
+#    field(FLNK, "$(P){$(NO)}send")
+#}
 
 
 

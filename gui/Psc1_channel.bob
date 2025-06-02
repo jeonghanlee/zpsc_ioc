@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-30 15:56:18 by pstester-->
+<!--Saved on 2025-06-02 08:46:52 by mead-->
 <display version="2.0.0">
   <name>$(CHAN):$(PriSys)</name>
   <width>900</width>
@@ -417,7 +417,7 @@
                 <color red="255" green="255" blue="255">
                 </color>
               </background_color>
-              <precision>5</precision>
+              <precision>3</precision>
               <show_units>false</show_units>
               <horizontal_alignment>1</horizontal_alignment>
               <actions>
@@ -2752,68 +2752,11 @@
       <tab>
         <name>DAC Control</name>
         <children>
-          <widget type="group" version="3.0.0">
-            <name>Ramp Control</name>
-            <x>196</x>
-            <y>348</y>
-            <width>522</width>
-            <height>264</height>
-            <widget type="led" version="2.0.0">
-              <name>LED</name>
-              <pv_name>$(PriSys){$(PSC)}$(CHAN):DACRampActive-I</pv_name>
-              <x>407</x>
-              <y>31</y>
-            </widget>
-            <widget type="label" version="2.0.0">
-              <name>Label_46</name>
-              <text>Ramp Active</text>
-              <x>282</x>
-              <y>29</y>
-              <width>132</width>
-              <font>
-                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-                </font>
-              </font>
-              <horizontal_alignment>1</horizontal_alignment>
-              <vertical_alignment>1</vertical_alignment>
-              <actions>
-              </actions>
-              <border_color>
-                <color red="0" green="128" blue="255">
-                </color>
-              </border_color>
-            </widget>
-            <widget type="bool_button" version="2.0.0">
-              <name>Boolean Button_1</name>
-              <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC_RampRun-SP</pv_name>
-              <x>318</x>
-              <y>143</y>
-            </widget>
-            <widget type="label" version="2.0.0">
-              <name>Label_40</name>
-              <text>Run Ramp</text>
-              <x>288</x>
-              <y>113</y>
-              <width>170</width>
-              <font>
-                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-                </font>
-              </font>
-              <horizontal_alignment>1</horizontal_alignment>
-              <vertical_alignment>1</vertical_alignment>
-              <actions>
-              </actions>
-              <border_color>
-                <color red="0" green="128" blue="255">
-                </color>
-              </border_color>
-            </widget>
-          </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Update_49</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC_SetPt-SP</pv_name>
-            <x>294</x>
-            <y>139</y>
+            <x>271</x>
+            <y>58</y>
             <width>90</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2836,8 +2779,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_39</name>
             <text>Set Point</text>
-            <x>273</x>
-            <y>121</y>
+            <x>250</x>
+            <y>40</y>
             <width>132</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2855,8 +2798,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_41</name>
             <text>DAC Op Mode</text>
-            <x>87</x>
-            <y>115</y>
+            <x>64</x>
+            <y>34</y>
             <width>132</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2874,8 +2817,8 @@
           <widget type="choice" version="2.0.0">
             <name>Choice Button_1</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC_OpMode-SP</pv_name>
-            <x>103</x>
-            <y>135</y>
+            <x>80</x>
+            <y>54</y>
             <height>85</height>
             <horizontal>false</horizontal>
             <items>
@@ -2885,77 +2828,11 @@
               <item>Item 4</item>
             </items>
           </widget>
-          <widget type="action_button" version="3.0.0">
-            <name>Action Button_15</name>
-            <actions>
-              <action type="command">
-                <command>/home/mead/chiesa/psc/testing/ramptable/tx_ramptable  /home/mead/chiesa/psc/testing/ramptable/raised_cosine_full_8000pts.txt</command>
-                <description>Load RampTable</description>
-              </action>
-            </actions>
-            <x>294</x>
-            <y>477</y>
-            <width>106</width>
-            <height>52</height>
-            <tooltip>$(actions)</tooltip>
-          </widget>
-          <widget type="fileselector" version="2.0.0">
-            <name>File Selector</name>
-            <pv_name>$(PriSys){$(PSC)}RampTableFile</pv_name>
-            <component>2</component>
-            <x>296</x>
-            <y>549</y>
-            <width>102</width>
-          </widget>
-          <widget type="textentry" version="3.0.0">
-            <name>Text Update_51</name>
-            <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC_RampLen-SP</pv_name>
-            <x>302</x>
-            <y>417</y>
-            <width>90</width>
-            <font>
-              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-              </font>
-            </font>
-            <background_color>
-              <color red="255" green="255" blue="255">
-              </color>
-            </background_color>
-            <format>1</format>
-            <precision>0</precision>
-            <show_units>false</show_units>
-            <horizontal_alignment>1</horizontal_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
-          <widget type="label" version="2.0.0">
-            <name>Label_42</name>
-            <text>DAC Ramp Length</text>
-            <x>281</x>
-            <y>399</y>
-            <width>132</width>
-            <font>
-              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-              </font>
-            </font>
-            <horizontal_alignment>1</horizontal_alignment>
-            <vertical_alignment>1</vertical_alignment>
-            <actions>
-            </actions>
-            <border_color>
-              <color red="0" green="128" blue="255">
-              </color>
-            </border_color>
-          </widget>
           <widget type="textentry" version="3.0.0">
             <name>Text Update_53</name>
             <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-I</pv_name>
-            <x>297</x>
-            <y>198</y>
+            <x>385</x>
+            <y>61</y>
             <width>90</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2978,8 +2855,8 @@
           <widget type="label" version="2.0.0">
             <name>Label_45</name>
             <text>ReadBack</text>
-            <x>276</x>
-            <y>177</y>
+            <x>364</x>
+            <y>40</y>
             <width>132</width>
             <font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2994,12 +2871,288 @@
               </color>
             </border_color>
           </widget>
-          <widget type="textupdate" version="2.0.0">
-            <name>Text Update</name>
-            <pv_name>$(PriSys){$(PSC)}RampTableFile</pv_name>
-            <x>310</x>
-            <y>640</y>
-            <width>198</width>
+          <widget type="led" version="2.0.0">
+            <name>LED</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):DACRampActive-I</pv_name>
+            <x>615</x>
+            <y>42</y>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_46</name>
+            <text>Ramp Active</text>
+            <x>490</x>
+            <y>40</y>
+            <width>132</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <horizontal_alignment>1</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="group" version="3.0.0">
+            <name>Ramp Table</name>
+            <x>22</x>
+            <y>262</y>
+            <width>780</width>
+            <height>420</height>
+            <widget type="xyplot" version="3.0.0">
+              <name>XY Graph_65</name>
+              <x>42</x>
+              <y>126</y>
+              <width>654</width>
+              <height>230</height>
+              <title>RampTable Preview</title>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <show_legend>false</show_legend>
+              <actions>
+              </actions>
+              <x_axis>
+                <title></title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <visible>true</visible>
+              </x_axis>
+              <y_axes>
+                <y_axis>
+                  <title>Amps</title>
+                  <autoscale>true</autoscale>
+                  <log_scale>false</log_scale>
+                  <minimum>0.0</minimum>
+                  <maximum>100.0</maximum>
+                  <show_grid>true</show_grid>
+                  <title_font>
+                    <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                    </font>
+                  </title_font>
+                  <scale_font>
+                    <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                    </font>
+                  </scale_font>
+                  <on_right>false</on_right>
+                  <visible>true</visible>
+                  <color>
+                    <color name="Text" red="0" green="0" blue="0">
+                    </color>
+                  </color>
+                </y_axis>
+              </y_axes>
+              <traces>
+                <trace>
+                  <name></name>
+                  <x_pv></x_pv>
+                  <y_pv>$(PriSys){$(PSC)}$(CHAN):RampTable-Wfm</y_pv>
+                  <err_pv></err_pv>
+                  <axis>0</axis>
+                  <trace_type>1</trace_type>
+                  <color>
+                    <color red="21" green="21" blue="196">
+                    </color>
+                  </color>
+                  <line_width>1</line_width>
+                  <line_style>0</line_style>
+                  <point_type>0</point_type>
+                  <point_size>4</point_size>
+                  <visible>true</visible>
+                </trace>
+              </traces>
+            </widget>
+            <widget type="textentry" version="3.0.0">
+              <name>Text Update_51</name>
+              <pv_name>$(PriSys){$(PSC)}$(CHAN):RampTableLen-SP</pv_name>
+              <x>327</x>
+              <y>60</y>
+              <width>90</width>
+              <font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </font>
+              <background_color>
+                <color red="255" green="255" blue="255">
+                </color>
+              </background_color>
+              <format>1</format>
+              <precision>0</precision>
+              <show_units>false</show_units>
+              <horizontal_alignment>1</horizontal_alignment>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_42</name>
+              <text>RampTable Length</text>
+              <x>306</x>
+              <y>35</y>
+              <width>132</width>
+              <font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </font>
+              <horizontal_alignment>1</horizontal_alignment>
+              <vertical_alignment>1</vertical_alignment>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="textentry" version="3.0.0">
+              <name>Text Update_147</name>
+              <pv_name>$(PriSys){$(PSC)}$(CHAN):RampTable-FilePath</pv_name>
+              <x>109</x>
+              <y>38</y>
+              <width>162</width>
+              <font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </font>
+              <background_color>
+                <color red="255" green="255" blue="255">
+                </color>
+              </background_color>
+              <format>6</format>
+              <precision>6</precision>
+              <show_units>false</show_units>
+              <horizontal_alignment>1</horizontal_alignment>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="textentry" version="3.0.0">
+              <name>Text Update_195</name>
+              <pv_name>$(PriSys){$(PSC)}$(CHAN):RampTable-FileName</pv_name>
+              <x>109</x>
+              <y>56</y>
+              <width>162</width>
+              <font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </font>
+              <background_color>
+                <color red="255" green="255" blue="255">
+                </color>
+              </background_color>
+              <format>6</format>
+              <precision>6</precision>
+              <show_units>false</show_units>
+              <horizontal_alignment>1</horizontal_alignment>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_86</name>
+              <text>FilePath</text>
+              <x>31</x>
+              <y>37</y>
+              <width>72</width>
+              <horizontal_alignment>1</horizontal_alignment>
+              <vertical_alignment>1</vertical_alignment>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_87</name>
+              <text>FileName</text>
+              <x>27</x>
+              <y>55</y>
+              <width>72</width>
+              <horizontal_alignment>1</horizontal_alignment>
+              <vertical_alignment>1</vertical_alignment>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="bool_button" version="2.0.0">
+              <name>Boolean Button_2</name>
+              <pv_name>$(PriSys){$(PSC)}$(CHAN):RampTable-Read</pv_name>
+              <x>480</x>
+              <y>54</y>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_88</name>
+              <text>Load RampTable 
+From File</text>
+              <x>466</x>
+              <y>8</y>
+              <width>122</width>
+              <height>54</height>
+              <font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </font>
+              <horizontal_alignment>1</horizontal_alignment>
+              <vertical_alignment>1</vertical_alignment>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="bool_button" version="2.0.0">
+              <name>Boolean Button_1</name>
+              <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC_RampRun-SP</pv_name>
+              <x>618</x>
+              <y>54</y>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_40</name>
+              <text>Run Ramp</text>
+              <x>618</x>
+              <y>23</y>
+              <width>98</width>
+              <font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </font>
+              <horizontal_alignment>1</horizontal_alignment>
+              <vertical_alignment>1</vertical_alignment>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
           </widget>
         </children>
       </tab>
@@ -10393,6 +10546,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
     <x>18</x>
     <width>882</width>
     <height>924</height>
+    <active_tab>2</active_tab>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_36</name>
