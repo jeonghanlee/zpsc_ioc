@@ -659,6 +659,7 @@ record(bo, "$(P){$(NO)}Chan$(CHAN):RampTable-Read") {
     field(ONAM, "On")
     field(VAL, "0")
     field(FLNK, "$(P){$(NO)}Chan$(CHAN):RampTable-ReadFile")
+    field(HIGH,".01")    #500 ms after low   
 }
 
 record(stringin, "$(P){$(NO)}Chan$(CHAN):RampTable-FilePath") {
