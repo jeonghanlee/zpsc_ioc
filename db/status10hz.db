@@ -497,7 +497,30 @@ record(ai, "$(P){$(NO)}Chan1:DACSetPt-I") {
     field(INP , "@PSC$(NO) 31 196")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
+    field(FLNK, "$(P){$(NO)}Chan1:DACSetPt-aSub")     
 }
+
+
+record(aSub, "$(P){$(NO)}Chan1:DACSetPt-aSub") {
+    field(DESC, "Rolling Buffer of 100 floats")
+    field(INPA, "$(P){$(NO)}Chan1:DACSetPt-I NPP NMS")  
+    field(FTA, "FLOAT")
+    field(FTVA, "FLOAT")   
+    field(NOVA, "1000") #buffer size
+    field(NEVA, "1000") #output array length
+    field(SNAM, "rollingBufProcess")
+    field(FLNK, "$(P){$(NO)}Chan1:DACSetPt-Wfm")         
+}
+
+record(waveform, "$(P){$(NO)}Chan1:DACSetPt-Wfm") {
+    field(DESC, "Waveform of last 1000 points")
+    field(INP, "$(P){$(NO)}Chan1:DACSetPt-aSub.VALA CPP")
+    field(FTVL, "FLOAT")
+    field(NELM, "1000")
+}
+
+
+
 
 record(ai, "$(P){$(NO)}Chan1:DACSetPt-Offset-I") {
     field(DESC, "DAC SetPoint Offset Readback")
@@ -1119,7 +1142,27 @@ record(ai, "$(P){$(NO)}Chan2:DACSetPt-I") {
     field(INP , "@PSC$(NO) 31 496")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
+    field(FLNK, "$(P){$(NO)}Chan2:DACSetPt-aSub")     
 }
+
+record(aSub, "$(P){$(NO)}Chan2:DACSetPt-aSub") {
+    field(DESC, "Rolling Buffer of 100 floats")
+    field(INPA, "$(P){$(NO)}Chan2:DACSetPt-I NPP NMS")  
+    field(FTA, "FLOAT")
+    field(FTVA, "FLOAT")   
+    field(NOVA, "1000") #buffer size
+    field(NEVA, "1000") #output array length
+    field(SNAM, "rollingBufProcess")
+    field(FLNK, "$(P){$(NO)}Chan2:DACSetPt-Wfm")         
+}
+
+record(waveform, "$(P){$(NO)}Chan2:DACSetPt-Wfm") {
+    field(DESC, "Waveform of last 1000 points")
+    field(INP, "$(P){$(NO)}Chan2:DACSetPt-aSub.VALA CPP")
+    field(FTVL, "FLOAT")
+    field(NELM, "1000")
+}
+
 
 record(ai, "$(P){$(NO)}Chan2:DACSetPt-Offset-I") {
     field(DESC, "DAC SetPoint Offset Readback")
@@ -1741,7 +1784,28 @@ record(ai, "$(P){$(NO)}Chan3:DACSetPt-I") {
     field(INP , "@PSC$(NO) 31 796")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
+    field(FLNK, "$(P){$(NO)}Chan3:DACSetPt-aSub")     
 }
+
+record(aSub, "$(P){$(NO)}Chan3:DACSetPt-aSub") {
+    field(DESC, "Rolling Buffer of 100 floats")
+    field(INPA, "$(P){$(NO)}Chan3:DACSetPt-I NPP NMS")  
+    field(FTA, "FLOAT")
+    field(FTVA, "FLOAT")   
+    field(NOVA, "1000") #buffer size
+    field(NEVA, "1000") #output array length
+    field(SNAM, "rollingBufProcess")
+    field(FLNK, "$(P){$(NO)}Chan3:DACSetPt-Wfm")         
+}
+
+record(waveform, "$(P){$(NO)}Chan3:DACSetPt-Wfm") {
+    field(DESC, "Waveform of last 1000 points")
+    field(INP, "$(P){$(NO)}Chan3:DACSetPt-aSub.VALA CPP")
+    field(FTVL, "FLOAT")
+    field(NELM, "1000")
+}
+
+
 
 record(ai, "$(P){$(NO)}Chan3:DACSetPt-Offset-I") {
     field(DESC, "DAC SetPoint Offset Readback")
@@ -2363,7 +2427,28 @@ record(ai, "$(P){$(NO)}Chan4:DACSetPt-I") {
     field(INP , "@PSC$(NO) 31 1096")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
+    field(FLNK, "$(P){$(NO)}Chan4:DACSetPt-aSub")     
 }
+
+record(aSub, "$(P){$(NO)}Chan4:DACSetPt-aSub") {
+    field(DESC, "Rolling Buffer of 100 floats")
+    field(INPA, "$(P){$(NO)}Chan4:DACSetPt-I NPP NMS")  
+    field(FTA, "FLOAT")
+    field(FTVA, "FLOAT")   
+    field(NOVA, "1000") #buffer size
+    field(NEVA, "1000") #output array length
+    field(SNAM, "rollingBufProcess")
+    field(FLNK, "$(P){$(NO)}Chan4:DACSetPt-Wfm")         
+}
+
+record(waveform, "$(P){$(NO)}Chan4:DACSetPt-Wfm") {
+    field(DESC, "Waveform of last 1000 points")
+    field(INP, "$(P){$(NO)}Chan4:DACSetPt-aSub.VALA CPP")
+    field(FTVL, "FLOAT")
+    field(NELM, "1000")
+}
+
+
 
 record(ai, "$(P){$(NO)}Chan4:DACSetPt-Offset-I") {
     field(DESC, "DAC SetPoint Offset Readback")
