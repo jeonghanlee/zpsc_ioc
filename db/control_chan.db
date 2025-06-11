@@ -650,6 +650,35 @@ record(bo, "$(P){$(NO)}Chan$(CHAN):ReadQspi-SP") {
 
 
 
+########## TEMP SMOOTH PVs
+
+record(ao, "$(P){$(NO)}Chan$(CHAN):DAC_SmoothNewSetPt-SP") {
+    field(DESC, "DAC Setpoint")
+    field(DTYP, "PSC Single F32")
+    field(OUT , "@PSC$(NO) $(CHAN) 410")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
+     
+record(ao, "$(P){$(NO)}Chan$(CHAN):DAC_SmoothOldSetPt-SP") {
+    field(DESC, "DAC Setpoint")
+    field(DTYP, "PSC Single F32")
+    field(OUT , "@PSC$(NO) $(CHAN) 414")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")    
+}
+
+record(ao, "$(P){$(NO)}Chan$(CHAN):DAC_PhaseInc-SP") {
+    field(DESC, "DAC Setpoint")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@PSC$(NO) $(CHAN) 418")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")    
+}
+
+########## TEMP SMOOTH PVs
+
+
 
 
 record(bo, "$(P){$(NO)}Chan$(CHAN):RampTable-Read") {
