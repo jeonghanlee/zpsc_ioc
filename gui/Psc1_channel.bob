@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-06-11 14:11:01 by mead-->
+<!--Saved on 2025-06-12 09:14:07 by pstester-->
 <display version="2.0.0">
   <name>$(CHAN):$(PriSys)</name>
   <width>900</width>
@@ -417,7 +417,7 @@
                 <color red="255" green="255" blue="255">
                 </color>
               </background_color>
-              <precision>3</precision>
+              <precision>5</precision>
               <show_units>false</show_units>
               <horizontal_alignment>1</horizontal_alignment>
               <actions>
@@ -10631,7 +10631,6 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
     <x>18</x>
     <width>882</width>
     <height>924</height>
-    <active_tab>2</active_tab>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_36</name>
@@ -10831,7 +10830,7 @@ $(actions)</tooltip>
     <name>Tank</name>
     <x>1086</x>
     <y>384</y>
-    <width>0</width>
-    <height>0</height>
+    <width>1</width>
+    <height>1</height>
   </widget>
 </display>
