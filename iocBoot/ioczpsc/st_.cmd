@@ -12,7 +12,7 @@ epicsEnvSet("PSC1_IP", "10.69.26.30");
 epicsEnvSet("PSC2_IP", "10.69.26.31"); 
 epicsEnvSet("PSC3_IP", "10.69.26.32"); 
 epicsEnvSet("PSC4_IP", "10.69.26.33"); 
-epicsEnvSet("PSC5_IP", "10.69.26.34"); 
+epicsEnvSet("PSC5_IP", "10.69.26.34");
 epicsEnvSet("PSC6_IP", "10.69.26.35"); 
 
 
@@ -179,37 +179,6 @@ dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=5, TYPE=EVR, CHAN=4, MSGID=10
 dbLoadRecords("db/wfmstats.db", "P=$(IOCNAME), PSC=5")
 #dbLoadRecords("db/asub_test.db")
 
-## Load record instances for PSC6
-dbLoadRecords("db/lstats.db", "P=$(IOCNAME), NO=6")
-dbLoadRecords("db/status10hz.db", "P=$(IOCNAME), NO=6, OFFSET=100")
-dbLoadRecords("db/control_glob.db", "P=$(IOCNAME), NO=6")
-dbLoadRecords("db/control_chan.db", "P=$(IOCNAME), NO=6, CHAN=1")
-dbLoadRecords("db/control_chan.db", "P=$(IOCNAME), NO=6, CHAN=2")
-dbLoadRecords("db/control_chan.db", "P=$(IOCNAME), NO=6, CHAN=3")
-dbLoadRecords("db/control_chan.db", "P=$(IOCNAME), NO=6, CHAN=4")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=USR, CHAN=1, MSGID=60, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=USR, CHAN=2, MSGID=61, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=USR, CHAN=3, MSGID=62, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=USR, CHAN=4, MSGID=63, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=FLT, CHAN=1, MSGID=70, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=FLT, CHAN=2, MSGID=71, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=FLT, CHAN=3, MSGID=72, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=FLT, CHAN=4, MSGID=73, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=ERR, CHAN=1, MSGID=80, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=ERR, CHAN=2, MSGID=81, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=ERR, CHAN=3, MSGID=82, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=ERR, CHAN=4, MSGID=83, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=INJ, CHAN=1, MSGID=90, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=INJ, CHAN=2, MSGID=91, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=INJ, CHAN=3, MSGID=92, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=INJ, CHAN=4, MSGID=93, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=EVR, CHAN=1, MSGID=100, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=EVR, CHAN=2, MSGID=101, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=EVR, CHAN=3, MSGID=102, BUFLEN=$(BLEN)")
-dbLoadRecords("db/snapshots.db", "P=$(IOCNAME), NO=6, TYPE=EVR, CHAN=4, MSGID=103, BUFLEN=$(BLEN)")
-dbLoadRecords("db/wfmstats.db", "P=$(IOCNAME), PSC=6")
-#dbLoadRecords("db/asub_test.db")
-
 
 
 
@@ -218,13 +187,13 @@ var(PSCDebug, 2)	#5 full debug
 
 #psc1 Create the PSC
 createPSC("PSC1", $(PSC1_IP), 3000, 0)
+#setPSCSendBlockSize("PSC1", 1100, 512)
+
 createPSC("PSC2", $(PSC2_IP), 3000, 0)
 createPSC("PSC3", $(PSC3_IP), 3000, 0)
 createPSC("PSC4", $(PSC4_IP), 3000, 0)
 createPSC("PSC5", $(PSC5_IP), 3000, 0)
 createPSC("PSC6", $(PSC6_IP), 3000, 0)
-
-
 
 cd "${TOP}/iocBoot/${IOC}"
 iocInit
