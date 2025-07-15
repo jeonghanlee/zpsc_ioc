@@ -8,7 +8,7 @@
 epicsEnvSet("IOCNAME", "lab")
 
 # PSC IP address
-epicsEnvSet("PSC1_IP", "192.168.1.101"); 
+epicsEnvSet("PSC1_IP", "10.0.142.115"); 
 
 epicsEnvSet("BLEN",100000);        # Snapshot DMA Length
 
