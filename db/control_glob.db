@@ -213,6 +213,15 @@ record(longout, "$(P){$(NO)}EVR:10KHz-EventNo-SP") {
 }
 
 
+record(longout, "$(P){$(NO)}FOFB:IPaddr-SP") {
+    field(DESC, "IP Address for FOFB")
+    field(DTYP, "PSC Single I32")  
+    field(OUT , "@PSC$(NO) 0 50")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite0")
+}
+
+
 
 
 

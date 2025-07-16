@@ -124,8 +124,40 @@ record(bi, "$(P){$(NO)}Polarity-Mode") {
     field(SCAN, "Passive")
 }
 
+record(longin, "$(P){$(NO)}FOFB:PacketsRcvd-I") {
+    field(DESC, "Number of FOFB packets received")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 31 40")
+    field(SCAN,"I/O Intr")
+}
 
+record(longin, "$(P){$(NO)}FOFB:Command-I") {
+    field(DESC, "FOFB Command (See Fast Protocol)")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 31 44")
+    field(SCAN,"I/O Intr")
+}
 
+record(longin, "$(P){$(NO)}FOFB:Nonce-I") {
+    field(DESC, "FOFB Nonce")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 31 48")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai, "$(P){$(NO)}TenKHz-Freq-I") {
+    field(DESC, "Frequency of 10KHz Trigger")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 52")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai, "$(P){$(NO)}OneHz-Freq-I") {
+    field(DESC, "Frequency of 1Hz HB Trigger")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 56")
+    field(SCAN,"I/O Intr")
+}
 
 
 
@@ -320,12 +352,12 @@ record(ai, "$(P){$(NO)}Chan1:Gnd-I") {
 }
 
 record(aSub, "$(P){$(NO)}Chan1:Gnd-aSub") {
-    field(DESC, "Rolling Buffer of 100 floats")
+    field(DESC, "Rolling Buffer of 1000 floats")
     field(INPA, "$(P){$(NO)}Chan1:Gnd-I NPP NMS")  
     field(FTA, "FLOAT")
     field(FTVA, "FLOAT")   
     field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
+    field(NEVA, "100") #output array length
     field(SNAM, "rollingBufProcess")
     field(FLNK, "$(P){$(NO)}Chan1:Gnd-Wfm")         
 }
@@ -833,7 +865,13 @@ record(longin, "$(P){$(NO)}Chan1:DACSetPtRaw-I") {
     field(SCAN,"I/O Intr")
 }
 
-
+record(ai, "$(P){$(NO)}Chan1:FOFB:DACSetPt-I") {
+    field(DESC, "FOFB DAC Set Point")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 356")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
 
 
 
@@ -980,7 +1018,28 @@ record(ai, "$(P){$(NO)}Chan2:Volt-I") {
     field(INP , "@PSC$(NO) 31 436")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
+    field(FLNK, "$(P){$(NO)}Chan2:Volt-aSub")      
 }
+
+
+record(aSub, "$(P){$(NO)}Chan2:Volt-aSub") {
+    field(DESC, "Rolling Buffer of 100 floats")
+    field(INPA, "$(P){$(NO)}Chan2:Volt-I NPP NMS")  
+    field(FTA, "FLOAT")
+    field(FTVA, "FLOAT")   
+    field(NOVA, "1000") #buffer size
+    field(NEVA, "1000") #output array length
+    field(SNAM, "rollingBufProcess")
+    field(FLNK, "$(P){$(NO)}Chan2:Volt-Wfm")         
+}
+
+record(waveform, "$(P){$(NO)}Chan2:Volt-Wfm") {
+    field(DESC, "Waveform of last 1000 points")
+    field(INP, "$(P){$(NO)}Chan2:Volt-aSub.VALA CPP")
+    field(FTVL, "FLOAT")
+    field(NELM, "1000")
+}
+
 
 record(ai, "$(P){$(NO)}Chan2:Volt-Offset-I") {
     field(DESC, "Voltage Monitor Offset Readback")
@@ -1005,7 +1064,27 @@ record(ai, "$(P){$(NO)}Chan2:Gnd-I") {
     field(INP , "@PSC$(NO) 31 448")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
+    field(FLNK, "$(P){$(NO)}Chan2:Gnd-aSub")      
 }
+
+record(aSub, "$(P){$(NO)}Chan2:Gnd-aSub") {
+    field(DESC, "Rolling Buffer of 1000 floats")
+    field(INPA, "$(P){$(NO)}Chan2:Gnd-I NPP NMS")  
+    field(FTA, "FLOAT")
+    field(FTVA, "FLOAT")   
+    field(NOVA, "1000") #buffer size
+    field(NEVA, "100") #output array length
+    field(SNAM, "rollingBufProcess")
+    field(FLNK, "$(P){$(NO)}Chan2:Gnd-Wfm")         
+}
+
+record(waveform, "$(P){$(NO)}Chan2:Gnd-Wfm") {
+    field(DESC, "Waveform of last 1000 points")
+    field(INP, "$(P){$(NO)}Chan2:Gnd-aSub.VALA CPP")
+    field(FTVL, "FLOAT")
+    field(NELM, "1000")
+}    
+    
 
 record(ai, "$(P){$(NO)}Chan2:Gnd-Offset-I") {
     field(DESC, "Ground Monitor Offset Readback")
@@ -1029,7 +1108,29 @@ record(ai, "$(P){$(NO)}Chan2:Spare-I") {
     field(INP , "@PSC$(NO) 31 460")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
+    field(FLNK, "$(P){$(NO)}Chan2:Spare-aSub") 
 }
+
+record(aSub, "$(P){$(NO)}Chan2:Spare-aSub") {
+    field(DESC, "Rolling Buffer of 100 floats")
+    field(INPA, "$(P){$(NO)}Chan2:Spare-I NPP NMS")  
+    field(FTA, "FLOAT")
+    field(FTVA, "FLOAT")   
+    field(NOVA, "1000") #buffer size
+    field(NEVA, "1000") #output array length
+    field(SNAM, "rollingBufProcess")
+    field(FLNK, "$(P){$(NO)}Chan2:Spare-Wfm")         
+}
+
+record(waveform, "$(P){$(NO)}Chan2:Spare-Wfm") {
+    field(DESC, "Waveform of last 1000 points")
+    field(INP, "$(P){$(NO)}Chan2:Spare-aSub.VALA CPP")
+    field(FTVL, "FLOAT")
+    field(NELM, "1000")
+}
+
+
+
 
 record(ai, "$(P){$(NO)}Chan2:Spare-Offset-I") {
     field(DESC, "Spare Monitor Offset Readback")
@@ -1476,6 +1577,14 @@ record(longin, "$(P){$(NO)}Chan2:DACSetPtRaw-I") {
     field(SCAN,"I/O Intr")
 }
 
+record(ai, "$(P){$(NO)}Chan2:FOFB:DACSetPt-I") {
+    field(DESC, "FOFB DAC Set Point")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 656")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
 
 
 ### PS3 #####
@@ -1621,6 +1730,25 @@ record(ai, "$(P){$(NO)}Chan3:Volt-I") {
     field(INP , "@PSC$(NO) 31 736")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
+    field(FLNK, "$(P){$(NO)}Chan3:Volt-aSub")      
+}
+
+record(aSub, "$(P){$(NO)}Chan3:Volt-aSub") {
+    field(DESC, "Rolling Buffer of 100 floats")
+    field(INPA, "$(P){$(NO)}Chan3:Volt-I NPP NMS")  
+    field(FTA, "FLOAT")
+    field(FTVA, "FLOAT")   
+    field(NOVA, "1000") #buffer size
+    field(NEVA, "1000") #output array length
+    field(SNAM, "rollingBufProcess")
+    field(FLNK, "$(P){$(NO)}Chan3:Volt-Wfm")         
+}
+
+record(waveform, "$(P){$(NO)}Chan3:Volt-Wfm") {
+    field(DESC, "Waveform of last 1000 points")
+    field(INP, "$(P){$(NO)}Chan3:Volt-aSub.VALA CPP")
+    field(FTVL, "FLOAT")
+    field(NELM, "1000")
 }
 
 record(ai, "$(P){$(NO)}Chan3:Volt-Offset-I") {
@@ -1646,6 +1774,25 @@ record(ai, "$(P){$(NO)}Chan3:Gnd-I") {
     field(INP , "@PSC$(NO) 31 748")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
+    field(FLNK, "$(P){$(NO)}Chan3:Gnd-aSub")      
+}
+
+record(aSub, "$(P){$(NO)}Chan3:Gnd-aSub") {
+    field(DESC, "Rolling Buffer of 1000 floats")
+    field(INPA, "$(P){$(NO)}Chan3:Gnd-I NPP NMS")  
+    field(FTA, "FLOAT")
+    field(FTVA, "FLOAT")   
+    field(NOVA, "1000") #buffer size
+    field(NEVA, "100") #output array length
+    field(SNAM, "rollingBufProcess")
+    field(FLNK, "$(P){$(NO)}Chan3:Gnd-Wfm")         
+}
+
+record(waveform, "$(P){$(NO)}Chan3:Gnd-Wfm") {
+    field(DESC, "Waveform of last 1000 points")
+    field(INP, "$(P){$(NO)}Chan3:Gnd-aSub.VALA CPP")
+    field(FTVL, "FLOAT")
+    field(NELM, "1000")
 }
 
 record(ai, "$(P){$(NO)}Chan3:Gnd-Offset-I") {
@@ -1670,7 +1817,27 @@ record(ai, "$(P){$(NO)}Chan3:Spare-I") {
     field(INP , "@PSC$(NO) 31 760")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
+    field(FLNK, "$(P){$(NO)}Chan3:Spare-aSub") 
 }
+
+record(aSub, "$(P){$(NO)}Chan3:Spare-aSub") {
+    field(DESC, "Rolling Buffer of 100 floats")
+    field(INPA, "$(P){$(NO)}Chan3:Spare-I NPP NMS")  
+    field(FTA, "FLOAT")
+    field(FTVA, "FLOAT")   
+    field(NOVA, "1000") #buffer size
+    field(NEVA, "1000") #output array length
+    field(SNAM, "rollingBufProcess")
+    field(FLNK, "$(P){$(NO)}Chan3:Spare-Wfm")         
+}
+
+record(waveform, "$(P){$(NO)}Chan3:Spare-Wfm") {
+    field(DESC, "Waveform of last 1000 points")
+    field(INP, "$(P){$(NO)}Chan3:Spare-aSub.VALA CPP")
+    field(FTVL, "FLOAT")
+    field(NELM, "1000")
+}
+
 
 record(ai, "$(P){$(NO)}Chan3:Spare-Offset-I") {
     field(DESC, "Spare Monitor Offset Readback")
@@ -2118,6 +2285,14 @@ record(longin, "$(P){$(NO)}Chan3:DACSetPtRaw-I") {
     field(SCAN,"I/O Intr")
 }
 
+record(ai, "$(P){$(NO)}Chan3:FOFB:DACSetPt-I") {
+    field(DESC, "FOFB DAC Set Point")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 956")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
 
 
 ### PS4 #####
@@ -2265,6 +2440,25 @@ record(ai, "$(P){$(NO)}Chan4:Volt-I") {
     field(INP , "@PSC$(NO) 31 1036")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
+    field(FLNK, "$(P){$(NO)}Chan4:Volt-aSub")      
+}
+
+record(aSub, "$(P){$(NO)}Chan4:Volt-aSub") {
+    field(DESC, "Rolling Buffer of 100 floats")
+    field(INPA, "$(P){$(NO)}Chan4:Volt-I NPP NMS")  
+    field(FTA, "FLOAT")
+    field(FTVA, "FLOAT")   
+    field(NOVA, "1000") #buffer size
+    field(NEVA, "1000") #output array length
+    field(SNAM, "rollingBufProcess")
+    field(FLNK, "$(P){$(NO)}Chan4:Volt-Wfm")         
+}
+
+record(waveform, "$(P){$(NO)}Chan4:Volt-Wfm") {
+    field(DESC, "Waveform of last 1000 points")
+    field(INP, "$(P){$(NO)}Chan4:Volt-aSub.VALA CPP")
+    field(FTVL, "FLOAT")
+    field(NELM, "1000")
 }
 
 record(ai, "$(P){$(NO)}Chan4:Volt-Offset-I") {
@@ -2290,6 +2484,25 @@ record(ai, "$(P){$(NO)}Chan4:Gnd-I") {
     field(INP , "@PSC$(NO) 31 1048")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
+    field(FLNK, "$(P){$(NO)}Chan4:Gnd-aSub")      
+}
+
+record(aSub, "$(P){$(NO)}Chan4:Gnd-aSub") {
+    field(DESC, "Rolling Buffer of 1000 floats")
+    field(INPA, "$(P){$(NO)}Chan4:Gnd-I NPP NMS")  
+    field(FTA, "FLOAT")
+    field(FTVA, "FLOAT")   
+    field(NOVA, "1000") #buffer size
+    field(NEVA, "100") #output array length
+    field(SNAM, "rollingBufProcess")
+    field(FLNK, "$(P){$(NO)}Chan4:Gnd-Wfm")         
+}
+
+record(waveform, "$(P){$(NO)}Chan4:Gnd-Wfm") {
+    field(DESC, "Waveform of last 1000 points")
+    field(INP, "$(P){$(NO)}Chan4:Gnd-aSub.VALA CPP")
+    field(FTVL, "FLOAT")
+    field(NELM, "1000")
 }
 
 record(ai, "$(P){$(NO)}Chan4:Gnd-Offset-I") {
@@ -2314,7 +2527,27 @@ record(ai, "$(P){$(NO)}Chan4:Spare-I") {
     field(INP , "@PSC$(NO) 31 1060")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
+    field(FLNK, "$(P){$(NO)}Chan4:Spare-aSub") 
 }
+
+record(aSub, "$(P){$(NO)}Chan4:Spare-aSub") {
+    field(DESC, "Rolling Buffer of 100 floats")
+    field(INPA, "$(P){$(NO)}Chan4:Spare-I NPP NMS")  
+    field(FTA, "FLOAT")
+    field(FTVA, "FLOAT")   
+    field(NOVA, "1000") #buffer size
+    field(NEVA, "1000") #output array length
+    field(SNAM, "rollingBufProcess")
+    field(FLNK, "$(P){$(NO)}Chan4:Spare-Wfm")         
+}
+
+record(waveform, "$(P){$(NO)}Chan4:Spare-Wfm") {
+    field(DESC, "Waveform of last 1000 points")
+    field(INP, "$(P){$(NO)}Chan4:Spare-aSub.VALA CPP")
+    field(FTVL, "FLOAT")
+    field(NELM, "1000")
+}
+
 
 record(ai, "$(P){$(NO)}Chan4:Spare-Offset-I") {
     field(DESC, "Spare Monitor Offset Readback")
@@ -2760,6 +2993,14 @@ record(longin, "$(P){$(NO)}Chan4:DACSetPtRaw-I") {
     field(DESC, "DAC SetPoint Raw Readback")
     field(DTYP, "PSC Reg")
     field(INP , "@PSC$(NO) 31 1252")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan4:FOFB:DACSetPt-I") {
+    field(DESC, "FOFB DAC Set Point")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 1256")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }

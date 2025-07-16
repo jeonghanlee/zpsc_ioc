@@ -612,6 +612,26 @@ record(ao, "$(P){$(NO)}Chan$(CHAN):SF:Error-SP") {
 }
 
 
+record(longout, "$(P){$(NO)}Chan$(CHAN):FOFB:FastAddr-SP") {
+    field(DESC, "Digital Output Park")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@PSC$(NO) $(CHAN) 330")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
+
+record(bo, "$(P){$(NO)}Chan$(CHAN):SS:Trig:Usr") {
+    field(DESC, "Trigger User Channel 1")
+    field(DTYP, "PSC Single U32") 
+    field(OUT , "@PSC$(NO) $(CHAN) 340")      
+    field(ZNAM, "Off")
+    field(ONAM, "Trigger")
+    field(VAL, "0")
+    field(HIGH, "1")   # Bit 0
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite0")
+}
+
+
 record(mbbo, "$(P){$(NO)}Chan$(CHAN):AveMode-SP") {
     field(DESC, "Sets the Averaging mode for 10Hz data")
     field(DTYP, "PSC Single U32")
