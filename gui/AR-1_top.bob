@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-06-18 14:32:47 by pstester-->
+<!--Saved on 2025-07-17 11:40:34 by pstester-->
 <display version="2.0.0">
   <name>PSC Top</name>
   <width>850</width>
-  <height>325</height>
+  <height>400</height>
   <background_color>
     <color red="200" green="215" blue="255">
     </color>
@@ -1104,5 +1104,55 @@
       <color red="0" green="128" blue="255">
       </color>
     </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_45</name>
+    <actions>
+      <action type="open_display">
+        <file>opi/tripplite_outlets_8.bob</file>
+        <macros>
+          <P>tripp_pdu</P>
+          <R>U7</R>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>U7 TRIP-PDU 10.69.26.36</text>
+    <x>26</x>
+    <y>325</y>
+    <width>156</width>
+    <height>25</height>
+    <font>
+      <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_46</name>
+    <actions>
+      <action type="open_display">
+        <file>opi/tripplite_outlets_8.bob</file>
+        <macros>
+          <P>tripp_pdu</P>
+          <R>U8</R>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>U8 TRIP-PDU 10.69.26.37</text>
+    <x>26</x>
+    <y>365</y>
+    <width>156</width>
+    <height>25</height>
+    <font>
+      <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
 </display>

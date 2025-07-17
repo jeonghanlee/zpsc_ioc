@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Tripplite PDU CircuitTemplate</name>
+  <width>650</width>
+  <height>25</height>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Bank $(CHAN)</text>
+    <width>80</width>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>sim://flipflop(0.5)</pv_name>
+    <x>320</x>
+    <visible>false</visible>
+    <on_color>
+      <color name="MINOR" red="255" green="128" blue="0">
+      </color>
+    </on_color>
+    <rules>
+      <rule name="Visible" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(P)$(R)OutletCmdProc$(Outlet)</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)CircuitVoltage$(CHAN)</pv_name>
+    <x>170</x>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P)$(R)CircuitCurrent$(CHAN)</pv_name>
+    <x>290</x>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>$(P)$(R)CircuitPower$(CHAN)</pv_name>
+    <x>410</x>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(P)$(R)CircuitUtil$(CHAN)</pv_name>
+    <x>530</x>
+  </widget>
+  <widget type="multi_state_led" version="2.0.0">
+    <name>LED (Multi State)_1</name>
+    <pv_name>$(P)$(R)CircuitBreakerSts$(CHAN)</pv_name>
+    <x>110</x>
+    <states>
+      <state>
+        <value>0</value>
+        <label></label>
+        <color>
+          <color name="STOP" red="255" green="0" blue="0">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>1</value>
+        <label></label>
+        <color>
+          <color name="OK" red="0" green="255" blue="0">
+          </color>
+        </color>
+      </state>
+    </states>
+  </widget>
+</display>

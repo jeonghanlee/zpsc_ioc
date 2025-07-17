@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>TrippLite 1U18 PDU</name>
+  <macros>
+    <P>A0202:</P>
+    <R>PDU1:</R>
+  </macros>
+  <width>1500</width>
+  <height>800</height>
+  <widget type="label" version="2.0.0">
+    <name>Label_14</name>
+    <class>TITLE</class>
+    <text>PDU $(P)$(R)</text>
+    <width>1090</width>
+    <height>60</height>
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Device Info</name>
+    <x>10</x>
+    <y>40</y>
+    <width>405</width>
+    <height>248</height>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(P)$(R)SerialNo</pv_name>
+      <x>110</x>
+      <y>184</y>
+      <width>259</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>Serial #:</text>
+      <y>184</y>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>$(P)$(R)DeviceName</pv_name>
+      <x>110</x>
+      <y>8</y>
+      <width>259</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>Device Name:</text>
+      <y>8</y>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_8</name>
+      <pv_name>$(P)$(R)MAC</pv_name>
+      <x>110</x>
+      <y>133</y>
+      <width>259</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_9</name>
+      <pv_name>$(P)$(R)DeviceType</pv_name>
+      <x>110</x>
+      <y>108</y>
+      <width>259</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_10</name>
+      <pv_name>$(P)$(R)UUID</pv_name>
+      <x>110</x>
+      <y>158</y>
+      <width>259</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_11</name>
+      <pv_name>$(P)$(R)Manufacturer</pv_name>
+      <x>110</x>
+      <y>58</y>
+      <width>259</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_16</name>
+      <text>Device Type:</text>
+      <y>108</y>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_17</name>
+      <text>MAC Address:</text>
+      <y>133</y>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_18</name>
+      <text>UUID:</text>
+      <y>158</y>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_19</name>
+      <text>Manufacturer:</text>
+      <y>58</y>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_12</name>
+      <pv_name>$(P)$(R)Model</pv_name>
+      <x>110</x>
+      <y>83</y>
+      <width>259</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_20</name>
+      <text>Model:</text>
+      <y>83</y>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_13</name>
+      <pv_name>$(P)$(R)DriverVersion</pv_name>
+      <x>110</x>
+      <y>33</y>
+      <width>259</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_21</name>
+      <text>Driver Version:</text>
+      <y>33</y>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Outlet</name>
+    <y>300</y>
+    <width>480</width>
+    <height>500</height>
+    <widget type="template" version="2.0.0">
+      <name>Template/Instance</name>
+      <file>_outlet.bob</file>
+      <instances>
+        <instance>
+          <macros>
+            <Outlet>1</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>2</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>3</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>4</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>5</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>6</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>7</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>8</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>9</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>10</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>11</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>12</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>13</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>14</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>15</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>16</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>17</Outlet>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <Outlet>18</Outlet>
+          </macros>
+        </instance>
+      </instances>
+      <x>12</x>
+      <y>12</y>
+      <width>420</width>
+      <height>396</height>
+      <gap>0</gap>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Bank</name>
+    <x>490</x>
+    <y>300</y>
+    <width>710</width>
+    <height>214</height>
+    <widget type="template" version="2.0.0">
+      <name>Template/Instance_1</name>
+      <file>_circuit.bob</file>
+      <instances>
+        <instance>
+          <macros>
+            <CHAN>1</CHAN>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <CHAN>2</CHAN>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <CHAN>3</CHAN>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <CHAN>4</CHAN>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <CHAN>5</CHAN>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <CHAN>6</CHAN>
+          </macros>
+        </instance>
+      </instances>
+      <x>12</x>
+      <y>27</y>
+      <width>650</width>
+      <height>150</height>
+      <gap>0</gap>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Breaker</text>
+      <x>112</x>
+      <y>2</y>
+      <width>50</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Voltage</text>
+      <x>202</x>
+      <y>2</y>
+      <width>48</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>Current</text>
+      <x>322</x>
+      <y>2</y>
+      <width>47</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>Utilisation</text>
+      <x>562</x>
+      <y>2</y>
+      <width>61</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>Power</text>
+      <x>442</x>
+      <y>2</y>
+      <width>40</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Phase</name>
+    <x>490</x>
+    <y>86</y>
+    <width>1055</width>
+    <height>150</height>
+    <widget type="template" version="2.0.0">
+      <name>Template/Instance_2</name>
+      <file>_phase.bob</file>
+      <instances>
+        <instance>
+          <macros>
+            <CHAN>1</CHAN>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <CHAN>2</CHAN>
+          </macros>
+        </instance>
+        <instance>
+          <macros>
+            <CHAN>3</CHAN>
+          </macros>
+        </instance>
+      </instances>
+      <x>12</x>
+      <y>27</y>
+      <width>1000</width>
+      <height>75</height>
+      <gap>0</gap>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>Frequency</text>
+      <x>147</x>
+      <y>2</y>
+      <width>67</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>Input Voltage</text>
+      <x>267</x>
+      <y>2</y>
+      <width>83</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>Input Current</text>
+      <x>387</x>
+      <y>2</y>
+      <width>82</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <text>Output Current</text>
+      <x>497</x>
+      <y>2</y>
+      <width>93</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_10</name>
+      <text>Active Power</text>
+      <x>620</x>
+      <y>2</y>
+      <width>82</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_11</name>
+      <text>Apparent Power</text>
+      <x>731</x>
+      <y>2</y>
+      <width>101</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <text>Power</text>
+      <x>877</x>
+      <y>2</y>
+      <width>40</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+</display>

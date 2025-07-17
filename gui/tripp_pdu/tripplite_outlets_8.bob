@@ -1,0 +1,1446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-07-17 11:39:52 by pstester-->
+<display version="2.0.0">
+  <name>TrippLite 1U8 PDU</name>
+  <width>1000</width>
+  <height>900</height>
+  <background_color>
+    <color name="Button_Background" red="210" green="210" blue="210">
+    </color>
+  </background_color>
+  <widget type="group" version="3.0.0">
+    <name>Device Info</name>
+    <x>500</x>
+    <y>330</y>
+    <width>485</width>
+    <height>300</height>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(P):$(R):SERIAL</pv_name>
+      <x>130</x>
+      <y>235</y>
+      <width>275</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>Serial #:</text>
+      <x>5</x>
+      <y>235</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>$(P):$(R):DEVICE_NAME</pv_name>
+      <x>130</x>
+      <y>10</y>
+      <width>275</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>Device Name:</text>
+      <x>5</x>
+      <y>10</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_8</name>
+      <pv_name>$(P):$(R):MAC</pv_name>
+      <x>130</x>
+      <y>160</y>
+      <width>275</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_9</name>
+      <pv_name>$(P):$(R):DEVICE_TYPE</pv_name>
+      <x>130</x>
+      <y>135</y>
+      <width>275</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_10</name>
+      <pv_name>$(P):$(R):UUID</pv_name>
+      <x>130</x>
+      <y>210</y>
+      <width>275</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_11</name>
+      <pv_name>$(P):$(R):MANUFACTURER</pv_name>
+      <x>130</x>
+      <y>85</y>
+      <width>275</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_16</name>
+      <text>Device Type:</text>
+      <x>5</x>
+      <y>135</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_17</name>
+      <text>MAC Address:</text>
+      <x>5</x>
+      <y>160</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_18</name>
+      <text>UUID:</text>
+      <x>5</x>
+      <y>210</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_19</name>
+      <text>Manufacturer:</text>
+      <x>5</x>
+      <y>85</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_12</name>
+      <pv_name>$(P):$(R):MODEL</pv_name>
+      <x>130</x>
+      <y>110</y>
+      <width>275</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_20</name>
+      <text>Model:</text>
+      <x>5</x>
+      <y>110</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_13</name>
+      <pv_name>$(P):$(R):DRIVER_VERSION</pv_name>
+      <x>130</x>
+      <y>35</y>
+      <width>275</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_21</name>
+      <text>Driver Version:</text>
+      <x>5</x>
+      <y>35</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_22</name>
+      <text>Device ID:</text>
+      <x>5</x>
+      <y>185</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_14</name>
+      <pv_name>$(P):$(R):DEVICE_ID</pv_name>
+      <x>130</x>
+      <y>185</y>
+      <width>275</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_23</name>
+      <text>Firmware Version:</text>
+      <x>5</x>
+      <y>60</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_15</name>
+      <pv_name>$(P):$(R):FIRMWARE</pv_name>
+      <x>130</x>
+      <y>60</y>
+      <width>275</width>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Controls</name>
+    <x>15</x>
+    <y>330</y>
+    <width>485</width>
+    <height>300</height>
+    <widget type="group" version="3.0.0">
+      <name>Group</name>
+      <macros>
+        <N>1</N>
+      </macros>
+      <x>10</x>
+      <y>50</y>
+      <width>410</width>
+      <height>22</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_2</name>
+        <text>Outlet $(N)</text>
+        <width>80</width>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>LED (Multi State)_1</name>
+        <pv_name>$(P):$(R):LOAD$(N):STATE</pv_name>
+        <x>85</x>
+        <states>
+          <state>
+            <value>OFF</value>
+            <label></label>
+            <color>
+              <color name="Off" red="60" green="100" blue="60">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>ON</value>
+            <label></label>
+            <color>
+              <color name="On" red="0" green="255" blue="0">
+              </color>
+            </color>
+          </state>
+        </states>
+        <fallback_label></fallback_label>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_1</name>
+        <pv_name>sim://flipflop(0.5)</pv_name>
+        <x>390</x>
+        <visible>false</visible>
+        <on_color>
+          <color name="MINOR" red="255" green="128" blue="0">
+          </color>
+        </on_color>
+        <rules>
+          <rule name="Visible" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>false</value>
+            </exp>
+            <pv_name>$(P)$(R)OutletCmdProc$(Outlet)</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="choice" version="2.0.0">
+        <name>Choice Button_9</name>
+        <pv_name>$(P):$(R):LOAD$(N):CMD</pv_name>
+        <x>120</x>
+        <width>180</width>
+        <height>22</height>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <items>
+          <item>item 1</item>
+          <item>item 2</item>
+        </items>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_21</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name).PROC</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(P):$(R):LOAD$(N):CYCLE</pv_name>
+        <text>CYCLE</text>
+        <x>300</x>
+        <width>90</width>
+        <height>22</height>
+        <tooltip>Turns OFF for 5s then turns ON</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_1</name>
+      <macros>
+        <N>2</N>
+      </macros>
+      <x>10</x>
+      <y>75</y>
+      <width>410</width>
+      <height>22</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_3</name>
+        <text>Outlet $(N)</text>
+        <width>80</width>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>LED (Multi State)_2</name>
+        <pv_name>$(P):$(R):LOAD$(N):STATE</pv_name>
+        <x>85</x>
+        <states>
+          <state>
+            <value>OFF</value>
+            <label></label>
+            <color>
+              <color name="Off" red="60" green="100" blue="60">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>ON</value>
+            <label></label>
+            <color>
+              <color name="On" red="0" green="255" blue="0">
+              </color>
+            </color>
+          </state>
+        </states>
+        <fallback_label></fallback_label>
+      </widget>
+      <widget type="choice" version="2.0.0">
+        <name>Choice Button_1</name>
+        <pv_name>$(P):$(R):LOAD$(N):CMD</pv_name>
+        <x>120</x>
+        <width>180</width>
+        <height>22</height>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <items>
+          <item>Item 1</item>
+          <item>Item 2</item>
+        </items>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_2</name>
+        <pv_name>sim://flipflop(0.5)</pv_name>
+        <x>390</x>
+        <visible>false</visible>
+        <on_color>
+          <color name="MINOR" red="255" green="128" blue="0">
+          </color>
+        </on_color>
+        <rules>
+          <rule name="Visible" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>false</value>
+            </exp>
+            <pv_name>$(P)$(R)OutletCmdProc$(Outlet)</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_14</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name).PROC</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(P):$(R):LOAD$(N):CYCLE</pv_name>
+        <text>CYCLE</text>
+        <x>300</x>
+        <width>90</width>
+        <height>22</height>
+        <tooltip>Turns OFF for 5s then turns ON</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_2</name>
+      <macros>
+        <N>3</N>
+      </macros>
+      <x>10</x>
+      <y>100</y>
+      <width>410</width>
+      <height>22</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_4</name>
+        <text>Outlet $(N)</text>
+        <width>80</width>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>LED (Multi State)_3</name>
+        <pv_name>$(P):$(R):LOAD$(N):STATE</pv_name>
+        <x>85</x>
+        <states>
+          <state>
+            <value>OFF</value>
+            <label></label>
+            <color>
+              <color name="Off" red="60" green="100" blue="60">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>ON</value>
+            <label></label>
+            <color>
+              <color name="On" red="0" green="255" blue="0">
+              </color>
+            </color>
+          </state>
+        </states>
+        <fallback_label></fallback_label>
+      </widget>
+      <widget type="choice" version="2.0.0">
+        <name>Choice Button_2</name>
+        <pv_name>$(P):$(R):LOAD$(N):CMD</pv_name>
+        <x>120</x>
+        <width>180</width>
+        <height>22</height>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <items>
+          <item>Item 1</item>
+          <item>Item 2</item>
+        </items>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_3</name>
+        <pv_name>sim://flipflop(0.5)</pv_name>
+        <x>390</x>
+        <visible>false</visible>
+        <on_color>
+          <color name="MINOR" red="255" green="128" blue="0">
+          </color>
+        </on_color>
+        <rules>
+          <rule name="Visible" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>false</value>
+            </exp>
+            <pv_name>$(P)$(R)OutletCmdProc$(Outlet)</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_15</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name).PROC</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(P):$(R):LOAD$(N):CYCLE</pv_name>
+        <text>CYCLE</text>
+        <x>300</x>
+        <width>90</width>
+        <height>22</height>
+        <tooltip>Turns OFF for 5s then turns ON</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_3</name>
+      <macros>
+        <N>4</N>
+      </macros>
+      <x>10</x>
+      <y>125</y>
+      <width>410</width>
+      <height>22</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_5</name>
+        <text>Outlet $(N)</text>
+        <width>80</width>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>LED (Multi State)_4</name>
+        <pv_name>$(P):$(R):LOAD$(N):STATE</pv_name>
+        <x>85</x>
+        <states>
+          <state>
+            <value>OFF</value>
+            <label></label>
+            <color>
+              <color name="Off" red="60" green="100" blue="60">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>ON</value>
+            <label></label>
+            <color>
+              <color name="On" red="0" green="255" blue="0">
+              </color>
+            </color>
+          </state>
+        </states>
+        <fallback_label></fallback_label>
+      </widget>
+      <widget type="choice" version="2.0.0">
+        <name>Choice Button_3</name>
+        <pv_name>$(P):$(R):LOAD$(N):CMD</pv_name>
+        <x>120</x>
+        <width>180</width>
+        <height>22</height>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <items>
+          <item>Item 1</item>
+          <item>Item 2</item>
+        </items>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_4</name>
+        <pv_name>sim://flipflop(0.5)</pv_name>
+        <x>390</x>
+        <visible>false</visible>
+        <on_color>
+          <color name="MINOR" red="255" green="128" blue="0">
+          </color>
+        </on_color>
+        <rules>
+          <rule name="Visible" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>false</value>
+            </exp>
+            <pv_name>$(P)$(R)OutletCmdProc$(Outlet)</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_16</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name).PROC</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(P):$(R):LOAD$(N):CYCLE</pv_name>
+        <text>CYCLE</text>
+        <x>300</x>
+        <width>90</width>
+        <height>22</height>
+        <tooltip>Turns OFF for 5s then turns ON</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_4</name>
+      <macros>
+        <N>5</N>
+      </macros>
+      <x>10</x>
+      <y>150</y>
+      <width>410</width>
+      <height>22</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_6</name>
+        <text>Outlet $(N)</text>
+        <width>80</width>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>LED (Multi State)_5</name>
+        <pv_name>$(P):$(R):LOAD$(N):STATE</pv_name>
+        <x>85</x>
+        <states>
+          <state>
+            <value>OFF</value>
+            <label></label>
+            <color>
+              <color name="Off" red="60" green="100" blue="60">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>ON</value>
+            <label></label>
+            <color>
+              <color name="On" red="0" green="255" blue="0">
+              </color>
+            </color>
+          </state>
+        </states>
+        <fallback_label></fallback_label>
+      </widget>
+      <widget type="choice" version="2.0.0">
+        <name>Choice Button_4</name>
+        <pv_name>$(P):$(R):LOAD$(N):CMD</pv_name>
+        <x>120</x>
+        <width>180</width>
+        <height>22</height>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <items>
+          <item>Item 1</item>
+          <item>Item 2</item>
+        </items>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_5</name>
+        <pv_name>sim://flipflop(0.5)</pv_name>
+        <x>390</x>
+        <visible>false</visible>
+        <on_color>
+          <color name="MINOR" red="255" green="128" blue="0">
+          </color>
+        </on_color>
+        <rules>
+          <rule name="Visible" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>false</value>
+            </exp>
+            <pv_name>$(P)$(R)OutletCmdProc$(Outlet)</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_17</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name).PROC</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(P):$(R):LOAD$(N):CYCLE</pv_name>
+        <text>CYCLE</text>
+        <x>300</x>
+        <width>90</width>
+        <height>22</height>
+        <tooltip>Turns OFF for 5s then turns ON</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_5</name>
+      <macros>
+        <N>6</N>
+      </macros>
+      <x>10</x>
+      <y>175</y>
+      <width>410</width>
+      <height>22</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_7</name>
+        <text>Outlet $(N)</text>
+        <width>80</width>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>LED (Multi State)_6</name>
+        <pv_name>$(P):$(R):LOAD$(N):STATE</pv_name>
+        <x>85</x>
+        <states>
+          <state>
+            <value>OFF</value>
+            <label></label>
+            <color>
+              <color name="Off" red="60" green="100" blue="60">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>ON</value>
+            <label></label>
+            <color>
+              <color name="On" red="0" green="255" blue="0">
+              </color>
+            </color>
+          </state>
+        </states>
+        <fallback_label></fallback_label>
+      </widget>
+      <widget type="choice" version="2.0.0">
+        <name>Choice Button_5</name>
+        <pv_name>$(P):$(R):LOAD$(N):CMD</pv_name>
+        <x>120</x>
+        <width>180</width>
+        <height>22</height>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <items>
+          <item>Item 1</item>
+          <item>Item 2</item>
+        </items>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_6</name>
+        <pv_name>sim://flipflop(0.5)</pv_name>
+        <x>390</x>
+        <visible>false</visible>
+        <on_color>
+          <color name="MINOR" red="255" green="128" blue="0">
+          </color>
+        </on_color>
+        <rules>
+          <rule name="Visible" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>false</value>
+            </exp>
+            <pv_name>$(P)$(R)OutletCmdProc$(Outlet)</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_18</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name).PROC</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(P):$(R):LOAD$(N):CYCLE</pv_name>
+        <text>CYCLE</text>
+        <x>300</x>
+        <width>90</width>
+        <height>22</height>
+        <tooltip>Turns OFF for 5s then turns ON</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_6</name>
+      <macros>
+        <N>7</N>
+      </macros>
+      <x>10</x>
+      <y>200</y>
+      <width>410</width>
+      <height>22</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_8</name>
+        <text>Outlet $(N)</text>
+        <width>80</width>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>LED (Multi State)_7</name>
+        <pv_name>$(P):$(R):LOAD$(N):STATE</pv_name>
+        <x>85</x>
+        <states>
+          <state>
+            <value>OFF</value>
+            <label></label>
+            <color>
+              <color name="Off" red="60" green="100" blue="60">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>ON</value>
+            <label></label>
+            <color>
+              <color name="On" red="0" green="255" blue="0">
+              </color>
+            </color>
+          </state>
+        </states>
+        <fallback_label></fallback_label>
+      </widget>
+      <widget type="choice" version="2.0.0">
+        <name>Choice Button_6</name>
+        <pv_name>$(P):$(R):LOAD$(N):CMD</pv_name>
+        <x>120</x>
+        <width>180</width>
+        <height>22</height>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <items>
+          <item>Item 1</item>
+          <item>Item 2</item>
+        </items>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_7</name>
+        <pv_name>sim://flipflop(0.5)</pv_name>
+        <x>390</x>
+        <visible>false</visible>
+        <on_color>
+          <color name="MINOR" red="255" green="128" blue="0">
+          </color>
+        </on_color>
+        <rules>
+          <rule name="Visible" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>false</value>
+            </exp>
+            <pv_name>$(P)$(R)OutletCmdProc$(Outlet)</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_19</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name).PROC</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(P):$(R):LOAD$(N):CYCLE</pv_name>
+        <text>CYCLE</text>
+        <x>300</x>
+        <width>90</width>
+        <height>22</height>
+        <tooltip>Turns OFF for 5s then turns ON</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_7</name>
+      <macros>
+        <N>8</N>
+      </macros>
+      <x>10</x>
+      <y>225</y>
+      <width>410</width>
+      <height>22</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_9</name>
+        <text>Outlet $(N)</text>
+        <width>80</width>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>LED (Multi State)_8</name>
+        <pv_name>$(P):$(R):LOAD$(N):STATE</pv_name>
+        <x>85</x>
+        <states>
+          <state>
+            <value>OFF</value>
+            <label></label>
+            <color>
+              <color name="Off" red="60" green="100" blue="60">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>ON</value>
+            <label></label>
+            <color>
+              <color name="On" red="0" green="255" blue="0">
+              </color>
+            </color>
+          </state>
+        </states>
+        <fallback_label></fallback_label>
+      </widget>
+      <widget type="choice" version="2.0.0">
+        <name>Choice Button_7</name>
+        <pv_name>$(P):$(R):LOAD$(N):CMD</pv_name>
+        <x>120</x>
+        <width>180</width>
+        <height>22</height>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <items>
+          <item>Item 1</item>
+          <item>Item 2</item>
+        </items>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_8</name>
+        <pv_name>sim://flipflop(0.5)</pv_name>
+        <x>390</x>
+        <visible>false</visible>
+        <on_color>
+          <color name="MINOR" red="255" green="128" blue="0">
+          </color>
+        </on_color>
+        <rules>
+          <rule name="Visible" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>false</value>
+            </exp>
+            <pv_name>$(P)$(R)OutletCmdProc$(Outlet)</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_20</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name).PROC</pv_name>
+            <value>1</value>
+            <description>Write PV</description>
+          </action>
+        </actions>
+        <pv_name>$(P):$(R):LOAD$(N):CYCLE</pv_name>
+        <text>CYCLE</text>
+        <x>300</x>
+        <width>90</width>
+        <height>22</height>
+        <tooltip>Turns OFF for 5s then turns ON</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group</name>
+      <x>10</x>
+      <y>10</y>
+      <width>410</width>
+      <height>25</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_7</name>
+        <actions execute_as_one="true">
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD1:CYCLE.PROC</pv_name>
+            <value>1</value>
+            <description>CYCLE ALL</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD2:CYCLE.PROC</pv_name>
+            <value>1</value>
+            <description>CYCLE ALL</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD3:CYCLE.PROC</pv_name>
+            <value>1</value>
+            <description>CYCLE ALL</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD4:CYCLE.PROC</pv_name>
+            <value>1</value>
+            <description>CYCLE ALL</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD5:CYCLE.PROC</pv_name>
+            <value>1</value>
+            <description>CYCLE ALL</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD6:CYCLE.PROC</pv_name>
+            <value>1</value>
+            <description>CYCLE ALL</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD7:CYCLE.PROC</pv_name>
+            <value>1</value>
+            <description>CYCLE ALL</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD8:CYCLE.PROC</pv_name>
+            <value>1</value>
+            <description>CYCLE ALL</description>
+          </action>
+        </actions>
+        <text>Cycle All</text>
+        <x>300</x>
+        <width>90</width>
+        <height>25</height>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_9</name>
+        <actions execute_as_one="true">
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD1:CMD</pv_name>
+            <value>0</value>
+            <description>Turn ALL OFF</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD2:CMD</pv_name>
+            <value>0</value>
+            <description>Turn ALL OFF</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD3:CMD</pv_name>
+            <value>0</value>
+            <description>Turn ALL OFF</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD4:CMD</pv_name>
+            <value>0</value>
+            <description>Turn ALL OFF</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD5:CMD</pv_name>
+            <value>0</value>
+            <description>Turn ALL OFF</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD6:CMD</pv_name>
+            <value>0</value>
+            <description>Turn ALL OFF</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD7:CMD</pv_name>
+            <value>0</value>
+            <description>Turn ALL OFF</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD8:CMD</pv_name>
+            <value>0</value>
+            <description>Turn ALL OFF</description>
+          </action>
+        </actions>
+        <text>Turn Off All</text>
+        <x>120</x>
+        <width>90</width>
+        <height>25</height>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>LED (Multi State)_9</name>
+        <pv_name>$(P):$(R):MAIN_LOAD_STATE</pv_name>
+        <x>85</x>
+        <states>
+          <state>
+            <value>OFF</value>
+            <label></label>
+            <color>
+              <color name="Off" red="60" green="100" blue="60">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>ON</value>
+            <label></label>
+            <color>
+              <color name="On" red="0" green="255" blue="0">
+              </color>
+            </color>
+          </state>
+        </states>
+        <fallback_label></fallback_label>
+        <fallback_color>
+          <color name="Off" red="60" green="100" blue="60">
+          </color>
+        </fallback_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_10</name>
+        <text>Main Load</text>
+        <width>80</width>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_8</name>
+        <actions execute_as_one="true">
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD1:CMD</pv_name>
+            <value>1</value>
+            <description>Turn ALL ON</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD2:CMD</pv_name>
+            <value>1</value>
+            <description>Turn ALL ON</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD3:CMD</pv_name>
+            <value>1</value>
+            <description>Turn ALL ON</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD4:CMD</pv_name>
+            <value>1</value>
+            <description>Turn ALL ON</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD5:CMD</pv_name>
+            <value>1</value>
+            <description>Turn ALL ON</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD6:CMD</pv_name>
+            <value>1</value>
+            <description>Turn ALL ON</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD7:CMD</pv_name>
+            <value>1</value>
+            <description>Turn ALL ON</description>
+          </action>
+          <action type="write_pv">
+            <pv_name>$(P):$(R):LOAD8:CMD</pv_name>
+            <value>1</value>
+            <description>Turn ALL ON</description>
+          </action>
+        </actions>
+        <text>Turn On All</text>
+        <x>210</x>
+        <width>90</width>
+        <height>25</height>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="stripchart" version="2.1.0">
+    <name>VOLTAGES</name>
+    <x>15</x>
+    <y>80</y>
+    <width>970</width>
+    <height>240</height>
+    <foreground_color>
+      <color name="Header_ForeGround" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <show_grid>true</show_grid>
+    <title>VOLTAGES</title>
+    <show_toolbar>false</show_toolbar>
+    <show_legend>true</show_legend>
+    <start>10 minute</start>
+    <y_axes>
+      <y_axis>
+        <title></title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>50.0</maximum>
+        <show_grid>true</show_grid>
+        <visible>true</visible>
+        <color>
+          <color name="Header_ForeGround" red="255" green="255" blue="255">
+          </color>
+        </color>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>.  INPUT</name>
+        <y_pv>$(P):$(R):VIN</y_pv>
+        <axis>0</axis>
+        <trace_type>2</trace_type>
+        <color>
+          <color red="0" green="0" blue="255">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>OUTPUT</name>
+        <y_pv>$(P):$(R):VOUT</y_pv>
+        <axis>1</axis>
+        <trace_type>2</trace_type>
+        <color>
+          <color name="ActiveText" red="255" green="255" blue="0">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Metrics</name>
+    <x>15</x>
+    <y>630</y>
+    <width>970</width>
+    <height>170</height>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_17</name>
+      <pv_name>$(P):$(R):VIN</pv_name>
+      <x>130</x>
+      <y>10</y>
+      <width>275</width>
+      <precision>2</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_33</name>
+      <text>Input Voltage:</text>
+      <x>5</x>
+      <y>10</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_18</name>
+      <pv_name>$(P):$(R):ENERGY</pv_name>
+      <x>620</x>
+      <y>85</y>
+      <width>275</width>
+      <precision>2</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_19</name>
+      <pv_name>$(P):$(R):POWER</pv_name>
+      <x>620</x>
+      <y>60</y>
+      <width>275</width>
+      <precision>2</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_21</name>
+      <pv_name>$(P):$(R):FOUT</pv_name>
+      <x>620</x>
+      <y>35</y>
+      <width>275</width>
+      <precision>2</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_34</name>
+      <text>Power:</text>
+      <x>495</x>
+      <y>60</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_35</name>
+      <text>Energy:</text>
+      <x>495</x>
+      <y>85</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_37</name>
+      <text>Output Frequency:</text>
+      <x>495</x>
+      <y>35</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_22</name>
+      <pv_name>$(P):$(R):VOLT_LOWT</pv_name>
+      <x>130</x>
+      <y>110</y>
+      <width>275</width>
+      <precision>2</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_38</name>
+      <text>Low Transfer Volt:</text>
+      <x>5</x>
+      <y>110</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_23</name>
+      <pv_name>$(P):$(R):VOUT</pv_name>
+      <x>130</x>
+      <y>35</y>
+      <width>275</width>
+      <precision>2</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_39</name>
+      <text>Output Voltage:</text>
+      <x>5</x>
+      <y>35</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_40</name>
+      <text>Energy (24hrs):</text>
+      <x>495</x>
+      <y>110</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_24</name>
+      <pv_name>$(P):$(R):ENERGY_24H</pv_name>
+      <x>620</x>
+      <y>110</y>
+      <width>275</width>
+      <precision>2</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_41</name>
+      <text>Input Frequency:</text>
+      <x>495</x>
+      <y>10</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_25</name>
+      <pv_name>$(P):$(R):FIN</pv_name>
+      <x>620</x>
+      <y>10</y>
+      <width>275</width>
+      <precision>2</precision>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_26</name>
+      <pv_name>$(P):$(R):VOLT_MAX</pv_name>
+      <x>130</x>
+      <y>60</y>
+      <width>275</width>
+      <precision>2</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_42</name>
+      <text>Maximum Voltage:</text>
+      <x>5</x>
+      <y>60</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_27</name>
+      <pv_name>$(P):$(R):VOLT_MIN</pv_name>
+      <x>130</x>
+      <y>85</y>
+      <width>275</width>
+      <precision>2</precision>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_43</name>
+      <text>Minimum Voltage:</text>
+      <x>5</x>
+      <y>85</y>
+      <width>120</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_11</name>
+    <text>PDU $(P):$(R)</text>
+    <width>1000</width>
+    <height>60</height>
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>Picture_1</name>
+    <file>BerkleyLab.png</file>
+    <width>220</width>
+    <height>60</height>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(P):$(R):HEARTBEAT</pv_name>
+    <x>53</x>
+    <y>5</y>
+    <width>10</width>
+    <height>10</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P):$(R):TIME_OF_DAY</pv_name>
+    <x>795</x>
+    <y>810</y>
+    <width>190</width>
+    <foreground_color>
+      <color name="Header_ForeGround" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>Picture_2</name>
+    <file>ALS-U.png</file>
+    <x>780</x>
+    <width>220</width>
+    <height>60</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P):$(R):RUNNING_SINCE</pv_name>
+    <x>115</x>
+    <y>810</y>
+    <width>190</width>
+    <foreground_color>
+      <color name="Header_ForeGround" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text> Last Reboot:</text>
+    <x>15</x>
+    <y>810</y>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Header_ForeGround" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>$(P):$(R):UPTIME_SEC</pv_name>
+    <x>115</x>
+    <y>840</y>
+    <width>190</width>
+    <foreground_color>
+      <color name="Header_ForeGround" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text> Uptime:</text>
+    <x>15</x>
+    <y>840</y>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Header_ForeGround" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_12</name>
+    <text> Time of Day:</text>
+    <x>700</x>
+    <y>810</y>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Header_ForeGround" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+</display>

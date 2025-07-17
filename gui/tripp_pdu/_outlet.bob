@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-07-25 15:03:51 by nusaqib-->
+<display version="2.0.0">
+  <name>ICT Panel Outlet Template</name>
+  <width>420</width>
+  <height>22</height>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Outlet $(Outlet)</text>
+    <width>60</width>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="multi_state_led" version="2.0.0">
+    <name>LED (Multi State)_1</name>
+    <pv_name>$(P)$(R)OutletStatus$(Outlet)</pv_name>
+    <x>81</x>
+    <states>
+      <state>
+        <value>1</value>
+        <label></label>
+        <color>
+          <color name="Off" red="60" green="100" blue="60">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>2</value>
+        <label></label>
+        <color>
+          <color name="On" red="0" green="255" blue="0">
+          </color>
+        </color>
+      </state>
+    </states>
+    <fallback_label></fallback_label>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>sim://flipflop(0.5)</pv_name>
+    <x>390</x>
+    <on_color>
+      <color name="MINOR" red="255" green="128" blue="0">
+      </color>
+    </on_color>
+    <rules>
+      <rule name="Visible" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(R)OutletCmdProc$(Outlet)</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button</name>
+    <pv_name>$(P)$(R)OutletCmd$(Outlet)</pv_name>
+    <x>120</x>
+    <width>250</width>
+    <height>22</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+      <item>Item 3</item>
+    </items>
+  </widget>
+</display>

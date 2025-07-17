@@ -1,0 +1,4 @@
+NAME=zpsc_ioc
+PORT=4055
+USER=softioc
+HOST=pstester3

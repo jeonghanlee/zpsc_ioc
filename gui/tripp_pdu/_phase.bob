@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Tripplite PDU CircuitTemplate</name>
+  <width>1000</width>
+  <height>25</height>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Phase $(CHAN)</text>
+    <width>80</width>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>sim://flipflop(0.5)</pv_name>
+    <x>270</x>
+    <visible>false</visible>
+    <on_color>
+      <color name="MINOR" red="255" green="128" blue="0">
+      </color>
+    </on_color>
+    <rules>
+      <rule name="Visible" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(P)$(R)OutletCmdProc$(Outlet)</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)PhaseFreq$(CHAN)</pv_name>
+    <x>120</x>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P)$(R)PhaseInpVoltage$(CHAN)</pv_name>
+    <x>240</x>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>$(P)$(R)PhaseInpCurrent$(CHAN)</pv_name>
+    <x>360</x>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(P)$(R)PhaseOutCurrent$(CHAN)</pv_name>
+    <x>480</x>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>$(P)$(R)PhaseOutActivePower$(CHAN)</pv_name>
+    <x>600</x>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_5</name>
+    <pv_name>$(P)$(R)PhaseOutAppPower$(CHAN)</pv_name>
+    <x>720</x>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>$(P)$(R)PhaseOutPower$(CHAN)</pv_name>
+    <x>840</x>
+  </widget>
+</display>
