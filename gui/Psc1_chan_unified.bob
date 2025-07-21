@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-07-16 09:09:00 by mead-->
+<!--Saved on 2025-07-21 16:01:18 by mead-->
 <display version="2.0.0">
   <name>$(CHAN):$(PriSys)</name>
   <width>1700</width>
@@ -163,90 +163,10 @@ $(actions)</tooltip>
     <transparent>true</transparent>
     <actions>
     </actions>
-    <widget type="label" version="2.0.0">
-      <name>Label_146</name>
-      <text>Amp/Volt</text>
-      <x>472</x>
-      <y>26</y>
-      <width>90</width>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input_5</name>
-      <pv_name>$(PriSys){$(PSC)}$(CHAN):SF:DAC_DCCTs-SP</pv_name>
-      <x>560</x>
-      <y>26</y>
-      <width>85</width>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>1</precision>
-      <show_units>false</show_units>
-      <horizontal_alignment>1</horizontal_alignment>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input_36</name>
-      <pv_name>$(PriSys){$(PSC)}$(CHAN):SF:AmpsperSec-SP</pv_name>
-      <x>560</x>
-      <y>49</y>
-      <width>85</width>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>1</precision>
-      <horizontal_alignment>1</horizontal_alignment>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_150</name>
-      <text>Ramp rate (A/s)</text>
-      <x>438</x>
-      <y>46</y>
-      <width>115</width>
-      <height>19</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_17</name>
       <pv_name>$(PriSys){$(PSC)}$(CHAN):DigOut_ON1-SP</pv_name>
-      <x>13</x>
+      <x>57</x>
       <y>37</y>
       <width>50</width>
       <height>21</height>
@@ -256,7 +176,7 @@ $(actions)</tooltip>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_18</name>
       <pv_name>$(PriSys){$(PSC)}$(CHAN):DigOut_ON2-SP</pv_name>
-      <x>68</x>
+      <x>112</x>
       <y>37</y>
       <width>50</width>
       <height>21</height>
@@ -266,7 +186,7 @@ $(actions)</tooltip>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_19</name>
       <pv_name>$(PriSys){$(PSC)}$(CHAN):DigOut_Reset-SP</pv_name>
-      <x>123</x>
+      <x>167</x>
       <y>37</y>
       <width>50</width>
       <height>21</height>
@@ -276,7 +196,7 @@ $(actions)</tooltip>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_20</name>
       <pv_name>$(PriSys){$(PSC)}$(CHAN):DigOut_Park-SP</pv_name>
-      <x>178</x>
+      <x>299</x>
       <y>37</y>
       <width>50</width>
       <height>21</height>
@@ -286,7 +206,7 @@ $(actions)</tooltip>
     <widget type="led" version="2.0.0">
       <name>LED_103</name>
       <pv_name>$(PriSys){$(PSC)}$(CHAN):DigIn-I.B0</pv_name>
-      <x>238</x>
+      <x>392</x>
       <y>37</y>
       <width>50</width>
       <height>21</height>
@@ -309,7 +229,7 @@ $(actions)</tooltip>
     <widget type="led" version="2.0.0">
       <name>LED_104</name>
       <pv_name>$(PriSys){$(PSC)}$(CHAN):DigIn-I.B1</pv_name>
-      <x>298</x>
+      <x>452</x>
       <y>37</y>
       <width>50</width>
       <height>21</height>
@@ -336,7 +256,7 @@ $(actions)</tooltip>
     <widget type="led" version="2.0.0">
       <name>LED_105</name>
       <pv_name>$(PriSys){$(PSC)}$(CHAN):DigIn-I.B2</pv_name>
-      <x>358</x>
+      <x>512</x>
       <y>37</y>
       <width>50</width>
       <height>21</height>
@@ -359,8 +279,8 @@ $(actions)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_236</name>
       <text>Pwr</text>
-      <x>13</x>
-      <y>8</y>
+      <x>57</x>
+      <y>11</y>
       <width>43</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -374,8 +294,8 @@ $(actions)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_237</name>
       <text>Enb</text>
-      <x>67</x>
-      <y>8</y>
+      <x>111</x>
+      <y>11</y>
       <width>46</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -389,8 +309,8 @@ $(actions)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_238</name>
       <text>Rst</text>
-      <x>125</x>
-      <y>8</y>
+      <x>169</x>
+      <y>11</y>
       <width>41</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -404,8 +324,8 @@ $(actions)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_239</name>
       <text>Park</text>
-      <x>175</x>
-      <y>8</y>
+      <x>296</x>
+      <y>11</y>
       <width>50</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -419,8 +339,8 @@ $(actions)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_240</name>
       <text>On</text>
-      <x>234</x>
-      <y>7</y>
+      <x>388</x>
+      <y>11</y>
       <width>55</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -433,10 +353,10 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_241</name>
-      <text>Flt</text>
-      <x>296</x>
-      <y>7</y>
-      <width>48</width>
+      <text>BPC Flt</text>
+      <x>450</x>
+      <y>11</y>
+      <width>52</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -449,8 +369,8 @@ $(actions)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_242</name>
       <text>HB</text>
-      <x>362</x>
-      <y>7</y>
+      <x>519</x>
+      <y>11</y>
       <width>32</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -461,12 +381,64 @@ $(actions)</tooltip>
         </color>
       </border_color>
     </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_110</name>
+      <pv_name>$(PriSys){$(PSC)}$(CHAN):DigIn-I.B3</pv_name>
+      <x>572</x>
+      <y>37</y>
+      <width>50</width>
+      <height>21</height>
+      <off_color>
+        <color red="0" green="95" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="MAJOR" red="255" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
     <widget type="label" version="2.0.0">
-      <name>Label_278</name>
-      <text>DAC Scale Factors</text>
-      <x>529</x>
-      <y>1</y>
-      <width>132</width>
+      <name>Label_279</name>
+      <text>Ext Flt</text>
+      <x>571</x>
+      <y>11</y>
+      <width>49</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_25</name>
+      <pv_name>$(PriSys){$(PSC)}$(CHAN):DigOut_Spare-SP</pv_name>
+      <x>222</x>
+      <y>37</y>
+      <width>50</width>
+      <height>21</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_281</name>
+      <text>Ext</text>
+      <x>224</x>
+      <y>11</y>
+      <width>41</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -2042,6 +2014,47 @@ $(actions)</tooltip>
         </trace>
       </traces>
     </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_38</name>
+      <pv_name>$(PriSys){$(PSC)}$(CHAN):TenHzBufLen-SP</pv_name>
+      <x>176</x>
+      <y>789</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_280</name>
+      <text>Buffer Length</text>
+      <x>65</x>
+      <y>789</y>
+      <width>101</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
   </widget>
   <widget type="group" version="3.0.0">
     <name>Fault Status</name>
@@ -2638,9 +2651,9 @@ $(actions)</tooltip>
       <name>Boolean Button_6</name>
       <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultClear-SP</pv_name>
       <x>189</x>
-      <y>45</y>
+      <y>28</y>
       <width>60</width>
-      <height>18</height>
+      <height>36</height>
       <off_label></off_label>
       <on_label></on_label>
     </widget>
@@ -2648,7 +2661,7 @@ $(actions)</tooltip>
       <name>Label_91</name>
       <text>Fault Clear</text>
       <x>181</x>
-      <y>28</y>
+      <y>11</y>
       <width>78</width>
       <height>27</height>
       <horizontal_alignment>1</horizontal_alignment>

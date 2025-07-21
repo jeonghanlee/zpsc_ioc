@@ -1,0 +1,2 @@
+#registrar(rollingBufRegistrar)
+function(rollingBufProcess_varlen)

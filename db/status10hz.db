@@ -1,5 +1,32 @@
 
  
+record(longout, "test:inputA") {
+    field(DESC, "Input A")
+    field(VAL, "1")
+    field(PINI, "YES")
+}
+
+record(longout, "test:inputB") {
+    field(DESC, "Input B")
+    field(VAL, "4")
+    field(PINI, "YES")
+}
+
+record(aSub, "test:sum") {
+    field(DESC, "Sum two float inputs")
+    field(INPA, "test:inputA")
+    field(FTA, "LONG")
+    field(INPB, "test:inputB")
+    field(FTB, "LONG")
+    field(FTVA, "FLOAT")
+    field(OUTA, "test:output")
+    field(SNAM, "sumTwoFloats")
+    field(SCAN, "1 second")  # process every second (or choose another trigger)
+}
+
+ 
+ 
+ 
 
 ############# 10Hz Status PV's (MSG ID 30) #########################
 
@@ -104,7 +131,7 @@ record(longin, "$(P){$(NO)}Bandwidth-I") {
 record(bi, "$(P){$(NO)}Bandwidth-Mode") {
     field(INP, "$(P){$(NO)}Bandwidth-I")
     field(ZNAM, "Fast")
-    field(ONAM, "Medium")
+    field(ONAM, "Slow")
     field(SCAN, "Passive")
 }
 
@@ -163,6 +190,16 @@ record(ai, "$(P){$(NO)}OneHz-Freq-I") {
 
 ### PS1 #####
 
+record(longout, "$(P){$(NO)}Chan1:TenHzBufLen-SP") {
+    field(DESC, "Rolling buffer length")
+    field(VAL, "100")     # default length
+    field(PREC, "0")
+    field(HOPR, "1000")
+    field(LOPR, "1")
+    field(PINI, "YES") 
+}
+
+
 record(ai, "$(P){$(NO)}Chan1:DCCT1-I") {
     field(DESC, "DCCT 1 Readback")
     field(DTYP, "PSC Reg F32")
@@ -174,12 +211,14 @@ record(ai, "$(P){$(NO)}Chan1:DCCT1-I") {
 
 record(aSub, "$(P){$(NO)}Chan1:DCCT1-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
-    field(INPA, "$(P){$(NO)}Chan1:DCCT1-I NPP NMS")  
+    field(INPA, "$(P){$(NO)}Chan1:DCCT1-I NPP ")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan1:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")   
     field(FTVA, "FLOAT")   
     field(NOVA, "1000") #buffer size
     field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan1:DCCT1-Wfm")         
 }
 
@@ -221,10 +260,12 @@ record(aSub, "$(P){$(NO)}Chan1:DCCT2-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan1:DCCT2-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan1:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")   
     field(FTVA, "FLOAT")   
     field(NOVA, "1000") #buffer size
     field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(SNAM, "rollingBufProcess_varlen")    
     field(FLNK, "$(P){$(NO)}Chan1:DCCT2-Wfm")         
 }
 
