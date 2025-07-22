@@ -8,7 +8,7 @@
 epicsEnvSet("IOCNAME", "lab")
 
 # PSC IP address
-epicsEnvSet("PSC1_IP", "10.69.26.31"); 
+epicsEnvSet("PSC1_IP", "10.0.142.115"); 
 
 epicsEnvSet("BLEN",100000);        # Snapshot DMA Length
 
@@ -20,7 +20,7 @@ zpsc_registerRecordDeviceDriver pdbbase
 
 ## Load record instances for PSC1
 dbLoadRecords("db/lstats.db", "P=$(IOCNAME), NO=1")
-dbLoadRecords("db/status10hz.db", "P=$(IOCNAME), NO=1, OFFSET=100")
+dbLoadRecords("db/status10hz.db", "P=$(IOCNAME), NO=1, OFFSET=100, BUFLEN=10000")
 dbLoadRecords("db/control_glob.db", "P=$(IOCNAME), NO=1")
 dbLoadRecords("db/control_chan.db", "P=$(IOCNAME), NO=1, CHAN=1")
 dbLoadRecords("db/control_chan.db", "P=$(IOCNAME), NO=1, CHAN=2")
@@ -82,6 +82,12 @@ dbpf lab{1}Chan1:DigOut_Reset-SP 0
 dbpf lab{1}Chan2:DigOut_Reset-SP 0
 dbpf lab{1}Chan3:DigOut_Reset-SP 0
 dbpf lab{1}Chan4:DigOut_Reset-SP 0
+
+dbpf lab{1}Chan1:DigOut_Spare-SP 0
+dbpf lab{1}Chan2:DigOut_Spare-SP 0
+dbpf lab{1}Chan3:DigOut_Spare-SP 0
+dbpf lab{1}Chan4:DigOut_Spare-SP 0
+
 
 dbpf lab{1}Chan1:DigOut_Park-SP 0
 dbpf lab{1}Chan2:DigOut_Park-SP 0

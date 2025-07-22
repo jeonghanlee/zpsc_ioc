@@ -1,31 +1,6 @@
 
  
-record(longout, "test:inputA") {
-    field(DESC, "Input A")
-    field(VAL, "1")
-    field(PINI, "YES")
-}
 
-record(longout, "test:inputB") {
-    field(DESC, "Input B")
-    field(VAL, "4")
-    field(PINI, "YES")
-}
-
-record(aSub, "test:sum") {
-    field(DESC, "Sum two float inputs")
-    field(INPA, "test:inputA")
-    field(FTA, "LONG")
-    field(INPB, "test:inputB")
-    field(FTB, "LONG")
-    field(FTVA, "FLOAT")
-    field(OUTA, "test:output")
-    field(SNAM, "sumTwoFloats")
-    field(SCAN, "1 second")  # process every second (or choose another trigger)
-}
-
- 
- 
  
 
 ############# 10Hz Status PV's (MSG ID 30) #########################
@@ -193,7 +168,7 @@ record(ai, "$(P){$(NO)}OneHz-Freq-I") {
 record(longout, "$(P){$(NO)}Chan1:TenHzBufLen-SP") {
     field(DESC, "Rolling buffer length")
     field(VAL, "100")     # default length
-    field(PREC, "0")
+    #field(PREC, "0")
     field(HOPR, "1000")
     field(LOPR, "1")
     field(PINI, "YES") 
@@ -216,8 +191,8 @@ record(aSub, "$(P){$(NO)}Chan1:DCCT1-aSub") {
     field(INPB, "$(P){$(NO)}Chan1:TenHzBufLen-SP NPP")   # desired length
     field(FTB, "LONG")   
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
     field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan1:DCCT1-Wfm")         
 }
@@ -226,7 +201,7 @@ record(waveform, "$(P){$(NO)}Chan1:DCCT1-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan1:DCCT1-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -263,8 +238,8 @@ record(aSub, "$(P){$(NO)}Chan1:DCCT2-aSub") {
     field(INPB, "$(P){$(NO)}Chan1:TenHzBufLen-SP NPP")   # desired length
     field(FTB, "LONG")   
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
     field(SNAM, "rollingBufProcess_varlen")    
     field(FLNK, "$(P){$(NO)}Chan1:DCCT2-Wfm")         
 }
@@ -273,7 +248,7 @@ record(waveform, "$(P){$(NO)}Chan1:DCCT2-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan1:DCCT2-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -307,10 +282,12 @@ record(aSub, "$(P){$(NO)}Chan1:DAC-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan1:DAC-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan1:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")       
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan1:DAC-Wfm")         
 }
 
@@ -318,7 +295,7 @@ record(waveform, "$(P){$(NO)}Chan1:DAC-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan1:DAC-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -352,10 +329,12 @@ record(aSub, "$(P){$(NO)}Chan1:Volt-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan1:Volt-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan1:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")      
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan1:Volt-Wfm")         
 }
 
@@ -363,7 +342,7 @@ record(waveform, "$(P){$(NO)}Chan1:Volt-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan1:Volt-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 record(ai, "$(P){$(NO)}Chan1:Volt-Offset-I") {
@@ -396,10 +375,12 @@ record(aSub, "$(P){$(NO)}Chan1:Gnd-aSub") {
     field(DESC, "Rolling Buffer of 1000 floats")
     field(INPA, "$(P){$(NO)}Chan1:Gnd-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan1:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")       
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "100") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan1:Gnd-Wfm")         
 }
 
@@ -407,7 +388,7 @@ record(waveform, "$(P){$(NO)}Chan1:Gnd-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan1:Gnd-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -442,10 +423,12 @@ record(aSub, "$(P){$(NO)}Chan1:Spare-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan1:Spare-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan1:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")      
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan1:Spare-Wfm")         
 }
 
@@ -453,7 +436,7 @@ record(waveform, "$(P){$(NO)}Chan1:Spare-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan1:Spare-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -487,10 +470,12 @@ record(aSub, "$(P){$(NO)}Chan1:Reg-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan1:Reg-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan1:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")       
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan1:Reg-Wfm")         
 }
 
@@ -498,7 +483,7 @@ record(waveform, "$(P){$(NO)}Chan1:Reg-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan1:Reg-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -531,10 +516,12 @@ record(aSub, "$(P){$(NO)}Chan1:Error-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan1:Error-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan1:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")      
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan1:Error-Wfm")         
 }
 
@@ -542,7 +529,7 @@ record(waveform, "$(P){$(NO)}Chan1:Error-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan1:Error-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -578,10 +565,12 @@ record(aSub, "$(P){$(NO)}Chan1:DACSetPt-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan1:DACSetPt-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan1:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")       
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan1:DACSetPt-Wfm")         
 }
 
@@ -589,7 +578,7 @@ record(waveform, "$(P){$(NO)}Chan1:DACSetPt-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan1:DACSetPt-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -918,6 +907,16 @@ record(ai, "$(P){$(NO)}Chan1:FOFB:DACSetPt-I") {
 
 ### PS2 #####
 
+record(longout, "$(P){$(NO)}Chan2:TenHzBufLen-SP") {
+    field(DESC, "Rolling buffer length")
+    field(VAL, "100")     # default length
+    #field(PREC, "0")
+    field(HOPR, "1000")
+    field(LOPR, "1")
+    field(PINI, "YES") 
+}
+
+
 record(ai, "$(P){$(NO)}Chan2:DCCT1-I") {
     field(DESC, "DCCT 1 Readback")
     field(DTYP, "PSC Reg F32")
@@ -931,10 +930,12 @@ record(aSub, "$(P){$(NO)}Chan2:DCCT1-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan2:DCCT1-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan2:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")      
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan2:DCCT1-Wfm")         
 }
 
@@ -942,7 +943,7 @@ record(waveform, "$(P){$(NO)}Chan2:DCCT1-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan2:DCCT1-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -975,10 +976,12 @@ record(aSub, "$(P){$(NO)}Chan2:DCCT2-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan2:DCCT2-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan2:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan2:DCCT2-Wfm")         
 }
 
@@ -986,7 +989,7 @@ record(waveform, "$(P){$(NO)}Chan2:DCCT2-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan2:DCCT2-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -1019,10 +1022,12 @@ record(aSub, "$(P){$(NO)}Chan2:DAC-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan2:DAC-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan2:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan2:DAC-Wfm")         
 }
 
@@ -1030,7 +1035,7 @@ record(waveform, "$(P){$(NO)}Chan2:DAC-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan2:DAC-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
    
     
@@ -1067,10 +1072,12 @@ record(aSub, "$(P){$(NO)}Chan2:Volt-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan2:Volt-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan2:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")          
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan2:Volt-Wfm")         
 }
 
@@ -1078,7 +1085,7 @@ record(waveform, "$(P){$(NO)}Chan2:Volt-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan2:Volt-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -1112,10 +1119,12 @@ record(aSub, "$(P){$(NO)}Chan2:Gnd-aSub") {
     field(DESC, "Rolling Buffer of 1000 floats")
     field(INPA, "$(P){$(NO)}Chan2:Gnd-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan2:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")          
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "100") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan2:Gnd-Wfm")         
 }
 
@@ -1123,7 +1132,7 @@ record(waveform, "$(P){$(NO)}Chan2:Gnd-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan2:Gnd-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }    
     
 
@@ -1156,10 +1165,12 @@ record(aSub, "$(P){$(NO)}Chan2:Spare-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan2:Spare-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan2:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")          
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan2:Spare-Wfm")         
 }
 
@@ -1167,7 +1178,7 @@ record(waveform, "$(P){$(NO)}Chan2:Spare-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan2:Spare-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -1203,10 +1214,12 @@ record(aSub, "$(P){$(NO)}Chan2:Reg-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan2:Reg-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan2:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")          
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan2:Reg-Wfm")         
 }
 
@@ -1214,7 +1227,7 @@ record(waveform, "$(P){$(NO)}Chan2:Reg-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan2:Reg-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -1248,10 +1261,12 @@ record(aSub, "$(P){$(NO)}Chan2:Error-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan2:Error-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan2:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")          
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan2:Error-Wfm")         
 }
 
@@ -1259,7 +1274,7 @@ record(waveform, "$(P){$(NO)}Chan2:Error-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan2:Error-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 record(ai, "$(P){$(NO)}Chan2:Error-Offset-I") {
@@ -1291,10 +1306,12 @@ record(aSub, "$(P){$(NO)}Chan2:DACSetPt-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan2:DACSetPt-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan2:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")          
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan2:DACSetPt-Wfm")         
 }
 
@@ -1302,7 +1319,7 @@ record(waveform, "$(P){$(NO)}Chan2:DACSetPt-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan2:DACSetPt-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -1630,6 +1647,16 @@ record(ai, "$(P){$(NO)}Chan2:FOFB:DACSetPt-I") {
 
 ### PS3 #####
 
+record(longout, "$(P){$(NO)}Chan3:TenHzBufLen-SP") {
+    field(DESC, "Rolling buffer length")
+    field(VAL, "100")     # default length
+    #field(PREC, "0")
+    field(HOPR, "1000")
+    field(LOPR, "1")
+    field(PINI, "YES") 
+}
+
+
 record(ai, "$(P){$(NO)}Chan3:DCCT1-I") {
     field(DESC, "DCCT 1 Readback")
     field(DTYP, "PSC Reg F32")
@@ -1643,10 +1670,12 @@ record(aSub, "$(P){$(NO)}Chan3:DCCT1-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan3:DCCT1-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan3:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan3:DCCT1-Wfm")         
 }
 
@@ -1654,7 +1683,7 @@ record(waveform, "$(P){$(NO)}Chan3:DCCT1-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan3:DCCT1-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -1687,10 +1716,12 @@ record(aSub, "$(P){$(NO)}Chan3:DCCT2-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan3:DCCT2-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan3:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")   
     field(FLNK, "$(P){$(NO)}Chan3:DCCT2-Wfm")         
 }
 
@@ -1698,7 +1729,7 @@ record(waveform, "$(P){$(NO)}Chan3:DCCT2-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan3:DCCT2-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -1732,10 +1763,12 @@ record(aSub, "$(P){$(NO)}Chan3:DAC-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan3:DAC-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan3:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan3:DAC-Wfm")         
 }
 
@@ -1743,7 +1776,7 @@ record(waveform, "$(P){$(NO)}Chan3:DAC-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan3:DAC-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -1778,10 +1811,12 @@ record(aSub, "$(P){$(NO)}Chan3:Volt-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan3:Volt-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan3:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan3:Volt-Wfm")         
 }
 
@@ -1789,7 +1824,7 @@ record(waveform, "$(P){$(NO)}Chan3:Volt-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan3:Volt-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 record(ai, "$(P){$(NO)}Chan3:Volt-Offset-I") {
@@ -1822,10 +1857,12 @@ record(aSub, "$(P){$(NO)}Chan3:Gnd-aSub") {
     field(DESC, "Rolling Buffer of 1000 floats")
     field(INPA, "$(P){$(NO)}Chan3:Gnd-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan3:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "100") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan3:Gnd-Wfm")         
 }
 
@@ -1833,7 +1870,7 @@ record(waveform, "$(P){$(NO)}Chan3:Gnd-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan3:Gnd-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 record(ai, "$(P){$(NO)}Chan3:Gnd-Offset-I") {
@@ -1865,10 +1902,12 @@ record(aSub, "$(P){$(NO)}Chan3:Spare-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan3:Spare-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan3:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan3:Spare-Wfm")         
 }
 
@@ -1876,7 +1915,7 @@ record(waveform, "$(P){$(NO)}Chan3:Spare-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan3:Spare-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -1910,10 +1949,12 @@ record(aSub, "$(P){$(NO)}Chan3:Reg-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan3:Reg-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan3:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan3:Reg-Wfm")         
 }
 
@@ -1921,7 +1962,7 @@ record(waveform, "$(P){$(NO)}Chan3:Reg-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan3:Reg-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -1954,10 +1995,12 @@ record(aSub, "$(P){$(NO)}Chan3:Error-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan3:Error-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan3:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan3:Error-Wfm")         
 }
 
@@ -1965,7 +2008,7 @@ record(waveform, "$(P){$(NO)}Chan3:Error-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan3:Error-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -1999,10 +2042,12 @@ record(aSub, "$(P){$(NO)}Chan3:DACSetPt-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan3:DACSetPt-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan3:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan3:DACSetPt-Wfm")         
 }
 
@@ -2010,7 +2055,7 @@ record(waveform, "$(P){$(NO)}Chan3:DACSetPt-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan3:DACSetPt-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -2338,6 +2383,16 @@ record(ai, "$(P){$(NO)}Chan3:FOFB:DACSetPt-I") {
 
 ### PS4 #####
 
+record(longout, "$(P){$(NO)}Chan4:TenHzBufLen-SP") {
+    field(DESC, "Rolling buffer length")
+    field(VAL, "100")     # default length
+    #field(PREC, "0")
+    field(HOPR, "1000")
+    field(LOPR, "1")
+    field(PINI, "YES") 
+}
+
+
 record(ai, "$(P){$(NO)}Chan4:DCCT1-I") {
     field(DESC, "DCCT 1 Readback")
     field(DTYP, "PSC Reg F32")
@@ -2351,10 +2406,12 @@ record(aSub, "$(P){$(NO)}Chan4:DCCT1-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan4:DCCT1-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan4:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan4:DCCT1-Wfm")         
 }
 
@@ -2362,7 +2419,7 @@ record(waveform, "$(P){$(NO)}Chan4:DCCT1-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan4:DCCT1-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -2396,10 +2453,12 @@ record(aSub, "$(P){$(NO)}Chan4:DCCT2-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan4:DCCT2-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan4:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan4:DCCT2-Wfm")         
 }
 
@@ -2407,7 +2466,7 @@ record(waveform, "$(P){$(NO)}Chan4:DCCT2-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan4:DCCT2-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -2441,10 +2500,12 @@ record(aSub, "$(P){$(NO)}Chan4:DAC-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan4:DAC-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan4:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan4:DAC-Wfm")         
 }
 
@@ -2452,7 +2513,7 @@ record(waveform, "$(P){$(NO)}Chan4:DAC-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan4:DAC-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -2488,10 +2549,12 @@ record(aSub, "$(P){$(NO)}Chan4:Volt-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan4:Volt-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan4:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan4:Volt-Wfm")         
 }
 
@@ -2499,7 +2562,7 @@ record(waveform, "$(P){$(NO)}Chan4:Volt-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan4:Volt-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 record(ai, "$(P){$(NO)}Chan4:Volt-Offset-I") {
@@ -2532,10 +2595,12 @@ record(aSub, "$(P){$(NO)}Chan4:Gnd-aSub") {
     field(DESC, "Rolling Buffer of 1000 floats")
     field(INPA, "$(P){$(NO)}Chan4:Gnd-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan4:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "100") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan4:Gnd-Wfm")         
 }
 
@@ -2543,7 +2608,7 @@ record(waveform, "$(P){$(NO)}Chan4:Gnd-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan4:Gnd-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 record(ai, "$(P){$(NO)}Chan4:Gnd-Offset-I") {
@@ -2575,10 +2640,12 @@ record(aSub, "$(P){$(NO)}Chan4:Spare-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan4:Spare-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan4:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan4:Spare-Wfm")         
 }
 
@@ -2586,7 +2653,7 @@ record(waveform, "$(P){$(NO)}Chan4:Spare-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan4:Spare-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -2620,10 +2687,12 @@ record(aSub, "$(P){$(NO)}Chan4:Reg-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan1:Reg-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan4:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan4:Reg-Wfm")         
 }
 
@@ -2631,7 +2700,7 @@ record(waveform, "$(P){$(NO)}Chan4:Reg-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan4:Reg-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -2664,10 +2733,12 @@ record(aSub, "$(P){$(NO)}Chan4:Error-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan4:Error-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan4:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan4:Error-Wfm")         
 }
 
@@ -2675,7 +2746,7 @@ record(waveform, "$(P){$(NO)}Chan4:Error-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan4:Error-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
@@ -2708,10 +2779,12 @@ record(aSub, "$(P){$(NO)}Chan4:DACSetPt-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
     field(INPA, "$(P){$(NO)}Chan4:DACSetPt-I NPP NMS")  
     field(FTA, "FLOAT")
+    field(INPB, "$(P){$(NO)}Chan4:TenHzBufLen-SP NPP")   # desired length
+    field(FTB, "LONG")         
     field(FTVA, "FLOAT")   
-    field(NOVA, "1000") #buffer size
-    field(NEVA, "1000") #output array length
-    field(SNAM, "rollingBufProcess")
+    field(NOVA, "$(BUFLEN)") #buffer size
+    field(NEVA, "$(BUFLEN)") #output array length
+    field(SNAM, "rollingBufProcess_varlen")
     field(FLNK, "$(P){$(NO)}Chan4:DACSetPt-Wfm")         
 }
 
@@ -2719,7 +2792,7 @@ record(waveform, "$(P){$(NO)}Chan4:DACSetPt-Wfm") {
     field(DESC, "Waveform of last 1000 points")
     field(INP, "$(P){$(NO)}Chan4:DACSetPt-aSub.VALA CPP")
     field(FTVL, "FLOAT")
-    field(NELM, "1000")
+    field(NELM, "$(BUFLEN)")
 }
 
 
