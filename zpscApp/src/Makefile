@@ -6,9 +6,9 @@ include $(TOP)/configure/CONFIG
 #=============================
 
 # Enable Sequencer support
-USR_SEQ = YES
-SNCFLAGS += +r
-zpsc_SNC_SRCS += reset_digout.st
+#USR_SEQ = YES
+#SNCFLAGS += +r
+#zpsc_SNC_SRCS += reset_digout.st
 
 #=============================
 # Build the IOC application
@@ -32,7 +32,7 @@ zpsc_DBD += sumTwoFloats.dbd
 
 # Add all the support libraries needed by this IOC
 zpsc_LIBS += pscCore
-zpsc_LIBS += seq pv
+#zpsc_LIBS += seq pv
 
 # Add your custom C source here:
 zpsc_SRCS += scaleWaveform.c  
