@@ -7,6 +7,14 @@ include $(TOP)/configure/CONFIG
 # Create and install (or just install) into <top>/db
 # databases, templates, substitutions like this
 DB += PSC-CH4.db
+# Temp. solution to support old IOC
+DB += control_chan.db
+DB += control_glob.db
+DB += snapshots.db
+DB += wfmstats.db
+DB += status10hz.db
+DB += lstats.db
+
 
 ifneq ($(ASYN),)
 DB_INSTALLS += $(ASYN)/db/asynRecord.db
@@ -34,7 +42,7 @@ DB_INSTALLS += $(PMAC)/db/pmacStatusAxis.template
 DB_INSTALLS += $(PMAC)/db/powerPmacStatus.template
 endif
 
-DB += $(patsubst ../%, %, $(wildcard ../*.template))
+#DB += $(patsubst ../%, %, $(wildcard ../*.template))
 #DB += $(patsubst ../%, %, $(wildcard ../*.db))
 #DB += $(patsubst ../%, %, $(wildcard ../*.vdb))
 #DB += $(patsubst ../%, %, $(wildcard ../*.substitutions))
