@@ -11,16 +11,16 @@
 #  RPATH4, RNAME4
 #
 
-global {P=$(P), NAME=$(NAME), NO=$(NO), BUFLEN=$(BUFLEN)}
+global {P="$(PREFIX)", NAME="$(PSCNAME)", NO="$(PSCNO)", BUFLEN="$(PSCBUFLEN)"}
 
 
-# LEVEL0 : P, NO
+# LEVEL0 : P, NAME, NO
 # Lstats (MSG ID 101)
 file "lstats.template"
 {{}}
 
 
-# LEVEL0 : P, NO
+# LEVEL0 : P, NAME, NO
 # 10Hz Status PV's (MSG ID 30)
 file "status10hz.template"
 {{}}
@@ -30,7 +30,7 @@ file "status10hz.template"
 file "control_glob.template"
 {{}}
 
-# LEVEL0 : P, NO
+# LEVEL0 : P, NAME, NO
 # LEVEL1 : CHAN, RAMPPATH, RAMPNAME
 # record(stringin, "$(P){$(NO)}Chan$(CHAN):RampTable-FilePath") {
 # record(stringin, "$(P){$(NO)}Chan$(CHAN):RampTable-FileName") {
@@ -38,13 +38,13 @@ file "control_chan.template"
 {
 pattern
 {CHAN, RAMPPATH, RAMPNAME}
-{1, $(RPATH1), $(RNAME1)}
-{2, $(RPATH2), $(RNAME2)}
-{3, $(RPATH3), $(RNAME3)}
-{4, $(RPATH4), $(RNAME4)}
+{1, "/home", "data.txt"}
+{2, "/home", "data.txt"}
+{3, "/home", "data.txt"}
+{4, "/home", "data.txt"}
 }
 
-# LEVEL0 : P, NO, BUFLEN 
+# LEVEL0 : P, NAME, NO, BUFLEN 
 # LEVEL1 : CHAN, TYPE, MSGID 
 file "snapshots_chan.template" 
 {
@@ -72,7 +72,7 @@ pattern
 {EVR, 4, 103}
 }
 
-# LEVEL0 : P, NO
+# LEVEL0 : P, NAME, NO
 file "wfmstats.template"
 {{}}
 

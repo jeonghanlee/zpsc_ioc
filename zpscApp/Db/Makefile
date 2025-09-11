@@ -35,10 +35,10 @@ DB_INSTALLS += $(PMAC)/db/pmacStatusAxis.template
 DB_INSTALLS += $(PMAC)/db/powerPmacStatus.template
 endif
 
-#DB += $(patsubst ../%, %, $(wildcard ../*.template))
+DB += $(patsubst ../%, %, $(wildcard ../*.template))
 #DB += $(patsubst ../%, %, $(wildcard ../*.db))
 #DB += $(patsubst ../%, %, $(wildcard ../*.vdb))
-#DB += $(patsubst ../%, %, $(wildcard ../*.substitutions))
+DB += $(patsubst ../%, %, $(wildcard ../*.substitutions))
 
 ##
 DB += $(patsubst ../%, %, $(wildcard ../*.proto))

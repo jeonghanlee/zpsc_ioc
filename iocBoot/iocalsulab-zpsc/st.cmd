@@ -65,11 +65,15 @@ zpsc_registerRecordDeviceDriver pdbbase
 cd "${TOP}/iocBoot/${IOC}"
 
 # PSC IP address
-epicsEnvSet("PSC1_NAME", "PSC1")
+epicsEnvSet("PSC1_NAME", "PSC")
+epicsEnvSet("PSC1_NO", "1")
 epicsEnvSet("PSC1_IP", "10.0.142.115"); 
 
 # Default Snapshot DMA Length 100000
-iocshLoad("$(IOCSH_TOP)/zpsc.iocsh", "DATABASE_TOP=$(DB_TOP),P=$(IOCNAME),NAME=$(PSC1_NAME),NO=1,IPADDR=$(PSC1_IP)")
+iocshLoad("$(IOCSH_LOCAL_TOP)/zpsc.iocsh", "DATABASE_TOP=$(DB_TOP),P=$(IOCNAME),NAME=$(PSC1_NAME),NO=$(PSC1_NO),IPADDR=$(PSC1_IP)")
+
+#createPSC("PSC1", "10.0.142.115", "3000", "0")
+#dbLoadTemplate("/home/jeonglee/iocs/zpsc_ioc/db/PSC-CH4.substitutions", "PREFIX=alsulab-zpsc,PSCNAME=PSC,PSCNO=1,PSCBUFLEN=100000")
 
 
 #>>>>>>>>>>>>>
@@ -82,5 +86,5 @@ iocInit
 ClockTime_Report
 ##
 
-iocshLoad("$(IOCSH_TOP)/zpsc_afterinit.iocsh", "DATABASE_TOP=$(DB_TOP),P=$(IOCNAME),NAME=$(PSC1_NAME),NO=1,IPADDR=$(PSC1_IP)")
+iocshLoad("$(IOCSH_LOCAL_TOP)/zpsc_afterinit.iocsh", "DATABASE_TOP=$(DB_TOP),P=$(IOCNAME),NAME=$(PSC1_NAME),NO=$(PSC1_NO),IPADDR=$(PSC1_IP)")
 
