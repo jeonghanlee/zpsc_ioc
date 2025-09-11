@@ -4,13 +4,10 @@ name: Building
 on:
   push:
     branches: [master]
-
   pull_request:
     branches: [master]
 
-
 jobs:
-
   Debian13:
     runs-on: ubuntu-latest
     container: jeonghanlee/debian13-epics
@@ -21,7 +18,6 @@ jobs:
         run: |
           echo "EPICS_BASE:=/usr/local/epics/R7.0.7/base"> configure/RELEASE.local
           make
-
   Rocky8:
     runs-on: ubuntu-latest
     container: jeonghanlee/rocky8-epics
