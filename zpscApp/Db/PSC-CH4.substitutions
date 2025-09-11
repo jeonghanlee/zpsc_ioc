@@ -1,44 +1,52 @@
 # Record set for a 4CH zpsc
 #
 # Macros:
-#  P      = 
+#  P      =
+#  NAME   = PSC Name (Default "PSC")
 #  NO     = PSC Identification Number 
 #  BUFLEN = 
-#  OFFSET = 
+#  RPATH1, RNAME1
+#  RPATH2, RNAME2
+#  RPATH3, RNAME3
+#  RPATH4, RNAME4
 #
-#
 
-global {P=$(P), NO=$(NO), BUFLEN=$(BLEN), OFFSET=100}
+global {P=$(P), NAME=$(NAME), NO=$(NO), BUFLEN=$(BUFLEN)}
 
 
-# P, NO
+# LEVEL0 : P, NO
 # Lstats (MSG ID 101)
 file "lstats.template"
 {{}}
 
 
-# P, NO
+# LEVEL0 : P, NO
 # 10Hz Status PV's (MSG ID 30)
 file "status10hz.template"
 {{}}
 
-# P, NO
+# record(stringin, "$(P){$(NO)}RampTableFile") {
+# LEVEL0 : P, NO
 file "control_glob.template"
 {{}}
 
-# P, NO, CHAN
+# LEVEL0 : P, NO
+# LEVEL1 : CHAN, RAMPPATH, RAMPNAME
+# record(stringin, "$(P){$(NO)}Chan$(CHAN):RampTable-FilePath") {
+# record(stringin, "$(P){$(NO)}Chan$(CHAN):RampTable-FileName") {
 file "control_chan.template" 
 {
-pattern 
-{CH}
-{1}
-{2}
-{3}
-{4}
+pattern
+{CHAN, RAMPPATH, RAMPNAME}
+{1, $(RPATH1), $(RNAME1)}
+{2, $(RPATH2), $(RNAME2)}
+{3, $(RPATH3), $(RNAME3)}
+{4, $(RPATH4), $(RNAME4)}
 }
 
-# P, NO, TYPE, CHAN, MSGID, BUFLEN
-file "snapshots.template" 
+# LEVEL0 : P, NO, BUFLEN 
+# LEVEL1 : CHAN, TYPE, MSGID 
+file "snapshots_chan.template" 
 {
 pattern 
 {TYPE, CHAN, MSGID}
@@ -64,6 +72,7 @@ pattern
 {EVR, 4, 103}
 }
 
-# P, NO
+# LEVEL0 : P, NO
 file "wfmstats.template"
 {{}}
+

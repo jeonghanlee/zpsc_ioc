@@ -1,28 +1,25 @@
 ####################################################################################################
 ############ START of zpsc.iocsh ##############################################################
-#-- P         : PREFIX
-#-- PORT      :
-#-- IPADDR    :
-#-- DATABASE_TOP :
-#-- SHOWDEV   : [Default] #
-#-- ASYNTRACE : [Default] #
-#-- SCAN      : [Default] 1 second
-#-- PREC      : [Default] 3
+#-- P             : PREFIX
+#-- NAME          : PSC NAME PREFIX
+#-- NO            : PSC NAME NUMBER
+#-- IPADDR        : PSC IP Address
+#-- PORT          : [Default] 3000, PSC PORT
+#-- TIMEOUT       : [Default] 0,    PSC timeout (unit?)
+#-- PSCDEBUG      : [Default] #
+#-- DBUGLVL       : [Default] 2 PSC debug level  #5 full debug
+#-- PSCBSIZE      : [Default] #
+#-- BID           : [Default] 1100,  PSC Block ID
+#-- BSIZE         : [Default] 512,   PSC Block Size
+#-- DATABASE_TOP  :
+#-- DATABASE_NANE :[Default] PSC-4CH.db
+#-- BUFLEN        :[Default] 100000, Snapshot DMA Length
 #--#################################################################################################
-#--#
-#--# Here is the example, one should modify according to your IOC application
-#--# Note that we mixed the variable names in somewhere (SCAN, PREC, PORT, P)
-#--#           we separated the variable names in DATABASE_TOP from .... i
-#--# Please make sure you use the proper variable name to match st.cmd, and your DB file.
-#--#
-#--# Configure port driver
-#-- MultiFunctionConfig((portName,        # The name to give to this asyn port driver
-#--                      uniqueID,        # For USB the serial number.  For Ethernet the MAC address or IP address.
-#--                      maxInputPoints,  # Maximum number of input points for waveform digitizer
-#--                      maxOutputPoints) # Maximum number of output points for waveform generator
-#MultiFunctionConfig("$(PORT)", "$(IPADDR=128.3.130.203)", 1, 1)
-#$(SHOWDEV=#--) measCompShowDevices()
-#$(ASYNTRACE=#--) asynSetTraceMask($(PORT), -1, ERROR|FLOW|DRIVER)
-#dbLoadRecords("$(DATABASE_TOP)/TC32.db", "P=$(P),PORT=$(PORT),SCAN=$(SCAN=1 second),PREC=$(PREC=3)")
+
+$(PSCDEBUG=#--) var(PSCDebug, "$(DBUGLVL=2)")	
+createPSC("$(NAME=PSC)$(NO)", "$(IPADDR)", "$(PORT=3000), "$(TIMEOUT=0)")
+$(PSCBSIZE=#--) setPSCSendBlockSize("$(NAME=PSC)$(NO)", "$(BID=1100)", "$(BSIZE=512)")
+dbLoadRecords("$(DATABASE_TOP)/$(DATABASE_NAME=PSC-4CH.db)", "P=$(P),NAME=$(NAME=PSC),NO=$(NO),BUFLEN=$(BUFLEN=100000)")
+
 ############ END of zpsc.iocsh ################################################################
 ####################################################################################################
