@@ -64,16 +64,20 @@ zpsc_registerRecordDeviceDriver pdbbase
 
 cd "${TOP}/iocBoot/${IOC}"
 
-# PSC IP address
-epicsEnvSet("PSC1_NAME", "PSC")
+# PSC1 
+epicsEnvSet("PSC1_NE", "PSC")
 epicsEnvSet("PSC1_NO", "1")
 epicsEnvSet("PSC1_IP", "10.0.142.115"); 
+iocshLoad("$(IOCSH_LOCAL_TOP)/zpsc.iocsh", "DATABASE_TOP=$(DB_TOP),P=$(IOCNAME),NAME=$(PSC1_NE),NO=$(PSC1_NO),IPADDR=$(PSC1_IP)")
+#iocshLoad("$(IOCSH_LOCAL_TOP)/zpsc.iocsh", "DATABASE_TOP=$(DB_TOP),P=$(IOCNAME),NAME=$(PSC1_NE),NO=$(PSC1_NO),IPADDR=$(PSC1_IP),PSCDEBUG=")
+#iocshLoad("$(IOCSH_LOCAL_TOP)/zpsc.iocsh", "DATABASE_TOP=$(DB_TOP),P=$(IOCNAME),NAME=$(PSC1_NE),NO=$(PSC1_NO),IPADDR=$(PSC1_IP),PSCDEBUG=,PSCBSIZE=")
+#iocshLoad("$(IOCSH_LOCAL_TOP)/zpsc.iocsh", "DATABASE_TOP=$(DB_TOP),P=$(IOCNAME),NAME=$(PSC1_NE),NO=$(PSC1_NO),IPADDR=$(PSC1_IP),PSCDEBUG=,DBUGLVL=5,PSCBSIZE=")
 
-# Default Snapshot DMA Length 100000
-iocshLoad("$(IOCSH_LOCAL_TOP)/zpsc.iocsh", "DATABASE_TOP=$(DB_TOP),P=$(IOCNAME),NAME=$(PSC1_NAME),NO=$(PSC1_NO),IPADDR=$(PSC1_IP)")
-
-#createPSC("PSC1", "10.0.142.115", "3000", "0")
-#dbLoadTemplate("/home/jeonglee/iocs/zpsc_ioc/db/PSC-CH4.substitutions", "PREFIX=alsulab-zpsc,PSCNAME=PSC,PSCNO=1,PSCBUFLEN=100000")
+# Example for PSC2
+#epicsEnvSet("PSC2_NE", "PSC")
+#epicsEnvSet("PSC2_NO", "2")
+#epicsEnvSet("PSC2_IP", "10.0.142.116"); 
+#iocshLoad("$(IOCSH_LOCAL_TOP)/zpsc.iocsh", "DATABASE_TOP=$(DB_TOP),P=$(IOCNAME),NAME=$(PSC2_NE),NO=$(PSC2_NO),IPADDR=$(PSC2_IP)")
 
 
 #>>>>>>>>>>>>>
@@ -86,5 +90,5 @@ iocInit
 ClockTime_Report
 ##
 
-iocshLoad("$(IOCSH_LOCAL_TOP)/zpsc_afterinit.iocsh", "DATABASE_TOP=$(DB_TOP),P=$(IOCNAME),NAME=$(PSC1_NAME),NO=$(PSC1_NO),IPADDR=$(PSC1_IP)")
+iocshLoad("$(IOCSH_LOCAL_TOP)/zpsc_afterinit.iocsh", "DATABASE_TOP=$(DB_TOP),P=$(IOCNAME),NO=$(PSC1_NO)")
 
