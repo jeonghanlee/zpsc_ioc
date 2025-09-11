@@ -6,10 +6,7 @@ include $(TOP)/configure/CONFIG
 #----------------------------------------------------
 # Create and install (or just install) into <top>/db
 # databases, templates, substitutions like this
-DB += snapshots.db
-DB += control_glob.db
-
-
+DB += PSC-CH4.db
 
 ifneq ($(ASYN),)
 DB_INSTALLS += $(ASYN)/db/asynRecord.db
@@ -37,8 +34,8 @@ DB_INSTALLS += $(PMAC)/db/pmacStatusAxis.template
 DB_INSTALLS += $(PMAC)/db/powerPmacStatus.template
 endif
 
-#DB += $(patsubst ../%, %, $(wildcard ../*.template))
-DB += $(patsubst ../%, %, $(wildcard ../*.db))
+DB += $(patsubst ../%, %, $(wildcard ../*.template))
+#DB += $(patsubst ../%, %, $(wildcard ../*.db))
 #DB += $(patsubst ../%, %, $(wildcard ../*.vdb))
 #DB += $(patsubst ../%, %, $(wildcard ../*.substitutions))
 

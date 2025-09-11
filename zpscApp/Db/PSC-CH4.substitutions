@@ -1,0 +1,69 @@
+# Record set for a 4CH zpsc
+#
+# Macros:
+#  P      = 
+#  NO     = PSC Identification Number 
+#  BUFLEN = 
+#  OFFSET = 
+#
+#
+
+global {P=$(P), NO=$(NO), BUFLEN=$(BLEN), OFFSET=100}
+
+
+# P, NO
+# Lstats (MSG ID 101)
+file "lstats.template"
+{{}}
+
+
+# P, NO
+# 10Hz Status PV's (MSG ID 30)
+file "status10hz.template"
+{{}}
+
+# P, NO
+file "control_glob.template"
+{{}}
+
+# P, NO, CHAN
+file "control_chan.template" 
+{
+pattern 
+{CH}
+{1}
+{2}
+{3}
+{4}
+}
+
+# P, NO, TYPE, CHAN, MSGID, BUFLEN
+file "snapshots.template" 
+{
+pattern 
+{TYPE, CHAN, MSGID}
+{USR, 1, 60}
+{USR, 2, 61}
+{USR, 3, 62}
+{USR, 4, 63}
+{FLT, 1, 70}
+{FLT, 2, 71}
+{FLT, 3, 72}
+{FLT, 4, 73}
+{ERR, 1, 80}
+{ERR, 2, 81}
+{ERR, 3, 82}
+{ERR, 4, 83}
+{INJ, 1, 90}
+{INJ, 2, 91}
+{INJ, 3, 92}
+{INJ, 4, 93}
+{EVR, 1, 100}
+{EVR, 2, 101}
+{EVR, 3, 102}
+{EVR, 4, 103}
+}
+
+# P, NO
+file "wfmstats.template"
+{{}}
